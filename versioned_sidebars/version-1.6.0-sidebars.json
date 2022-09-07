@@ -1,0 +1,198 @@
+{
+    "docs": [{
+            "type": "category",
+            "label": "Tuval framework",
+            "collapsed": false,
+            "items": [
+                "intro",
+                "purpose",
+                "architecture"
+            ]
+        },
+        {
+            "type": "category",
+            "label": "Getting Started",
+            "collapsed": true,
+            "items": [
+                "installation",
+                {
+                    "Core Library": [
+                        "maven",
+                        {
+                            "type": "category",
+                            "label": "Collections",
+                            "collapsed": true,
+                            "items": [
+                                "core-library/collections/arraylist",
+                                "core-library/collections/bitarray",
+                                "core-library/collections/hashtable",
+                                "core-library/collections/linkedlist",
+                                "core-library/collections/list",
+                                "core-library/collections/queue",
+                                "core-library/collections/sorted-list",
+                                "core-library/collections/stack"
+                            ]
+                        },
+                        {
+                            "type": "category",
+                            "label": "Cryptography",
+                            "collapsed": true,
+                            "items": [
+                                "core-library/collections/arraylist",
+                                "core-library/collections/bitarray",
+                                "core-library/collections/hashtable",
+                                "core-library/collections/linkedlist",
+                                "core-library/collections/list",
+                                "core-library/collections/queue",
+                                "core-library/collections/sorted-list",
+                                "core-library/collections/stack"
+                            ]
+                        },
+                        {
+                            "type": "category",
+                            "label": "Encoding",
+                            "collapsed": true,
+                            "items": [
+                                "core-library/collections/arraylist",
+                                "core-library/collections/bitarray",
+                                "core-library/collections/hashtable",
+                                "core-library/collections/linkedlist",
+                                "core-library/collections/list",
+                                "core-library/collections/queue",
+                                "core-library/collections/sorted-list",
+                                "core-library/collections/stack"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Graphics Library (TGI)": [{
+                            "type": "category",
+                            "label": "Introduction",
+                            "collapsed": true,
+                            "items": [
+                                "graphics-library/01.01.understanding-tuval",
+                                "graphics-library/01.02.exploring-tuval-functionality",
+                                "graphics-library/01.03.TGFromCanvasPerspective",
+                                "graphics-library/01.04.ClassesInTuvalGraphics"
+                            ]
+                        },
+                        {
+                            "type": "category",
+                            "label": "Your First TGI Application",
+                            "collapsed": true,
+                            "items": [
+                                "graphics-library/02.00.YourFirstTGApplication",
+                                "graphics-library/02.01.DrawingSurfaces",
+                                "graphics-library/02.02.CoordinateSystem",
+                                "graphics-library/02.03.YourFirstTGApplication"
+                            ]
+                        },
+                        "application-options",
+                        "session",
+                        "logging"
+                    ]
+                },
+                {
+                    "Forms Library (Tuval UI)": [{
+                            "type": "category",
+                            "label": "Introduction",
+                            "collapsed": true,
+                            "items": [
+                                "graphics-library/01.01.understanding-tuval",
+                                "graphics-library/01.02.exploring-tuval-functionality",
+                                "graphics-library/01.03.TGFromCanvasPerspective",
+                                "graphics-library/01.04.ClassesInTuvalGraphics"
+                            ]
+                        },
+                        {
+                            "type": "category",
+                            "label": "Your First TGI Application",
+                            "collapsed": true,
+                            "items": [
+                                "graphics-library/02.00.YourFirstTGApplication",
+                                "graphics-library/02.01.DrawingSurfaces",
+                                "graphics-library/02.02.CoordinateSystem",
+                                "graphics-library/02.03.YourFirstTGApplication"
+                            ]
+                        },
+                        "application-options",
+                        "session",
+                        "logging"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "category",
+            "label": "Guides",
+            "collapsed": true,
+            "items": [
+                "guides/project-structure"
+
+            ]
+        },
+        {
+            "type": "category",
+            "label": "API Reference",
+            "items": [
+                "api/screens"
+            ]
+        }
+    ],
+    "screens": [{
+            "type": "ref",
+            "id": "api/screens"
+        },
+        {
+            "type": "category",
+            "label": "API Reference",
+            "collapsed": false,
+            "items": [
+                "api/screen",
+                "api/template",
+                "api/layout",
+                "api/tags",
+                "api/window",
+                "api/resizable",
+                "api/button",
+                "api/criteria",
+                "api/tab-and-tabcontainer",
+                "api/wizard-and-wizard-panel",
+                "api/accordion",
+                "api/grids",
+                "api/pivot-table",
+                "api/context-menu",
+                "api/messages",
+                "api/info",
+                "api/include",
+                "api/dialog",
+                "api/chart",
+                "api/actions",
+                "api/dependencies"
+            ]
+        }
+    ],
+    "schedule": [{
+            "type": "ref",
+            "id": "guides/scheduler"
+        },
+        {
+            "type": "category",
+            "label": "Schedule Task",
+            "collapsed": false,
+            "items": [
+                "guides/schedule-configuration",
+                "guides/dependency-task"
+            ]
+        }
+    ],
+    "training": [{
+        "type": "category",
+        "label": "Basic tutorials",
+        "collapsed": false,
+        "items": [
+            "training/tuval-101"
+        ]
+    }]
+}
