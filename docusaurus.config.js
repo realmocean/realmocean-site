@@ -63,13 +63,14 @@ module.exports = {
                     label: 'Blog',
                     position: 'left'
                 },
-                 {
-                      to: '/login',
-                      label: 'Log In Console',
-                      position: 'right',
-                      className: 'login-button',
-                  },
-
+                {
+                    href: 'https://app.realmocean.com',
+                    html: '<b>Log In</b>',
+                    position: 'right',
+                    className: 'login-button',
+                    target: '_self',
+                    'aria-label': 'GitHub repository'
+                }
                 /*   {
                       alt: 'Github repository',
                       href: 'https://github.com/tuvalframework/framework',
