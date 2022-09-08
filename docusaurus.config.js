@@ -63,12 +63,12 @@ module.exports = {
                     label: 'Blog',
                     position: 'left'
                 },
-                /*   {
+                 {
                       to: '/login',
                       label: 'Log In Console',
                       position: 'right',
                       className: 'login-button',
-                  }, */
+                  },
 
                 /*   {
                       alt: 'Github repository',
