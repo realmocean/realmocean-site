@@ -67,10 +67,37 @@
         },
         {
             "type": "category",
-            "label": "Guides",
+            "label": "Components",
             "collapsed": true,
-            "items": [
-                "guides/project-structure"
+            "items": [{
+                    "type": "category",
+                    "label": "Buttons",
+                    "collapsed": true,
+                    "items": [
+                        "components/buttons/button",
+                        "components/buttons/button-group",
+                        "components/buttons/dropdown-menu",
+                        "components/buttons/progress-button",
+                        "components/buttons/split-button"
+                    ]
+                },
+                {
+                    "type": "category",
+                    "label": "Inputs",
+                    "collapsed": true,
+                    "items": [
+                        "components/inputs/textbox",
+                        "components/inputs/input-mask",
+                        "components/inputs/numeric-textbox",
+                        "components/inputs/radio-button",
+                        "components/inputs/checkbox",
+                        "components/inputs/color-picker",
+                        "components/inputs/file-upload",
+                        "components/inputs/range-slider",
+                        "components/inputs/toggle-switch-button",
+                        "components/inputs/signature"
+                    ]
+                }
             ]
         },
         {
