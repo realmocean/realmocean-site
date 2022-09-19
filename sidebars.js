@@ -49,22 +49,7 @@ module.exports = {
                 'deployment'
             ],
         },
-        {
-            type: 'category',
-            label: 'Guides',
-            collapsed: true,
-            items: [
-                'guides/project-structure',
-                'guides/scheduler',
-                'guides/notifier',
-                'guides/selenium-testing',
-                'guides/print-engine',
-                'guides/debugging',
-                'guides/validation',
-                'guides/v4-migration',
-                'guides/default-screens',
-            ],
-        },
+
         {
             type: 'category',
             label: 'API Reference',

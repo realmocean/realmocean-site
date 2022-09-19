@@ -52,7 +52,7 @@ module.exports = {
 
                 {
                     type: 'doc',
-                    docId: 'training/tuval-101',
+                    docId: 'components/inputs/textbox',
                     position: 'left',
                     label: 'Tutorials',
                     activeSidebarClassName: 'navbar__link--active',
