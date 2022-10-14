@@ -27,6 +27,11 @@ module.exports = {
                     label: 'Home',
                 },
                 {
+                    to: '/realms',
+                    position: 'left',
+                    label: 'Realms',
+                },
+                {
                     to: '/appstore',
                     position: 'left',
                     label: 'App Store',

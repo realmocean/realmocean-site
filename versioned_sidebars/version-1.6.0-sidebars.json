@@ -87,7 +87,10 @@
                         "components/buttons/button-group",
                         "components/buttons/dropdown-menu",
                         "components/buttons/progress-button",
-                        "components/buttons/split-button"
+                        "components/buttons/split-button",
+                        "components/buttons/chips",
+                        "components/buttons/fab",
+                        "components/buttons/speeddial"
                     ]
                 },
                 {
@@ -105,6 +108,91 @@
                         "components/inputs/range-slider",
                         "components/inputs/toggle-switch-button",
                         "components/inputs/signature"
+                    ]
+                },
+                {
+                    "type": "category",
+                    "label": "DropDowns",
+                    "collapsed": true,
+                    "items": [
+                        "components/dropdowns/autocomplate",
+                        "components/dropdowns/combobox",
+                        "components/dropdowns/dropdownlist",
+                        "components/dropdowns/dropdowntree",
+                        "components/dropdowns/multiselectdropdown",
+                        "components/dropdowns/mention",
+                        "components/dropdowns/listbox"
+                    ]
+                },
+                {
+                    "type": "category",
+                    "label": "Navigation",
+                    "collapsed": true,
+                    "items": [
+                        "components/navigation/accordion",
+                        "components/navigation/appbar",
+                        "components/navigation/breadcrumb",
+                        "components/navigation/carousel",
+                        "components/navigation/contextmenu",
+                        "components/navigation/menubar",
+                        "components/navigation/sidebar",
+                        "components/navigation/tabs",
+                        "components/navigation/toolbar",
+                        "components/navigation/treeview",
+                        "components/navigation/filemanager"
+                    ]
+                },
+                {
+                    "type": "category",
+                    "label": "Grids",
+                    "collapsed": true,
+                    "items": [
+                        "components/grids/datagrid",
+                        "components/grids/pivottable",
+                        "components/grids/treegrid",
+                        "components/grids/spreadsheet"
+                    ]
+                },
+                {
+                    "type": "category",
+                    "label": "File Viewers & Editors",
+                    "collapsed": true,
+                    "items": [
+                        "components/fileviewers/inplaceeditor",
+                        "components/fileviewers/PDFViewer",
+                        "components/fileviewers/richtexteditor",
+                        "components/fileviewers/wordprocessor",
+                        "components/fileviewers/imageeditor"
+                    ]
+                },
+                {
+                    "type": "category",
+                    "label": "Layout",
+                    "collapsed": true,
+                    "items": [
+                        "components/layout/avatar",
+                        "components/layout/card",
+                        "components/layout/dialog",
+                        "components/layout/predefineddialogs",
+                        "components/layout/listview",
+                        "components/layout/tooltip",
+                        "components/layout/splitter",
+                        "components/layout/dashboardlayout"
+                    ]
+                },
+                {
+                    "type": "category",
+                    "label": "Data Visualization",
+                    "collapsed": true,
+                    "items": [
+                        "components/datavisualization/charts",
+                        "components/datavisualization/stockchart",
+                        "components/datavisualization/circulargauge",
+                        "components/datavisualization/diagram",
+                        "components/datavisualization/heatmapchart",
+                        "components/datavisualization/lineargauge",
+                        "components/datavisualization/maps",
+                        "components/datavisualization/rangeselector"
                     ]
                 }
             ]
