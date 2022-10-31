@@ -11,11 +11,41 @@
         },
         {
             "type": "category",
-            "label": "Services",
+            "label": "Brokers",
             "collapsed": true,
-            "items": [{
+            "items": [
+                {
                     "type": "category",
-                    "label": "Organization Service",
+                    "label": "Licensing Broker",
+                    "collapsed": true,
+                    "items": [
+                        "providers/licensing/overview",
+                        "providers/licensing/objectmodel",
+                        {
+                            "type": "category",
+                            "label": "Licensing Models",
+                            "collapsed": false,
+                            "items": [
+                                "providers/licensing/licensing-models/overview",
+                                "providers/licensing/licensing-models/floating",
+                                "providers/licensing/licensing-models/multi-feature",
+                                "providers/licensing/licensing-models/node-locked",
+                                "providers/licensing/licensing-models/pay-per-use",
+                                "providers/licensing/licensing-models/pricing-table",
+                                "providers/licensing/licensing-models/quota",
+                                "providers/licensing/licensing-models/rental",
+                                "providers/licensing/licensing-models/subscription",
+                                "providers/licensing/licensing-models/try-n-buy"
+
+                                
+                            ]
+                        }
+                    ]
+                },
+
+                {
+                    "type": "category",
+                    "label": "Organization Broker",
                     "collapsed": true,
                     "items": [
                         "providers/orgProvider",
@@ -34,7 +64,7 @@
                 },
                 {
                     "type": "category",
-                    "label": "Customer Service",
+                    "label": "Customer Broker",
                     "collapsed": true,
                     "items": [
                         "providers/orgProvider",
