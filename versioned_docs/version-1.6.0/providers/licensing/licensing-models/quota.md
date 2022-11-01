@@ -23,7 +23,7 @@ Overview
 -   Number of request per day
 -   ... you name it
 
-Quota is just a fixed number, it doesn't change from validation to validation, but will change when user acquires new licenses or licenses get activated/deactivated via NetLicensing API / Console. As a vendor, you keep control of the quota.
+Quota is just a fixed number, it doesn't change from validation to validation, but will change when user acquires new licenses or licenses get activated/deactivated via AppLicensing API / Console. As a vendor, you keep control of the quota.
 
 Reported quota is a sum of quotas of all active licenses at the time of validation. Value '-1' indicates unlimited quota. In case an active license exists with quota '-1', overall quota is also '-1', regardless of other licenses.
 
@@ -36,7 +36,7 @@ This licensing model requires one or more license templates of type QUANTITY, ea
 -   100 users for 45 EUR
 -   1000 users for 400 EUR
 
-Required additional properties specific to the QUANTITY [license templates](object-model#license-template):
+Required additional properties specific to the QUANTITY [license templates](../object-model#license-template):
 
 -   `Integer` **`quantity`** - specifies the quota allowed by the licenses created off this template. Positive integer, or '-1' for unlimited quota.
 
@@ -45,14 +45,14 @@ Licenses
 
 According to the license templates, QUANTITY licenses define a quota via its **`quantity`** property.
 
-Required additional properties specific to the QUANTITY [licenses](object-model#license):
+Required additional properties specific to the QUANTITY [licenses](../object-model#license):
 
 -   `Integer` **`quantity`** - specifies the quota allowed by the license. Positive integer, or '-1' for unlimited quota. Normally it is copied from the corresponding license template, but can be changed later for each license individually. When multiple QUANTITY licenses purchased, the total quota is the sum of **`quantity`** of all active licenses, or '-1' if any active license has **`quantity`** '-1'.
 
 Validation
 ==========
 
-On validation, this licensing model does not require any [validate parameters](licensee-services#validate-licensee).
+On validation, this licensing model does not require any [validate parameters](../restfull-api/services/licensee-services#validate-licensee).
 
 Validation returns following values, specific to **Quota** licensing model:
 
@@ -62,7 +62,7 @@ Validation returns following values, specific to **Quota** licensing model:
 Validation response example:
 
 ```xml
-<ns2:netlicensing xmlns="http://www.w3.org/2000/09/xmldsig#" xmlns:ns2="http://netlicensing.labs64.com/schema/context" ttl="2020-03-12T19:56:47.297Z">
+<ns2:AppLicensing xmlns="http://www.w3.org/2000/09/xmldsig#" xmlns:ns2="http://AppLicensing.labs64.com/schema/context" ttl="2020-03-12T19:56:47.297Z">
   <ns2:infos/>
   <ns2:items>
     <ns2:item type="ProductModuleValidation">
@@ -73,5 +73,5 @@ Validation response example:
       <ns2:property name="licensingModel">Quota</ns2:property>
     </ns2:item>
   </ns2:items>
-</ns2:netlicensing>
+</ns2:AppLicensing>
 ```

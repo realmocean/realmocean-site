@@ -28,13 +28,13 @@ For our example assume that each device is initially licensed for 3 months; befo
 
 To implement the above scenario, the **Rental** licensing model requires exactly one FEATURE license template, which corresponds to a terminal device being licensed in our example \[<img src="assets/images/icons/phone.png" width="18" height="25" />\]. For every specific device one license from the FEATURE license template will be created, holding the number that identifies that specific device.
 
-**Rental** licensing model requires also at least one TIMEVOLUME license template \[<img src="assets/images/icons/clock.png" width="18" height="25" />\]. More TIMEVOLUME license templates can be created as necessary for different time periods. TIMEVOLUME [license templates](object-model) need additional property:
+**Rental** licensing model requires also at least one TIMEVOLUME license template \[<img src="assets/images/icons/clock.png" width="18" height="25" />\]. More TIMEVOLUME license templates can be created as necessary for different time periods. TIMEVOLUME [license templates](../object-model) need additional property:
 
 -   **`timeVolume`** - amount of days licensed.
 
 Licenses from the TIMEVOLUME license template can only be created if at least one license from the FEATURE license template already exists, because every TIMEVOLUME license must be linked to a feature (represented by the FEATURE license).
 
-Every [license](object-model#license) that is created from a TIMEVOLUME license template gets automatically a copy of the timeVolume property from the license template. In addition to the timeVolume property and the standard license properties it must have the following specific properties set:
+Every [license](../object-model#license) that is created from a TIMEVOLUME license template gets automatically a copy of the timeVolume property from the license template. In addition to the timeVolume property and the standard license properties it must have the following specific properties set:
 
 -   **`parentFeature`** - the number of the FEATURE license this TIMEVOLUME license is associated with;
 -   **`startDate`** - the date from which this license becomes valid.
@@ -117,14 +117,14 @@ Below is the summary of all the license templates that need to be configured for
 
 Once license templates are configured, licensing model is ready for use.
 
-Let's assume now a customer with the [id number](glossary) "CUST-4567" orders 3 terminal devices identified by the numbers "DEV-341", "DEV-342" and "DEV-343".
+Let's assume now a customer with the [id number](../glossary) "CUST-4567" orders 3 terminal devices identified by the numbers "DEV-341", "DEV-342" and "DEV-343".
 
-First of all, if this is a new customer, corresponding [Licensee](object-model#licensee) object must be created within NetLicensing, holding the above customer number - "CUST-4567".  
-This can be done either manually via <a href="https://ui.netlicensing.io" class="external-link">NetLicensing Management Console</a> or the application on the payment processing server can do it via [NetLicensing API](restful-api), if it has an automated customer registration procedure.
+First of all, if this is a new customer, corresponding [Licensee](../object-model#licensee) object must be created within AppLicensing, holding the above customer number - "CUST-4567".  
+This can be done either manually via <a href="https://ui.AppLicensing.io" class="external-link">AppLicensing Management Console</a> or the application on the payment processing server can do it via [AppLicensing API](../restfull-api/services/license-services.md), if it has an automated customer registration procedure.
 
 <img src="assets/images/rental-overview-02.png" />
 
-Once required licensee object is in place, for each of the ordered terminal devices create the following licenses, binding them to the licensee "CUST-4567" (again NetLicensing Management Console or NetLicensing API can be used at your choice):
+Once required licensee object is in place, for each of the ordered terminal devices create the following licenses, binding them to the licensee "CUST-4567" (again AppLicensing Management Console or AppLicensing API can be used at your choice):
 
 -   from license template "LT-DEV", number=DEV-341
 -   from license template "LT-EVAL": parentFeature=DEV-341, startDate=now
@@ -148,7 +148,7 @@ If devices in our example were all added at the same time on Feb 01, 2012 at 14:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<netlicensing xmlns="http://netlicensing.labs64.com/schema/context">
+<AppLicensing xmlns="http://AppLicensing.labs64.com/schema/context">
   <items>
     <item type="ProductModuleValidation">
       <property name="productModuleNumber">M1XMKFVY7</property>
@@ -169,15 +169,15 @@ If devices in our example were all added at the same time on Feb 01, 2012 at 14:
       </list>
     </item>
   </items>
-</netlicensing>
+</AppLicensing>
 ```
 
 
 Means all devices can be used, and each device expires on Mai 05, 2012, 91 days after it was added.
 
-The application will react on the **`valid`** state by allowing or declining operations for the specific device. Checking the expiration date for the devices, the application can notify the customer in case one or more terminal devices are about to expire, and also redirect the customer to NetLicensing Shop for license renewal.
+The application will react on the **`valid`** state by allowing or declining operations for the specific device. Checking the expiration date for the devices, the application can notify the customer in case one or more terminal devices are about to expire, and also redirect the customer to AppLicensing Shop for license renewal.
 
-Once in the NetLicensing Shop, for each TIMEVOLUME license template that is not marked "hidden" the customer will see corresponding entry as available for purchase:
+Once in the AppLicensing Shop, for each TIMEVOLUME license template that is not marked "hidden" the customer will see corresponding entry as available for purchase:
 
 <table>
 <colgroup>
@@ -211,7 +211,7 @@ Once in the NetLicensing Shop, for each TIMEVOLUME license template that is not 
 </tbody>
 </table>
 
-Customer selects a license he wants to purchase by pressing "+" in the corresponding row. He sees then a popup with the list of items according to the "FEATURE" licenses he has. In our example this will correspond to devices he possess. The customer can mark then one or more devices for which he wants to purchase the selected license. After paying the shopping cart, all the licenses the customer purchased become active and the new state will be reflected in the subsequent calls to [validate](licensee-services#validate-licensee) from the application.
+Customer selects a license he wants to purchase by pressing "+" in the corresponding row. He sees then a popup with the list of items according to the "FEATURE" licenses he has. In our example this will correspond to devices he possess. The customer can mark then one or more devices for which he wants to purchase the selected license. After paying the shopping cart, all the licenses the customer purchased become active and the new state will be reflected in the subsequent calls to [validate](../restfull-api/services/licensee-services#validate-licensee) from the application.
 
 Assuming for our example that the customer selected 6 months license for devices "DEV-341" and "DEV-342", the licenses after his purchase will look like:
 
@@ -223,7 +223,7 @@ And the validation result for the validation performed on Aug 21, 2012 will look
 
 ```xml
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<netlicensing xmlns="http://netlicensing.labs64.com/schema/context">
+<AppLicensing xmlns="http://AppLicensing.labs64.com/schema/context">
   <items>
     <item type="ProductModuleValidation">
       <property name="productModuleNumber">M1XMKFVY7</property>
@@ -245,16 +245,16 @@ And the validation result for the validation performed on Aug 21, 2012 will look
       </list>
     </item>
   </items>
-</netlicensing>
+</AppLicensing>
 ```
 
 
 Means devices DEV-341 and DEV-342 can be used, both expire on Oct 31, 2012 (91+182 days after initially added), and for DEV-343 no active licenses available.
 
-For user convenience, **Rental** licensing model assigns the "expiration warning level" to each feature. The level has three steps: "`green`", "`yellow`" or "`red`", and is indicated in NetLicensing Shop by displaying the feature name in the corresponding color, while the "`validate`" NetLicensing API call returns it as "`expirationWarningLevel`" property of each feature. This level tells roughly how much time remains until the feature expires, and is configurable via two additional properties of the corresponding product module:
+For user convenience, **Rental** licensing model assigns the "expiration warning level" to each feature. The level has three steps: "`green`", "`yellow`" or "`red`", and is indicated in AppLicensing Shop by displaying the feature name in the corresponding color, while the "`validate`" AppLicensing API call returns it as "`expirationWarningLevel`" property of each feature. This level tells roughly how much time remains until the feature expires, and is configurable via two additional properties of the corresponding product module:
 
--   "Remaining time volume for yellow level" in NetLicensing Management Console, "`yellowThreshold`" property in NetLicensing API
--   "Remaining time volume for red level" in NetLicensing Management Console, "`redThreshold`" property in NetLicensing API
+-   "Remaining time volume for yellow level" in AppLicensing Management Console, "`yellowThreshold`" property in AppLicensing API
+-   "Remaining time volume for red level" in AppLicensing Management Console, "`redThreshold`" property in AppLicensing API
 
 The parameters are optional, if not provided, assumed to be 0 days.
 

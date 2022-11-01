@@ -25,16 +25,16 @@ Accordingly, this licensing model requires exactly two license templates:
 TIMEVOLUME license template properties:
 
 -   `Integer` **`timeVolume`** - required custom property, amount of days for the evaluation period.
--   [`Monetary`](restful-api#data-types) **`price`** / **`currency`** - must be set to **`0`** / **`EUR`**, evaluation is free of charge
+-   [`Monetary`] **`price`** / **`currency`** - must be set to **`0`** / **`EUR`**, evaluation is free of charge
 -   `Boolean` **`automatic`** - must be set to **`true`**: evaluation starts automatically after the first use)
--   `Boolean` **`hidden`** - must be set to **`true`**: evaluation license is not available for purchase in NetLicensing Shop
--   `Boolean` **`hideLicenses`** - if set to **`false`**, evaluation license will be visible in the shopping cart of NetLicensing Shop as already acquired license.
+-   `Boolean` **`hidden`** - must be set to **`true`**: evaluation license is not available for purchase in AppLicensing Shop
+-   `Boolean` **`hideLicenses`** - if set to **`false`**, evaluation license will be visible in the shopping cart of AppLicensing Shop as already acquired license.
 
 FEATURE license template properties:
 
--   [`Monetary`](restful-api#data-types) **`price`** / **`currency`** - specify the purchase price for the product here
+-   [`Monetary`] **`price`** / **`currency`** - specify the purchase price for the product here
 -   `Boolean` **`automatic`** - must be set to **`false`**: license must be explicitly purchased
--   `Boolean` **`hidden`** - must be set to **`false`**: the license based on this template should be available for purchase in NetLicensing Shop
+-   `Boolean` **`hidden`** - must be set to **`false`**: the license based on this template should be available for purchase in AppLicensing Shop
 
 Validation
 ----------
@@ -47,7 +47,7 @@ On validation, this licensing model requires no parameters.
 
 -   `Boolean` **`valid`** - **`true`** if product use is allowed
 -   `Boolean` **`evaluation`** - **`true`** if product is not yet purchased, but evaluation period ongoing
--   [`Timestamp`](restful-api#data-types) **`evaluationExpires`** - in case **`evaluation=true`**, provides the time when the evaluation license expires.
+-   [`Timestamp`] **`evaluationExpires`** - in case **`evaluation=true`**, provides the time when the evaluation license expires.
 
 Below is more formal description of the Try & Buy licensing model logic:
 
@@ -70,7 +70,7 @@ Below is more formal description of the Try & Buy licensing model logic:
 <div>Request</div>
 
 ```http
-POST https://go.netlicensing.io/core/v2/rest/licensee/I011/validate
+POST https://go.AppLicensing.io/core/v2/rest/licensee/I011/validate
 Accept: application/xml
 ```
 
@@ -79,7 +79,7 @@ Accept: application/xml
 
 ```xml
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<ns2:netlicensing xmlns="http://www.w3.org/2000/09/xmldsig#" xmlns:ns2="http://netlicensing.labs64.com/schema/context" ttl="2020-05-11T08:51:58.233Z">
+<ns2:AppLicensing xmlns="http://www.w3.org/2000/09/xmldsig#" xmlns:ns2="http://AppLicensing.labs64.com/schema/context" ttl="2020-05-11T08:51:58.233Z">
   <ns2:infos/>
   <ns2:items>
     <ns2:item type="ProductModuleValidation">
@@ -91,5 +91,5 @@ Accept: application/xml
       <ns2:property name="licensingModel">TryAndBuy</ns2:property>
     </ns2:item>
   </ns2:items>
-</ns2:netlicensing>
+</ns2:AppLicensing>
 ```

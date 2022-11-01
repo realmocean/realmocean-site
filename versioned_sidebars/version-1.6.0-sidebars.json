@@ -20,7 +20,7 @@
                     "collapsed": true,
                     "items": [
                         "providers/licensing/overview",
-                        "providers/licensing/objectmodel",
+                        "providers/licensing/object-model",
                         {
                             "type": "category",
                             "label": "Licensing Models",
@@ -39,7 +39,21 @@
 
                                 
                             ]
-                        }
+                        },
+                        {
+                            "type": "category",
+                            "label": "AppLicensing API",
+                            "collapsed": false,
+                            "items": [
+                                "providers/licensing/restfull-api/services/license-services",
+                                "providers/licensing/restfull-api/services/licensee-services"
+                                
+                              
+
+                                
+                            ]
+                        },
+                        "providers/licensing/glossary"
                     ]
                 },
 

@@ -25,7 +25,7 @@ The billing is accordingly tied to the chosen model, which can be for instance:
 -   Count based: billing on the number of uses
 -   Volume based: billing on the amount of resource use
 
-In either case, NetLicensing keeps track of credits by a simple integer counters, stored in **`quantity`** and **`usedQuantity`** properties of each license. You decide what actual metric to associate with the credits.
+In either case, AppLicensing keeps track of credits by a simple integer counters, stored in **`quantity`** and **`usedQuantity`** properties of each license. You decide what actual metric to associate with the credits.
 
 For better adapting to various scenarios, Pay-per-Use supports two modes of operation: *pre-payment* and *post-payment*. The mode is decided by arguments passed to the validate call, see the validation section below for details.
 
@@ -38,14 +38,14 @@ To use this licensing model you must define one or more license templates of typ
 -   100 credits for 45 EUR
 -   1000 credits for 400 EUR
 
-Additional properties specific to the QUANTITY [license templates](object-model#license-template):
+Additional properties specific to the QUANTITY [license templates](../object-model#license-template):
 
 -   `Integer` **`quantity`** (required) - specifies credits amount, which is assigned by default to the licenses created off this template.
 
 Licenses
 ========
 
-Additional properties specific to the QUANTITY [licenses](object-model#license):
+Additional properties specific to the QUANTITY [licenses](../object-model#license):
 
 -   `Integer` **`quantity`** (required) - specifies the credits amount, provided by this license. Normally it is copied from the corresponding property of the license template, but can be changed later for each license individually. When multiple QUANTITY licenses purchased, the total amount of credits is the sum of **`quantity`** of all active licenses.
 -   `Integer` **`usedQuantity`** (optional) - specifies the amount of used credits. When not present, it is equivalent to **`usedQuantity`**=0. This property is updated automatically according to the parameters passed to the validate call (see below). **`usedQuantity`** equal to **`quantity`** means all credits of this license are used up.
@@ -53,7 +53,7 @@ Additional properties specific to the QUANTITY [licenses](object-model#license):
 Validation
 ==========
 
-On validation, this licensing model uses the following [validate parameters](licensee-services#validate-licensee):
+On validation, this licensing model uses the following [validate parameters](../restfull-api/services/licensee-services#validate-licensee):
 
 -   **`productModuleNumber`**=\<String\> - specifies the product module, that uses Pay-per-Use licensing model
 -   **`usedQuantity`**=\<non-negative Integer\> - specifies how many credits has been used by the application since previous validate call (*post-payment* mode). In case more credits were used than the remaining credits, remaining credits get negative.
@@ -79,7 +79,7 @@ Validation response examples:
 
 
 ```http
-POST https://go.netlicensing.io/core/v2/rest/licensee/ITEST-DEMO/validate
+POST https://go.AppLicensing.io/core/v2/rest/licensee/ITEST-DEMO/validate
 Accept: application/xml
 Content-Type: application/x-www-form-urlencoded
 
@@ -87,7 +87,7 @@ productModuleNumber0=MTEST-DEMO&usedQuantity0=10
 ```
 
 ```xml
-<netlicensing xmlns="http://netlicensing.labs64.com/schema/context" ttl="2020-05-21T07:28:48.646Z">
+<AppLicensing xmlns="http://AppLicensing.labs64.com/schema/context" ttl="2020-05-21T07:28:48.646Z">
     <infos/>
     <items>
         <item type="ProductModuleValidation">
@@ -98,14 +98,14 @@ productModuleNumber0=MTEST-DEMO&usedQuantity0=10
             <property name="licensingModel">PayPerUse</property>
         </item>
     </items>
-</netlicensing>
+</AppLicensing>
 ```
 
 
 <span class="expand-control-icon"><img src="assets/images/icons/grey_arrow_down.png" class="expand-control-image" /></span><span class="expand-control-text">All remaining credits are used up by this validate call</span>
 
 ```http
-POST https://go.netlicensing.io/core/v2/rest/licensee/ITEST-DEMO/validate
+POST https://go.AppLicensing.io/core/v2/rest/licensee/ITEST-DEMO/validate
 Accept: application/xml
 Content-Type: application/x-www-form-urlencoded
 
@@ -113,7 +113,7 @@ productModuleNumber0=MTEST-DEMO&usedQuantity0=25
 ```
 
 ```xml
- <netlicensing xmlns="http://netlicensing.labs64.com/schema/context" ttl="2020-05-21T07:30:28.246Z">
+ <AppLicensing xmlns="http://AppLicensing.labs64.com/schema/context" ttl="2020-05-21T07:30:28.246Z">
     <infos/>
     <items>
         <item type="ProductModuleValidation">
@@ -124,7 +124,7 @@ productModuleNumber0=MTEST-DEMO&usedQuantity0=25
             <property name="licensingModel">PayPerUse</property>
         </item>
     </items>
-</netlicensing>
+</AppLicensing>
 ```
 
 
@@ -132,7 +132,7 @@ productModuleNumber0=MTEST-DEMO&usedQuantity0=25
 
 
 ```http
-POST https://go.netlicensing.io/core/v2/rest/licensee/ITEST-DEMO/validate
+POST https://go.AppLicensing.io/core/v2/rest/licensee/ITEST-DEMO/validate
 Accept: application/xml
 Content-Type: application/x-www-form-urlencoded
 
@@ -140,7 +140,7 @@ productModuleNumber0=MTEST-DEMO&usedQuantity0=30
 ```
 
 ```xml
-<netlicensing xmlns="http://netlicensing.labs64.com/schema/context" ttl="2020-05-21T07:30:28.246Z">
+<AppLicensing xmlns="http://AppLicensing.labs64.com/schema/context" ttl="2020-05-21T07:30:28.246Z">
     <infos>
         <info id="usedQuantityExceedsRemaining" type="warning">
             usedQuantity exceeds remaining quantity - use of more than remaining quantity returned by the validation call should be prevented by the client software
@@ -155,7 +155,7 @@ productModuleNumber0=MTEST-DEMO&usedQuantity0=30
             <property name="licensingModel">PayPerUse</property>
         </item>
     </items>
-</netlicensing> 
+</AppLicensing> 
 ```
 
 Pre-payment mode
@@ -169,7 +169,7 @@ Validation response examples:
 
 
 ```http
-POST https://go.netlicensing.io/core/v2/rest/licensee/ITEST-DEMO/validate
+POST https://go.AppLicensing.io/core/v2/rest/licensee/ITEST-DEMO/validate
 Accept: application/xml
 Content-Type: application/x-www-form-urlencoded
 
@@ -177,7 +177,7 @@ productModuleNumber0=MTEST-DEMO&reserveQuantity0=10
 ```
 
 ```xml
-<netlicensing xmlns="http://netlicensing.labs64.com/schema/context" ttl="2020-05-21T07:28:48.646Z">
+<AppLicensing xmlns="http://AppLicensing.labs64.com/schema/context" ttl="2020-05-21T07:28:48.646Z">
     <infos/>
     <items>
         <item type="ProductModuleValidation">
@@ -188,7 +188,7 @@ productModuleNumber0=MTEST-DEMO&reserveQuantity0=10
             <property name="licensingModel">PayPerUse</property>
         </item>
     </items>
-</netlicensing>
+</AppLicensing>
 ```
 {: .ml-5 }
 
@@ -196,7 +196,7 @@ productModuleNumber0=MTEST-DEMO&reserveQuantity0=10
 
 
 ```http
-POST https://go.netlicensing.io/core/v2/rest/licensee/ITEST-DEMO/validate
+POST https://go.AppLicensing.io/core/v2/rest/licensee/ITEST-DEMO/validate
 Accept: application/xml
 Content-Type: application/x-www-form-urlencoded
 
@@ -205,7 +205,7 @@ productModuleNumber0=MTEST-DEMO&reserveQuantity0=15
 
 
 ```xml
- <netlicensing xmlns="http://netlicensing.labs64.com/schema/context" ttl="2020-05-21T07:30:28.246Z">
+ <AppLicensing xmlns="http://AppLicensing.labs64.com/schema/context" ttl="2020-05-21T07:30:28.246Z">
     <infos/>
     <items>
         <item type="ProductModuleValidation">
@@ -216,7 +216,7 @@ productModuleNumber0=MTEST-DEMO&reserveQuantity0=15
             <property name="licensingModel">PayPerUse</property>
         </item>
     </items>
-</netlicensing>
+</AppLicensing>
 ```
 
 
@@ -224,7 +224,7 @@ productModuleNumber0=MTEST-DEMO&reserveQuantity0=15
 
 
 ```http
-POST https://go.netlicensing.io/core/v2/rest/licensee/ITEST-DEMO/validate
+POST https://go.AppLicensing.io/core/v2/rest/licensee/ITEST-DEMO/validate
 Accept: application/xml
 Content-Type: application/x-www-form-urlencoded
 
@@ -232,7 +232,7 @@ productModuleNumber0=MTEST-DEMO&reserveQuantity0=20
 ```
 
 ```xml
-<netlicensing xmlns="http://netlicensing.labs64.com/schema/context" ttl="2020-05-21T07:30:28.246Z">
+<AppLicensing xmlns="http://AppLicensing.labs64.com/schema/context" ttl="2020-05-21T07:30:28.246Z">
     <items>
         <item type="ProductModuleValidation">
             <property name="productModuleNumber">MTEST-DEMO</property>
@@ -242,5 +242,5 @@ productModuleNumber0=MTEST-DEMO&reserveQuantity0=20
             <property name="licensingModel">PayPerUse</property>
         </item>
     </items>
-</netlicensing> 
+</AppLicensing> 
 ```

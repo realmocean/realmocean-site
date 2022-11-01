@@ -36,20 +36,20 @@ Your customers would be signed-up for plans by way of subscriptions or a one-tim
 
 Create a new product module and choose Model "Pricing Table".
 
-<a href="assets/images/pricing-table-create.png" class="imagelink" data-lightbox="pricing-table" data-title="Create Pricing Table" data-alt="Create Pricing Table">
-  <img src="assets/images/pricing-table-create.png" />
+<a href="" class="imagelink" data-lightbox="pricing-table" data-title="Create Pricing Table" data-alt="Create Pricing Table">
+  <img src="" />
 </a>
     
 ### Add Plan
 
 Creating a new Plan is quite simple. All you need to do is:
 
-- Log into NetLicensing Management Console
+- Log into AppLicensing Management Console
 - Choose or create a product module
 - In the Module configuration click on *"Add Plan"* button
 
-<a href="assets/images/pricing-table-plan.png" class="imagelink" data-lightbox="pricing-table" data-title="Pricing Table: Add Plan" data-alt="Pricing Table: Add Plan">
-  <img src="assets/images/pricing-table-plan.png" />
+<a href="" class="imagelink" data-lightbox="pricing-table" data-title="Pricing Table: Add Plan" data-alt="Pricing Table: Add Plan">
+  <img src="" />
 </a>
 
 Fill out the new Plan details and you're all set.
@@ -57,7 +57,7 @@ Fill out the new Plan details and you're all set.
 #### Plan Attributes
 
 - **Name** - descriptive plan name; this name will be shown to the customer
-- **Number** - plan number is the unique identifier of the Plan and is used to refer to the plan on the NetLicensing RESTful API and in your products
+- **Number** - plan number is the unique identifier of the Plan and is used to refer to the plan on the AppLicensing RESTful API and in your products
 - **Description** - a short plan description for the customer
 - **Price** - the price of the plan
 - **Billing Frequency** - billing period or billing interval determines the frequency your customer will be billed for the plan; you can choose one of the following: *One-Time* or *Recurring* (e.g. day, week, month, year)
@@ -75,14 +75,14 @@ Fill out the new Plan details and you're all set.
 
 Store Keeping Unit or SKU represents the feature in your product.
 
-<a href="assets/images/pricing-table-sku.png" class="imagelink" data-lightbox="pricing-table" data-title="Pricing Table: Add SKU" data-alt="Pricing Table: Add SKU">
-  <img src="assets/images/pricing-table-sku.png" />
+<a href="" class="imagelink" data-lightbox="pricing-table" data-title="Pricing Table: Add SKU" data-alt="Pricing Table: Add SKU">
+  <img src="" />
 </a>
 
 #### SKU Attributes
 
 - **Name** - descriptive SKU name; this name will be shown to the customer
-- **Number** - number is the unique identifier of the SKU and is used to refer to the plan features on the NetLicensing RESTful API and in your products
+- **Number** - number is the unique identifier of the SKU and is used to refer to the plan features on the AppLicensing RESTful API and in your products
 - **Type** - SKU type defines the basic behaviour. You can choose one of the following: *Quantity* or *Feature*
 
 ## Publish
@@ -100,7 +100,7 @@ There are two ways to how you can export Pricing Table HTML structure to embed t
 -   **`productModuleNumber=<number>`** product module number for Pricing Table licensing model to be exported.
 
 ```http
-GET https://go.netlicensing.io/core/v2/rest/licensingmodel/PricingTable/render?productModuleNumber=M9SAHGYZJ
+GET https://go.AppLicensing.io/core/v2/rest/licensingmodel/PricingTable/render?productModuleNumber=M9SAHGYZJ
 Accept: text/html
 ```
 
@@ -140,7 +140,7 @@ Please refer to the CSS class definitions below, which will help you to style ex
 | nlic-action | Action button |
 | nlic-action-{plan_number} | Action button with plan number |
 | nlic-action-url | Action button href |
-| nlic-attribution | NetLicensing attribution block (if present) |
+| nlic-attribution | AppLicensing attribution block (if present) |
 
 ## Integration
 
@@ -158,13 +158,13 @@ On validation, this licensing model requires no parameters.
 
 
 ```http
-POST https://go.netlicensing.io/core/v2/rest/licensee/CUST-01/validate
+POST https://go.AppLicensing.io/core/v2/rest/licensee/CUST-01/validate
 Accept: application/xml
 ```
 
 ```xml
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<ns2:netlicensing xmlns="http://www.w3.org/2000/09/xmldsig#" xmlns:ns2="http://netlicensing.labs64.com/schema/context" ttl="2020-05-06T07:01:06.970Z">
+<ns2:AppLicensing xmlns="http://www.w3.org/2000/09/xmldsig#" xmlns:ns2="http://AppLicensing.labs64.com/schema/context" ttl="2020-05-06T07:01:06.970Z">
   <ns2:infos/>
   <ns2:items>
     <ns2:item type="ProductModuleValidation">
@@ -189,5 +189,5 @@ Accept: application/xml
       </ns2:list>
     </ns2:item>
   </ns2:items>
-</ns2:netlicensing>
+</ns2:AppLicensing>
 ```
