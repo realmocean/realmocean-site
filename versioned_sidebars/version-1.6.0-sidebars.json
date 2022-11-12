@@ -211,6 +211,7 @@
                         "providers/emailService"
                     ]
                 },
+
                 {
                     "type": "category",
                     "label": "Notification Service",
