@@ -34,6 +34,206 @@
         },
         {
             "type": "category",
+            "label": "Services",
+            "collapsed": true,
+            "items": [
+                {
+                    "type": "category",
+                    "label": "Licensing Service",
+                    "collapsed": true,
+                    "items": [
+                        "providers/licensing/overview",
+                        "providers/licensing/object-model",
+                        {
+                            "type": "category",
+                            "label": "Licensing Models",
+                            "collapsed": false,
+                            "items": [
+                                "providers/licensing/licensing-models/overview",
+                                "providers/licensing/licensing-models/floating",
+                                "providers/licensing/licensing-models/multi-feature",
+                                "providers/licensing/licensing-models/node-locked",
+                                "providers/licensing/licensing-models/pay-per-use",
+                                "providers/licensing/licensing-models/pricing-table",
+                                "providers/licensing/licensing-models/quota",
+                                "providers/licensing/licensing-models/rental",
+                                "providers/licensing/licensing-models/subscription",
+                                "providers/licensing/licensing-models/try-n-buy"
+                            ]
+                        },
+                        {
+                            "type": "category",
+                            "label": "AppLicensing API",
+                            "collapsed": false,
+                            "items": [
+                                "providers/licensing/restfull-api/services/license-services",
+                                "providers/licensing/restfull-api/services/licensee-services"
+                            ]
+                        },
+                        "providers/licensing/glossary"
+                    ]
+                },
+                {
+                    "type": "category",
+                    "label": "Organization Service",
+                    "collapsed": true,
+                    "items": [
+                        "providers/orgProvider",
+                        {
+                            "type": "category",
+                            "label": "Models",
+                            "collapsed": false,
+                            "items": [
+                                "providers/organizationService/models/IEmployee",
+                                "providers/organizationService/models/IPosition",
+                                "providers/organizationService/models/IEmployeeTitle"
+                            ]
+                        },
+                        "providers/emailService"
+                    ]
+                },
+                {
+                    "type": "category",
+                    "label": "Customer Service",
+                    "collapsed": true,
+                    "items": [
+                        "providers/orgProvider",
+                        "providers/customerProvider",
+                        "providers/emailService"
+                    ]
+                },
+                {
+                    "type": "category",
+                    "label": "File System Service",
+                    "collapsed": true,
+                    "items": [
+                        "providers/orgProvider",
+                        "providers/customerProvider",
+                        "providers/emailService"
+                    ]
+                },
+                {
+                    "type": "category",
+                    "label": "Authentication Service",
+                    "collapsed": true,
+                    "items": [
+                        "providers/orgProvider",
+                        "providers/customerProvider",
+                        "providers/emailService"
+                    ]
+                },
+                {
+                    "type": "category",
+                    "label": "Project Service",
+                    "collapsed": true,
+                    "items": [
+                        "providers/orgProvider",
+                        "providers/customerProvider",
+                        "providers/emailService"
+                    ]
+                },
+                {
+                    "type": "category",
+                    "label": "Document Service",
+                    "collapsed": true,
+                    "items": [
+                        "providers/orgProvider",
+                        "providers/customerProvider",
+                        "providers/emailService"
+                    ]
+                },
+                {
+                    "type": "category",
+                    "label": "Email Service",
+                    "collapsed": true,
+                    "items": [
+                        "providers/orgProvider",
+                        "providers/customerProvider",
+                        "providers/emailService"
+                    ]
+                },
+                {
+                    "type": "category",
+                    "label": "Log Service",
+                    "collapsed": true,
+                    "items": [
+                        "providers/orgProvider",
+                        "providers/customerProvider",
+                        "providers/emailService"
+                    ]
+                },
+                {
+                    "type": "category",
+                    "label": "Tracker Service",
+                    "collapsed": true,
+                    "items": [
+                        "providers/orgProvider",
+                        "providers/customerProvider",
+                        "providers/emailService"
+                    ]
+                },
+                {
+                    "type": "category",
+                    "label": "Process Management Service",
+                    "collapsed": true,
+                    "items": [
+                        "providers/orgProvider",
+                        "providers/customerProvider",
+                        "providers/emailService"
+                    ]
+                },
+                {
+                    "type": "category",
+                    "label": "Process Mining Service",
+                    "collapsed": true,
+                    "items": [
+                        "providers/orgProvider",
+                        "providers/customerProvider",
+                        "providers/emailService"
+                    ]
+                },
+                {
+                    "type": "category",
+                    "label": "AppStore Service",
+                    "collapsed": true,
+                    "items": [
+                        "providers/orgProvider",
+                        {
+                            "type": "category",
+                            "label": "Models",
+                            "collapsed": false,
+                            "items": [
+                                "providers/organizationService/models/IEmployee",
+                                "providers/organizationService/models/IPosition",
+                                "providers/organizationService/models/IEmployeeTitle"
+                            ]
+                        },
+                        "providers/emailService"
+                    ]
+                },
+                {
+                    "type": "category",
+                    "label": "Notification Service",
+                    "collapsed": true,
+                    "items": [
+                        "providers/orgProvider",
+                        {
+                            "type": "category",
+                            "label": "Models",
+                            "collapsed": false,
+                            "items": [
+                                "providers/organizationService/models/IEmployee",
+                                "providers/organizationService/models/IPosition",
+                                "providers/organizationService/models/IEmployeeTitle"
+                            ]
+                        },
+                        "providers/emailService"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "category",
             "label": "Brokers",
             "collapsed": true,
             "items": [
