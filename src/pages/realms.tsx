@@ -8,10 +8,12 @@ const realms = [
     realm_link: 'http://apps.peda360.com'
   },
   {
-    name: 'Next Normal'
+    name: 'Next Normal',
+    realm_link: 'https://next-normal.realmocean.app'
   },
   {
-    name: 'BPM Genesis'
+    name: 'BPM Genesis',
+    realm_link: 'http://apps.bpmgenesis.com'
   }
 ]
 export default function AppStore() {
