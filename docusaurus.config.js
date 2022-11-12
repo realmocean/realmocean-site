@@ -14,7 +14,7 @@ module.exports = {
             },
         },
         navbar: {
-            title: 'Realm Ocean',
+            title: 'realmocean',
             logo: {
                 alt: 'Tuval Framework Logo',
                 src: 'img/tuval-logo.png',

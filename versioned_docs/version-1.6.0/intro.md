@@ -1,6 +1,6 @@
 ---
 id: intro
-title: Tuval Framework
+title: Introduction to realm ocean
 sidebar_label: Introduction
 slug: /
 tags:
@@ -8,138 +8,37 @@ tags:
   - Getting started
 ---
 
-<p align="center">
-  <a href="http://tuvalframework.com/" rel="noopener" target="_blank"><img width="150" src={require('@docusaurus/useBaseUrl').default('img/tuval-logo.png')} alt="Tuval logo"/></a>
-</p>
+## What is a realm?
 
+Realm is a work OS that powers developers to run apps. This is how realms enables teams and organizations to create custom solutions to manage their workflows. The options are infinite when you use the platform's API, components, brokers, integrations, automations, and more.
 
-[![license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/tuvalframework/framework/blob/main/LICENSE)
-[![npm latest package](https://img.shields.io/npm/v/@tuval/forms/latest.svg)](https://www.npmjs.com/package/@tuval/core)
-[![npm next package](https://img.shields.io/npm/v/@tuval/forms/next.svg)](https://www.npmjs.com/package/@tuval/core)
-[![npm downloads](https://img.shields.io/npm/dm/@tuval/forms.svg)](https://www.npmjs.com/package/@tuval/core)
-[![Follow on Twitter](https://img.shields.io/twitter/follow/tuvalframework.svg?label=follow+tuvalframework)](https://twitter.com/tuvalframework)
-[![Follow on Youtube](https://img.shields.io/youtube/channel/views/UCIvOMAYBuLllvPIJp0o-opQ?style=social)](https://www.youtube.com/channel/UCIvOMAYBuLllvPIJp0o-opQ)
+The Realm Ocean Framework allows developers to build new brokers, components and apps for realms.
 
-## Installation
+## Who can create realms?
 
-Tuval Framework is available as an npx package and you can create a development envoriment one command.
-Make sure docker is running before you start the installation.
+Any user can create realm and start offering third party applications on the app store or applications created by their own developers to their customers.
 
-**npm:**
+## Who can build apps?
+Any developer can build apps using the **App Framework**. We built the framework to create apps independently of the **realms**.
 
-```sh
-npx create-tuval
-```
-You can also install TF libraries separately.
+The framework provides a set of components, services and tools to help you build your app easily, in order to let you focus on what matters.
 
-### TF Core
+## Who can use your apps?
 
-TF Core is available as an [npm package](https://www.npmjs.com/package/@tuval/core).
+The apps you create can be used by any organization or individual user in any realm. For this, it will be sufficient to download the relevant application from the app store.
 
-**npm:**
+You can create and install custom apps for your own realm account. Also, having the ability to integrate with other systems used by the organization and to create visuals and custom reports for your needs.
 
-```sh
-npm install @tuval/core
-```
+You can also make your app a public app that allows you to share it with the realmocean community. You can create apps and sell them on your own or become a realm Partner and create apps as a service you offer to your customers.
 
-### TF CG
+We also have an app marketplace where other realm users can scan to install these third party apps. You can submit your app in our app store. For more information on submitting apps, check out our article Submitting Your App to the Apps Marketplace.
 
-TF Core Graphics is available as an [npm package](https://www.npmjs.com/package/@tuval/cg).
+## Start Building
 
-**npm:**
+To start building your first app all you need is a realmocean account.
 
-```sh
-npm install @tuval/cg
-```
+If you do not already have a realmocean account, sign up for a free account here.
 
-### TF Graphics
+Learn more about how to create and manage your apps here.
 
-TF Graphics is available as an [npm package](https://www.npmjs.com/package/@tuval/graphics).
-
-**npm:**
-
-```sh
-npm install @tuval/graphics
-```
-
-
-### TF Forms
-
-TF Forms is available as an [npm package](https://www.npmjs.com/package/@tuval/forms).
-
-**npm:**
-
-```sh
-npm install @tuval/forms
-```
-
-## Getting started with Tuval Framework
-
-Here is an example slice of a basic view in Tuval Framework. You can use playground for
-create your view.
-
-```ts
-// MARK : Main Frame of Form
-    VStack({ alignment: cTop })(
-
-        // MARK: Top Bar
-        HStack({alignment:cLeading})(
-            UIImage(logo).width(50).height(50),
-            Text('Procetra').foregroundColor(Color.white).fontSize(20)
-            .fontWeight('bold')
-        ).background('rgb(208, 63, 64)').height(70),
-
-        // MARK: Filter bar
-        HStack().background('#212932').height(60),
-
-        // MARK: Content
-        HStack({ alignment: cLeading })(
-
-            // Main Menu
-            VStack({ alignment: cTop })(
-                ...ForEach(menuModel)((item, index) =>
-                    // MARK: Menu item
-                    item.title == 'sep' ?
-                        VStack().height(1).background(Color.white)
-                        :
-                        VStack({ spacing: 10 })(
-                            Icon(item.icon).size(30),
-                            Text(item.title)
-                        ).height(70).foregroundColor({ default: Color.white, hover: Color.black })
-                            .marginTop('10px')
-                            .onClick(() => setSelectedIndex(index))
-                            .background({ default: selectedIndex == index ?
-                            Color.green : '', hover: '#eee' }).cursor('pointer')
-                )
-
-            ).background('#212932').width(80),
-
-            // MARK: Sub menu
-            VStack({ alignment: cTop })(
-                ...ForEach(menuModel[selectedIndex].subMenu)((item, index) =>
-                    // MARK: Menu item
-                        VStack({ spacing: 10 })(
-                            Icon(item.icon).size(30),
-                            Text(item.title)
-                        ).height(70).foregroundColor({ default: Color.white, hover: Color.black })
-                            .marginTop('10px')
-                            .onClick(() => setSelectedIndex(index))
-                            .background({  hover: '#eee' }).cursor('pointer')
-                )
-            ).background('#52565b').width()
-                .initial({ width: 0 }).animate({ width: 80 })
-                .shadow('inset 24px 0 20px -20px #373b40')
-                .visible(Array.isArray(menuModel[selectedIndex].subMenu)),
-
-        )
-    )
-```
-![View is ](https://github.com/tuvalframework/framework/raw/main/screen1.png "TF Playground")
-
-For starter app, you can [visit](https://github.com/tuvalframework/developer) developer repo.
-
-
-## Questions
-
-For how-to questions that don't involve making changes to the code base, please use [Stack Overflow](https://stackoverflow.com/questions/tagged/tuvalframework) instead of GitHub issues.
-Use the "tuvalframework" tag on Stack Overflow to make it easier for the community to find your question. You can send a mail to info@tuvalframework.com.
+Build your first broker by following our Quickstart Guide: Integration Recipes.

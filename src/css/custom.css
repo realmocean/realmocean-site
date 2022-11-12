@@ -21,6 +21,7 @@
     --ifm-code-font-size: 95%;
 }
 
+
 .docusaurus-highlight-code-line {
     background-color: rgb(72, 77, 91);
     display: block;
@@ -99,4 +100,24 @@ html[data-theme='dark'] .header-gitlab-link:before {
     background-color: #002856;
     color: rgb(255, 255, 255);
     padding: 10px 20px;
+}
+
+h1 {
+    margin-top: 10px;
+    font-size:1.9em;
+    line-height: 1.2;
+    font-weight: 400;
+}
+
+h2 {
+    font-size:1.5em;
+    line-height: 1.25;
+    font-weight: 400;
+}
+.menu__link.menu__link--sublist {
+    font-size: 14px;
+    font-weight: 700;
+}
+.menu__link {
+    font-size: 14px;
 }

@@ -1,12 +1,36 @@
 {
-    "docs": [{
+    "docs": [
+        {
             "type": "category",
             "label": "Realm Ocean",
             "collapsed": false,
             "items": [
                 "intro",
-                "purpose",
+                "faqs",
                 "architecture"
+            ]
+        },
+        {
+            "type": "category",
+            "label": "App Management",
+            "collapsed": true,
+            "items": [
+                "app-management/planning-your-app",
+                "app-management/choosing-authentication-method",
+                "app-management/creating-and-updating-apps",
+                {
+                    "type": "category",
+                    "label": "Monetization",
+                    "collapsed": true,
+                    "items": [
+                        "app-management/monetization/faqs",
+                        "app-management/monetization/applicensing",
+                        "app-management/monetization/providing-discounts"
+
+
+
+                    ]
+                }
             ]
         },
         {
@@ -37,7 +61,7 @@
                                 "providers/licensing/licensing-models/subscription",
                                 "providers/licensing/licensing-models/try-n-buy"
 
-                                
+
                             ]
                         },
                         {
@@ -47,10 +71,10 @@
                             "items": [
                                 "providers/licensing/restfull-api/services/license-services",
                                 "providers/licensing/restfull-api/services/licensee-services"
-                                
-                              
 
-                                
+
+
+
                             ]
                         },
                         "providers/licensing/glossary"
