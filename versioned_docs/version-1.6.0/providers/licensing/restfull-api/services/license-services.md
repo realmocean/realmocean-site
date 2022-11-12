@@ -58,7 +58,7 @@ Return a list of all licenses for the current vendor.
 </table>
 
 See also
-JavaDoc: <a href="https://go.AppLicensing.io/javadoc/v2/com/labs64/AppLicensing/service/LicenseService.html#list-com.labs64.AppLicensing.domain.vo.Context-java.lang.String-" class="external-link">LicenseService.list</a>
+JavaDoc: <a href="https://go.AppLicensing.io/javadoc/v2/com/Realmocean/AppLicensing/service/LicenseService.html#list-com.Realmocean.AppLicensing.domain.vo.Context-java.lang.String-" class="external-link">LicenseService.list</a>
 
 <span
 class="expand-control-icon"><img src="assets/images/icons/grey_arrow_down.png" class="expand-control-image" /></span><span
@@ -75,7 +75,7 @@ Accept: application/xml
 <div>Response</div>
 
 ```xml
-<AppLicensing xmlns="http://AppLicensing.labs64.com/schema/context">
+<AppLicensing xmlns="http://AppLicensing.Realmocean.com/schema/context">
     <items>
         <item type="License">
             <property name="number">L001</property>
@@ -134,7 +134,7 @@ Return a license by licenseNumber.
 </table>
 
 See also
-JavaDoc: <a href="https://go.AppLicensing.io/javadoc/v2/com/labs64/AppLicensing/service/LicenseService.html#get-com.labs64.AppLicensing.domain.vo.Context-java.lang.String-" class="external-link">LicenseService.get</a>
+JavaDoc: <a href="https://go.AppLicensing.io/javadoc/v2/com/Realmocean/AppLicensing/service/LicenseService.html#get-com.Realmocean.AppLicensing.domain.vo.Context-java.lang.String-" class="external-link">LicenseService.get</a>
 
 <span
 class="expand-control-icon"><img src="assets/images/icons/grey_arrow_down.png" class="expand-control-image" /></span><span
@@ -151,7 +151,7 @@ Accept: application/xml
 <div>Response</div>
 
 ```xml
-<AppLicensing xmlns="http://AppLicensing.labs64.com/schema/context">
+<AppLicensing xmlns="http://AppLicensing.Realmocean.com/schema/context">
     <items>
         <item type="License">
             <property name="number">L001</property>
@@ -220,7 +220,7 @@ Content-Type: application/x-www-form-urlencoded</p></td>
 </table>
 
 See also
-JavaDoc: <a href="https://go.AppLicensing.io/javadoc/v2/com/labs64/AppLicensing/service/LicenseService.html#create-com.labs64.AppLicensing.domain.vo.Context-java.lang.String-java.lang.String-java.lang.String-com.labs64.AppLicensing.domain.entity.License-" class="external-link">LicenseService.create</a>
+JavaDoc: <a href="https://go.AppLicensing.io/javadoc/v2/com/Realmocean/AppLicensing/service/LicenseService.html#create-com.Realmocean.AppLicensing.domain.vo.Context-java.lang.String-java.lang.String-java.lang.String-com.Realmocean.AppLicensing.domain.entity.License-" class="external-link">LicenseService.create</a>
 
 <span
 class="expand-control-icon"><img src="assets/images/icons/grey_arrow_down.png" class="expand-control-image" /></span><span
@@ -239,7 +239,7 @@ Content-Type: application/x-www-form-urlencoded
 <div>Response</div>
 
 ```xml
-<AppLicensing xmlns="http://AppLicensing.labs64.com/schema/context">
+<AppLicensing xmlns="http://AppLicensing.Realmocean.com/schema/context">
     <items>
         <item type="License">
             <property name="number">IKPQGUUJ4</property>
@@ -307,7 +307,7 @@ Content-Type: application/x-www-form-urlencoded</p></td>
 </table>
 
 See also
-JavaDoc: <a href="https://go.AppLicensing.io/javadoc/v2/com/labs64/AppLicensing/service/LicenseService.html#update-com.labs64.AppLicensing.domain.vo.Context-java.lang.String-java.lang.String-com.labs64.AppLicensing.domain.entity.License-" class="external-link">LicenseService.update</a>
+JavaDoc: <a href="https://go.AppLicensing.io/javadoc/v2/com/Realmocean/AppLicensing/service/LicenseService.html#update-com.Realmocean.AppLicensing.domain.vo.Context-java.lang.String-java.lang.String-com.Realmocean.AppLicensing.domain.entity.License-" class="external-link">LicenseService.update</a>
 
 <span
 class="expand-control-icon"><img src="assets/images/icons/grey_arrow_down.png" class="expand-control-image" /></span><span
@@ -326,7 +326,7 @@ Content-Type: application/x-www-form-urlencoded
 <div>Response</div>
 
 ```xml
-<AppLicensing xmlns="http://AppLicensing.labs64.com/schema/context">
+<AppLicensing xmlns="http://AppLicensing.Realmocean.com/schema/context">
     <items>
         <item type="License">
             <property name="number">L2DH0QG1O</property>
@@ -386,7 +386,7 @@ Delete a license by number.
 </table>
 
 See also
-JavaDoc: <a href="https://go.AppLicensing.io/javadoc/v2/com/labs64/AppLicensing/service/LicenseService.html#delete-com.labs64.AppLicensing.domain.vo.Context-java.lang.String-boolean-" class="external-link">LicenseService.delete</a>
+JavaDoc: <a href="https://go.AppLicensing.io/javadoc/v2/com/Realmocean/AppLicensing/service/LicenseService.html#delete-com.Realmocean.AppLicensing.domain.vo.Context-java.lang.String-boolean-" class="external-link">LicenseService.delete</a>
 
 <span
 class="expand-control-icon"><img src="assets/images/icons/grey_arrow_down.png" class="expand-control-image" /></span><span

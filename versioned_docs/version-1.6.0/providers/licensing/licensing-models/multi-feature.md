@@ -25,7 +25,7 @@ Validation response example:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<ns2:AppLicensing xmlns="http://www.w3.org/2000/09/xmldsig#" xmlns:ns2="http://AppLicensing.labs64.com/schema/context" ttl="2020-05-07T21:43:22.638Z">
+<ns2:AppLicensing xmlns="http://www.w3.org/2000/09/xmldsig#" xmlns:ns2="http://AppLicensing.Realmocean.com/schema/context" ttl="2020-05-07T21:43:22.638Z">
     <ns2:infos/>
     <ns2:items>
         <ns2:item type="ProductModuleValidation">

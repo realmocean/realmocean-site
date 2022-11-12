@@ -25,12 +25,11 @@
                     "items": [
                         "app-management/monetization/faqs",
                         "app-management/monetization/applicensing",
-                        "app-management/monetization/providing-discounts"
-
-
-
+                        "app-management/monetization/providing-discounts",
+                        "app-management/monetization/extending-trials"
                     ]
-                }
+                },
+                "app-management/oauth-and-permissions"
             ]
         },
         {
@@ -60,8 +59,6 @@
                                 "providers/licensing/licensing-models/rental",
                                 "providers/licensing/licensing-models/subscription",
                                 "providers/licensing/licensing-models/try-n-buy"
-
-
                             ]
                         },
                         {
@@ -71,16 +68,11 @@
                             "items": [
                                 "providers/licensing/restfull-api/services/license-services",
                                 "providers/licensing/restfull-api/services/licensee-services"
-
-
-
-
                             ]
                         },
                         "providers/licensing/glossary"
                     ]
                 },
-
                 {
                     "type": "category",
                     "label": "Organization Broker",
@@ -146,7 +138,8 @@
             "type": "category",
             "label": "Components",
             "collapsed": true,
-            "items": [{
+            "items": [
+                {
                     "type": "category",
                     "label": "Buttons",
                     "collapsed": true,

@@ -21,7 +21,7 @@ sidebar_label: Pricing Table
 
 Pricing plans for your products and services can be effectively modelled using **Pricing Table** licensing model. By using this licensing model, you will be able to easily manage plans and features, manage your customers and also keep track of their membership plans with the possibility to enable/disable individual features per customer.
 
-Each plan has its unique information associated with it, such as the plan’s name, number, pricing, billing interval, features set, and many more. 
+Each plan has its unique information associated with it, such as the plan’s name, number, pricing, billing interval, features set, and many more.
 
 Each plan can be additionally configured to support *"free trial"* and *"freemium"* business models, as well a hidden option to create context-specific packages.
 
@@ -39,7 +39,7 @@ Create a new product module and choose Model "Pricing Table".
 <a href="" class="imagelink" data-lightbox="pricing-table" data-title="Create Pricing Table" data-alt="Create Pricing Table">
   <img src="" />
 </a>
-    
+
 ### Add Plan
 
 Creating a new Plan is quite simple. All you need to do is:
@@ -164,7 +164,7 @@ Accept: application/xml
 
 ```xml
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<ns2:AppLicensing xmlns="http://www.w3.org/2000/09/xmldsig#" xmlns:ns2="http://AppLicensing.labs64.com/schema/context" ttl="2020-05-06T07:01:06.970Z">
+<ns2:AppLicensing xmlns="http://www.w3.org/2000/09/xmldsig#" xmlns:ns2="http://AppLicensing.Realmocean.com/schema/context" ttl="2020-05-06T07:01:06.970Z">
   <ns2:infos/>
   <ns2:items>
     <ns2:item type="ProductModuleValidation">

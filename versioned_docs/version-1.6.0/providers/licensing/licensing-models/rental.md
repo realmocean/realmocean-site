@@ -119,7 +119,7 @@ Once license templates are configured, licensing model is ready for use.
 
 Let's assume now a customer with the [id number](../glossary) "CUST-4567" orders 3 terminal devices identified by the numbers "DEV-341", "DEV-342" and "DEV-343".
 
-First of all, if this is a new customer, corresponding [Licensee](../object-model#licensee) object must be created within AppLicensing, holding the above customer number - "CUST-4567".  
+First of all, if this is a new customer, corresponding [Licensee](../object-model#licensee) object must be created within AppLicensing, holding the above customer number - "CUST-4567".
 This can be done either manually via <a href="https://ui.AppLicensing.io" class="external-link">AppLicensing Management Console</a> or the application on the payment processing server can do it via [AppLicensing API](../restfull-api/services/license-services.md), if it has an automated customer registration procedure.
 
 <img src="assets/images/rental-overview-02.png" />
@@ -148,7 +148,7 @@ If devices in our example were all added at the same time on Feb 01, 2012 at 14:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<AppLicensing xmlns="http://AppLicensing.labs64.com/schema/context">
+<AppLicensing xmlns="http://AppLicensing.Realmocean.com/schema/context">
   <items>
     <item type="ProductModuleValidation">
       <property name="productModuleNumber">M1XMKFVY7</property>
@@ -223,7 +223,7 @@ And the validation result for the validation performed on Aug 21, 2012 will look
 
 ```xml
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<AppLicensing xmlns="http://AppLicensing.labs64.com/schema/context">
+<AppLicensing xmlns="http://AppLicensing.Realmocean.com/schema/context">
   <items>
     <item type="ProductModuleValidation">
       <property name="productModuleNumber">M1XMKFVY7</property>

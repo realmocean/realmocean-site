@@ -77,7 +77,7 @@ Accept: application/xml
 <div>Response</div>
 
 ```xml
-<AppLicensing xmlns="http://AppLicensing.labs64.com/schema/context">
+<AppLicensing xmlns="http://AppLicensing.Realmocean.com/schema/context">
     <items>
         <item type="Licensee">
             <property name="number">I001</property>
@@ -237,7 +237,7 @@ Content-Type: application/x-www-form-urlencoded
 <div>Response</div>
 
 ```xml
-<AppLicensing xmlns="http://AppLicensing.labs64.com/schema/context">
+<AppLicensing xmlns="http://AppLicensing.Realmocean.com/schema/context">
     <items>
         <item type="Licensee">
             <property name="number">I762LBSSX</property>
@@ -321,7 +321,7 @@ Content-Type: application/x-www-form-urlencoded
 <div>Response</div>
 
 ```xml
-<AppLicensing xmlns="http://AppLicensing.labs64.com/schema/context">
+<AppLicensing xmlns="http://AppLicensing.Realmocean.com/schema/context">
     <items>
         <item type="Licensee">
             <property name="number">IP53OX9PF</property>
@@ -500,7 +500,7 @@ Accept: application/xml
 <div>Response</div>
 
 ```xml
-<AppLicensing xmlns="http://AppLicensing.labs64.com/schema/context" ttl="2015-11-03T15:02:36.137Z">
+<AppLicensing xmlns="http://AppLicensing.Realmocean.com/schema/context" ttl="2015-11-03T15:02:36.137Z">
   <items>
     <item type="ProductModuleValidation">
       <property name="productModuleNumber">M011</property>
@@ -534,7 +534,7 @@ If you use RESTful API directly in your code, ensure to replace GET with POST fo
 <div>Response</div>
 
 ```xml
-<AppLicensing xmlns="http://AppLicensing.labs64.com/schema/context" ttl="2017-04-04T10:31:45.400Z">
+<AppLicensing xmlns="http://AppLicensing.Realmocean.com/schema/context" ttl="2017-04-04T10:31:45.400Z">
   <ns2:infos>
         <ns2:info id="methodIsDeprecated" type="warning">'GET' method for licensee validate is deprecated, use 'POST' instead</ns2:info>
   </ns2:infos>
@@ -639,7 +639,7 @@ Accept: application/xml
 <div>Response</div>
 
 ```xml
-<AppLicensing xmlns="http://AppLicensing.labs64.com/schema/context" ttl="2015-11-03T15:02:36.137Z">
+<AppLicensing xmlns="http://AppLicensing.Realmocean.com/schema/context" ttl="2015-11-03T15:02:36.137Z">
   <items>
     <item type="ProductModuleValidation">
       <property name="productModuleNumber">M011</property>
@@ -663,7 +663,7 @@ Accept: application/xml
 $ curl --header "Accept: application/xml" --insecure --user demo:demo --request GET https://go.AppLicensing.io/core/v2/rest/licensee/I011/validate
 ```
 {: .ml-5 }
- 
+
 
 ### Transfer licenses
 

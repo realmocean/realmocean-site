@@ -64,8 +64,8 @@ Accept: application/xml
 
 ```xml
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<AppLicensing 
-    xmlns="http://AppLicensing.labs64.com/schema/context">
+<AppLicensing
+    xmlns="http://AppLicensing.Realmocean.com/schema/context">
     <infos/>
     <items>
         <item type="ProductModuleValidation">
