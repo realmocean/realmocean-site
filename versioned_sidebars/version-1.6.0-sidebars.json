@@ -230,6 +230,44 @@
                         },
                         "providers/emailService"
                     ]
+                },
+                {
+                    "type": "category",
+                    "label": "Digital Signature Service",
+                    "collapsed": true,
+                    "items": [
+                        "providers/orgProvider",
+                        {
+                            "type": "category",
+                            "label": "Models",
+                            "collapsed": false,
+                            "items": [
+                                "providers/organizationService/models/IEmployee",
+                                "providers/organizationService/models/IPosition",
+                                "providers/organizationService/models/IEmployeeTitle"
+                            ]
+                        },
+                        "providers/emailService"
+                    ]
+                },
+                {
+                    "type": "category",
+                    "label": "Theme Service",
+                    "collapsed": true,
+                    "items": [
+                        "providers/orgProvider",
+                        {
+                            "type": "category",
+                            "label": "Models",
+                            "collapsed": false,
+                            "items": [
+                                "providers/organizationService/models/IEmployee",
+                                "providers/organizationService/models/IPosition",
+                                "providers/organizationService/models/IEmployeeTitle"
+                            ]
+                        },
+                        "providers/emailService"
+                    ]
                 }
             ]
         },
