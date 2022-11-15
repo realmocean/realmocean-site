@@ -1,6 +1,6 @@
 ---
 id: intro
-title: Introduction to realm ocean
+title: Introduction to realmocean
 sidebar_label: Introduction
 slug: /
 tags:
