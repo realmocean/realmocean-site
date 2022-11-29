@@ -37,10 +37,7 @@
             "label": "App Design",
             "collapsed": true,
             "items": [
-                "app-design/starting-from-strach",
-                "app-management/choosing-authentication-method",
-                "app-management/creating-and-updating-apps",
-                "app-management/oauth-and-permissions"
+                "app-design/starting-from-strach"
             ]
         },
         {

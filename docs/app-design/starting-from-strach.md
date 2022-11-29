@@ -3,7 +3,7 @@ id: starting-from-strach
 title: Starting from Scratch
 sidebar_label: Starting from Scratch
 ---
-## Start with a feature, not a layout
+## __Start with a feature, not a layout
 
 When you start the design for a new app idea, what do you design first? If it’s the navigation bar at the top of the page, you’re making a mistake.
 
