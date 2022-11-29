@@ -1,0 +1,38 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.docs.category.AWE framework": {
+    "message": "AWE framework",
+    "description": "The label for category AWE framework in sidebar docs"
+  },
+  "sidebar.docs.category.Getting Started": {
+    "message": "Getting Started",
+    "description": "The label for category Getting Started in sidebar docs"
+  },
+  "sidebar.docs.category.Configuration": {
+    "message": "Configuration",
+    "description": "The label for category Configuration in sidebar docs"
+  },
+  "sidebar.docs.category.Modules": {
+    "message": "Modules",
+    "description": "The label for category Modules in sidebar docs"
+  },
+  "sidebar.docs.category.API Reference": {
+    "message": "API Reference",
+    "description": "The label for category API Reference in sidebar docs"
+  },
+  "sidebar.screens.category.API Reference": {
+    "message": "API Reference",
+    "description": "The label for category API Reference in sidebar screens"
+  },
+  "sidebar.schedule.category.Schedule Task": {
+    "message": "Schedule Task",
+    "description": "The label for category Schedule Task in sidebar schedule"
+  },
+  "sidebar.training.category.Basic tutorials": {
+    "message": "Basic tutorials",
+    "description": "The label for category Basic tutorials in sidebar training"
+  }
+}

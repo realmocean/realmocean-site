@@ -1,0 +1,118 @@
+---
+id: stack
+title: Stack
+sidebar_label: Stack
+---
+Stack is a special type of collection that stores elements in LIFO style (Last In First Out). Tuval Framework includes the generic version of Stack.
+Stack is useful to store temporary data in LIFO style, and you might want to delete an element after retrieving its value.
+
+## Stack Characteristics
+
+* Stack is Last In First Out collection.
+* Stack can contain elements of the specified type. It provides compile-time type checking and doesn't provides runtime type-checking.
+* Elements can be added using the Push() method. Cannot use array-initializer syntax.
+* Elements can be retrieved using the Pop() and the Peek() methods. It does not support an indexer Get and Set methods.
+
+## Creating a Stack
+
+You can create an object of the Stack by specifying a type parameter for the type of elements it can store. The following example creates and adds elements in the Stack using the Push() method. Stack allows null (for reference types) and duplicate values.
+
+```tsx
+//Typescript
+const myStack: Stack<int> = new Stack<int>();
+myStack.Push(1);
+myStack.Push(2);
+myStack.Push(3);
+myStack.Push(4);
+
+foreach (myStack, (item:int)=>{
+     Console.Write(item + ","); //prints 4,3,2,1,
+});
+```
+You can also create a Stack from an array, as shown below.
+
+```tsx
+//Typescript
+const arr: IntArray = New.IntArray([1, 2, 3, 4]);
+const myStack:Stack<int> = new Stack<int>(arr);
+
+foreach (myStack, (item:int)=>{
+    Console.Write(item + ","); //prints 4,3,2,1,
+});
+
+```
+
+## Stack Properties and Methods
+| Property | Description                                       |
+|----------|---------------------------------------------------|
+| Count    | Returns the total count of elements in the Stack. |
+
+| Method                   | Description                                          |
+|--------------------------|------------------------------------------------------|
+| Push(T)                  | Inserts an item at the top of the stack.             |
+| [Peek()](#Peek)          | Returns the top item from the stack.                 |
+| [Pop()](#Pop)            | Removes and returns items from the top of the stack. |
+| [Contains(T)](#Contains) | Checks whether an item exists in the stack or not.   |
+| Clear()                  | Removes all items from the stack.                    |
+
+### Pop()<a name="Pop"></a>
+The Pop() method returns the last element and removes it from a stack. If a stack is empty, then it will throw the InvalidOperationException. So, always check for the number of elements in a stack before calling the Pop() method.
+
+```tsx
+//Typescript
+const myStack: Stack<int> = new Stack<int>();
+myStack.Push(1);
+myStack.Push(2);
+myStack.Push(3);
+myStack.Push(4);
+
+Console.Write("Number of elements in Stack: {0}", myStack.Count);
+
+while (myStack.Count > 0) {
+     Console.Write(myStack.Pop() + ",");
+}
+
+Console.Write("Number of elements in Stack: {0}", myStack.Count);
+
+//-------------Output---------------
+//Number of elements in Stack: 4
+//4,3,2,1,
+//Number of elements in Stack: 0
+```
+
+### Peek()
+The Peek() method returns the lastly added value from the stack but does not remove it. Calling the Peek() method on an empty stack will throw the InvalidOperationException. So, always check for elements in the stack before retrieving elements using the Peek() method.
+
+```tsx
+//Typescript
+const myStack:Stack<int> = new Stack<int>();
+myStack.Push(1);
+myStack.Push(2);
+myStack.Push(3);
+myStack.Push(4);
+
+Console.Write("Number of elements in Stack: {0}", myStack.Count);// prints 4
+
+if(myStack.Count > 0){
+     Console.WriteLine(myStack.Peek()); // prints 4
+     Console.WriteLine(myStack.Peek()); // prints 4
+}
+
+Console.Write("Number of elements in Stack: {0}", myStack.Count);// prints 4
+```
+
+### Contains()
+
+The Contains() method checks whether the specified element exists in a Stack collection or not. It returns true if it exists, otherwise false.
+
+```tsx
+//Typescript
+const myStack:Stack<int> = new Stack<int>();
+myStack.Push(1);
+myStack.Push(2);
+myStack.Push(3);
+myStack.Push(4);
+
+myStack.Contains(2); // returns true
+myStack.Contains(10); // returns false
+```

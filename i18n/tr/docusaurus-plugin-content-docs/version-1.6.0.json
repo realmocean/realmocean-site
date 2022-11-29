@@ -1,0 +1,154 @@
+{
+  "version.label": {
+    "message": "1.6.0",
+    "description": "The label for version 1.6.0"
+  },
+  "sidebar.docs.category.Realm Ocean": {
+    "message": "Realm Ocean",
+    "description": "The label for category Realm Ocean in sidebar docs"
+  },
+  "sidebar.docs.category.App Management": {
+    "message": "App Management",
+    "description": "The label for category App Management in sidebar docs"
+  },
+  "sidebar.docs.category.Monetization": {
+    "message": "Monetization",
+    "description": "The label for category Monetization in sidebar docs"
+  },
+  "sidebar.docs.category.App Design": {
+    "message": "App Design",
+    "description": "The label for category App Design in sidebar docs"
+  },
+  "sidebar.docs.category.Services": {
+    "message": "Services",
+    "description": "The label for category Services in sidebar docs"
+  },
+  "sidebar.docs.category.Licensing Service": {
+    "message": "Licensing Service",
+    "description": "The label for category Licensing Service in sidebar docs"
+  },
+  "sidebar.docs.category.Licensing Models": {
+    "message": "Licensing Models",
+    "description": "The label for category Licensing Models in sidebar docs"
+  },
+  "sidebar.docs.category.AppLicensing API": {
+    "message": "AppLicensing API",
+    "description": "The label for category AppLicensing API in sidebar docs"
+  },
+  "sidebar.docs.category.Organization Service": {
+    "message": "Organization Service",
+    "description": "The label for category Organization Service in sidebar docs"
+  },
+  "sidebar.docs.category.Models": {
+    "message": "Models",
+    "description": "The label for category Models in sidebar docs"
+  },
+  "sidebar.docs.category.Customer Service": {
+    "message": "Customer Service",
+    "description": "The label for category Customer Service in sidebar docs"
+  },
+  "sidebar.docs.category.File System Service": {
+    "message": "File System Service",
+    "description": "The label for category File System Service in sidebar docs"
+  },
+  "sidebar.docs.category.Authentication Service": {
+    "message": "Authentication Service",
+    "description": "The label for category Authentication Service in sidebar docs"
+  },
+  "sidebar.docs.category.Project Service": {
+    "message": "Project Service",
+    "description": "The label for category Project Service in sidebar docs"
+  },
+  "sidebar.docs.category.Document Service": {
+    "message": "Document Service",
+    "description": "The label for category Document Service in sidebar docs"
+  },
+  "sidebar.docs.category.Email Service": {
+    "message": "Email Service",
+    "description": "The label for category Email Service in sidebar docs"
+  },
+  "sidebar.docs.category.Log Service": {
+    "message": "Log Service",
+    "description": "The label for category Log Service in sidebar docs"
+  },
+  "sidebar.docs.category.Tracker Service": {
+    "message": "Tracker Service",
+    "description": "The label for category Tracker Service in sidebar docs"
+  },
+  "sidebar.docs.category.Process Management Service": {
+    "message": "Process Management Service",
+    "description": "The label for category Process Management Service in sidebar docs"
+  },
+  "sidebar.docs.category.Process Mining Service": {
+    "message": "Process Mining Service",
+    "description": "The label for category Process Mining Service in sidebar docs"
+  },
+  "sidebar.docs.category.AppStore Service": {
+    "message": "AppStore Service",
+    "description": "The label for category AppStore Service in sidebar docs"
+  },
+  "sidebar.docs.category.Notification Service": {
+    "message": "Notification Service",
+    "description": "The label for category Notification Service in sidebar docs"
+  },
+  "sidebar.docs.category.Digital Signature Service": {
+    "message": "Digital Signature Service",
+    "description": "The label for category Digital Signature Service in sidebar docs"
+  },
+  "sidebar.docs.category.Theme Service": {
+    "message": "Theme Service",
+    "description": "The label for category Theme Service in sidebar docs"
+  },
+  "sidebar.docs.category.Brokers": {
+    "message": "Brokers",
+    "description": "The label for category Brokers in sidebar docs"
+  },
+  "sidebar.docs.category.Licensing Broker": {
+    "message": "Licensing Broker",
+    "description": "The label for category Licensing Broker in sidebar docs"
+  },
+  "sidebar.docs.category.Organization Broker": {
+    "message": "Organization Broker",
+    "description": "The label for category Organization Broker in sidebar docs"
+  },
+  "sidebar.docs.category.Customer Broker": {
+    "message": "Customer Broker",
+    "description": "The label for category Customer Broker in sidebar docs"
+  },
+  "sidebar.docs.category.Components": {
+    "message": "Components",
+    "description": "The label for category Components in sidebar docs"
+  },
+  "sidebar.docs.category.Buttons": {
+    "message": "Buttons",
+    "description": "The label for category Buttons in sidebar docs"
+  },
+  "sidebar.docs.category.Inputs": {
+    "message": "Inputs",
+    "description": "The label for category Inputs in sidebar docs"
+  },
+  "sidebar.docs.category.DropDowns": {
+    "message": "DropDowns",
+    "description": "The label for category DropDowns in sidebar docs"
+  },
+  "sidebar.docs.category.Navigation": {
+    "message": "Navigation",
+    "description": "The label for category Navigation in sidebar docs"
+  },
+  "sidebar.docs.category.Grids": {
+    "message": "Grids",
+    "description": "The label for category Grids in sidebar docs"
+  },
+  "sidebar.docs.category.File Viewers & Editors": {
+    "message": "File Viewers & Editors",
+    "description": "The label for category File Viewers & Editors in sidebar docs"
+  },
+  "sidebar.docs.category.Layout": {
+    "message": "Layout",
+    "description": "The label for category Layout in sidebar docs"
+  },
+  "sidebar.docs.category.Data Visualization": {
+    "message": "Data Visualization",
+    "description": "The label for category Data Visualization in sidebar docs"
+  }
+}
