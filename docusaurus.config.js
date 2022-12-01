@@ -129,14 +129,18 @@ module.exports = {
     },
     i18n: {
         defaultLocale: 'en',
-        locales: ['en', 'tr'],
+        locales: ['en', 'tr','ko'],
         localeConfigs: {
             en: {
                 label: 'English',
                 direction: 'ltr',
             },
-            es: {
+            tr: {
                 label: 'Turkish',
+                direction: 'ltr',
+            },
+            ko: {
+                label: '한국인',
                 direction: 'ltr',
             },
         }

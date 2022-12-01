@@ -1,0 +1,34 @@
+{
+  "title": {
+    "message": "realmocean",
+    "description": "The title in the navbar"
+  },
+  "item.label.Home": {
+    "message": "Home",
+    "description": "Navbar item with label Home"
+  },
+  "item.label.Realms": {
+    "message": "Realms",
+    "description": "Navbar item with label Realms"
+  },
+  "item.label.App Store": {
+    "message": "App Store",
+    "description": "Navbar item with label App Store"
+  },
+  "item.label.Documentation": {
+    "message": "Documentation",
+    "description": "Navbar item with label Documentation"
+  },
+  "item.label.Hire an expert": {
+    "message": "Hire an expert",
+    "description": "Navbar item with label Hire an expert"
+  },
+  "item.label.Tutorials": {
+    "message": "Tutorials",
+    "description": "Navbar item with label Tutorials"
+  },
+  "item.label.Blog": {
+    "message": "Blog",
+    "description": "Navbar item with label Blog"
+  }
+}
