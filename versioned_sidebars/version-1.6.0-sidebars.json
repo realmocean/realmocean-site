@@ -37,7 +37,8 @@
             "label": "App Design",
             "collapsed": true,
             "items": [
-                "app-design/starting-from-strach"
+                "app-design/starting-from-strach",
+                "app-design/hierarchy-is-everything"
             ]
         },
         {
