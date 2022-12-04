@@ -10,9 +10,9 @@ tags:
 
 ## What is a realm?
 
-Realm is a work OS that powers developers to run apps. This is how realms enables teams and organizations to create custom solutions to manage their workflows. The options are infinite when you use the platform's API, components, brokers, integrations, automations, and more.
+Realm, çalışma uygulamalarını çalıştırmak için güçlendirilmiş bir işletim sistemidir. Bu sayede takımlar ve kurumlar, iş akışlarını yönetmek için özel çözümler oluşturabilirler. Realm platformunun API'sı, bileşenleri, aracıları, entegrasyonları, otomasyonları ve daha fazlasını kullanarak seçenekler sonsuzdur.
 
-The Realm Ocean Framework allows developers to build new brokers, components and apps for realms.
+Realm Ocean Framework, geliştiricilerin Realm platformuna yeni aracılar, bileşenler ve uygulamalar oluşturmasına olanak sağlar. Realm Ocean Framework, geliştiricilere özel ihtiyaçlarına ve iş akışlarına uygun özel çözümler oluşturma esnekliği verir. Framework, Realm platformunun API'sına erişim sağlar, ayrıca geliştiricilerin hızlı ve kolay bir şekilde güçlü ve ölçeklenebilir uygulamalar oluşturmalarına yardımcı olacak çeşitli önceden hazırlanmış bileşen ve entegrasyona erişim sağlar. Realm Ocean Framework'ü kullanarak, geliştiriciler takımların ve kurumların iş akışlarını daha iyi yönetmelerine ve genel verimliliklerini artırmalarına yardımcı olan özel çözümler oluşturabilirler.
 
 ## Who can create realms?
 
