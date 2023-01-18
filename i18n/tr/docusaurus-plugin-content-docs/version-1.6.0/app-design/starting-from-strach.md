@@ -3,61 +3,61 @@ id: starting-from-strach
 title: En baştan başlamak
 sidebar_label: En baştan başlamak
 ---
-## Sayfa yerlesimi ile degil, bir ozellik ile baslayin
+## Sayfa yerleşimi ile değil, bir özellik ile başlayın
 
-When you start the design for a new app idea, what do you design first? If it’s the navigation bar at the top of the page, you’re making a mistake.
+Yeni bir uygulama fikri için tasarıma başladığınızda ilk olarak ne tasarlarsınız? Eğer bu bir navigation bar ise, bir hata yapıyorsunuz demektir.
 
-The easiest way to find yourself frustrated and stuck when working on a new design is to start by trying to “design the app.” When most people think about “designing the app”, they’re thinking about the shell.
+Yeni bir tasarım üzerinde çalışırken kendinizi takılıp kalmış olarak bulmanın en kolay yolu 'uygulamayı tasarlamaya çalışmaktır'. Çoğu insan "uygulamayı tasarlamayı" düşündüğünde, direkt olarak tamamlanmış görünümü düşünür.
 
-Should it have a top nav, or a sidebar?
+Bir top navigation bar mı olmalı yoksa bir sidebar mı olmalı?
 
-Should the navigation items be on the left, or on the right?
+Gezinme öğeleri solda mı yoksa sağda mı olmalı?
 
-Should the page content be in a container, or should it be full-width?
+Sayfa içeriği bir container'da mı yoksa tam genişlikte mi olmalı?
 
-Where should the logo go?
+Logo nerede durmalı?
 
 ![dsd](./images/img01.png)
 
-The thing is, an “app” is actually a collection of features. Before you’ve designed a few features, you don’t even have the information you need to make a decision about how the navigation should work. No wonder it’s frustrating!
+Mesele şu ki, bir "uygulama" aslında bir özellikler koleksiyonudur. Birkaç özellik tasarlamadan önce, navigation'un nasıl çalışması gerektiğine karar vermek için ihtiyacınız olan bilgilere bile sahip değilsiniz. Bu sinir bozucu olabilir!
 
-Instead of starting with the shell, start with a piece of actual functionality.
+Tüm sayfayı bir anda tasarlamak yerine, parça parça gerçek işlevsellik ile başlayın.
 
 
-For example, say you’re building a flight booking service. You could start with a feature like “searching for a flight”.
+Örneğin, bir uçuş rezervasyonu hizmeti oluşturduğunuzu varsayalım. “Uçuş arama” gibi bir özellikle başlayabilirsiniz.
 
-Your interface will need:
+Arayüzünüzün ihtiyacı olacak şeyler:
 
-- A field for the departure city
-- A field for the destination city
-- A field for the departure date
-- A field for the return date
-- A button to perform the search
+- Kalkış şehri için bir alan
+- Hedef şehir için bir alan
+- Kalkış tarihi için bir alan
+- Dönüş tarihi için bir alan
+- Arama yapmak için bir düğme
 
-Start with that.
+Bununla başlayın.
 
 ![dsd](./images/img02.png)
 
-Hell, you might not even need that other stuff anyways — it worked for Google.
+Çok iyi, diğer şeylere ihtiyacınız olmayabilir - Bu, Google'da işe yaradı.
 
 ![dsd](./images/img03.png)
 
-## Detail comes later
+## Detaylar sonra gelir
 
-In the earliest stages of designing a new feature, it’s important that you don’t get hung up making low-level decisions about things like typefaces, shadows, icons, etc.
+Yeni bir özellik tasarlamanın ilk aşamalarında, yazı biçimleri, gölgeler, simgeler vb. gibi şeyler hakkında düşük düzey kararlar vermeye takılıp kalmamanız önemlidir.
 
-That stuff will all matter eventually, but it doesn’t matter right now.
+Bu şeylerin hepsi sonunda önemli olacak, ama şu anda önemi yok.
 
 
-If you have trouble ignoring the details when working in a high fidelity environment like the browser or your favorite design tool, one trick Jason Fried of Basecamp likes to use is to design on paper using a thick Sharpie.
+Tarayıcı veya en sevdiğiniz tasarım aracı gibi aslına uygunluğu yüksek bir ortamda çalışırken ayrıntıları göz ardı etmekte zorlanıyorsanız, Basecamp'tan Jason Fried'in kullanmayı sevdiği bir numara, kalın bir Sharpie kullanarak kağıt üzerinde tasarım yapın.
 
 ![dsd](./images/img04.png)
 
-Obsessing over little details just isn’t possible with a Sharpie, so it can be a great way to quickly explore a bunch of different layout ideas.
+Bir Sharpie ile küçük ayrıntılara takılmak mümkün değildir, bu nedenle farklı bir tasarım fikrini hızla keşfetmenin harika bir yolu olabilir.
 
-### Hold the color
+### Rengi gizleyin
 
-Even when you’re ready to refine an idea in higher fidelity, resist the temptation to introduce color right away.
+Bir fikri daha geliştirmeye kesin gözüyle bakıyorsanız, rengi hemen kullanma isteğinize karşı koyun.
 
 By designing in grayscale, you’re forced to use spacing, contrast, and size to do all of the heavy lifting.
 
