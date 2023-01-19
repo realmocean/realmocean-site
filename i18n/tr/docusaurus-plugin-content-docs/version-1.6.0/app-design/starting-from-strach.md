@@ -57,71 +57,71 @@ Bir Sharpie ile küçük ayrıntılara takılmak mümkün değildir, bu nedenle 
 
 ### Rengi gizleyin
 
-Bir fikri daha geliştirmeye kesin gözüyle bakıyorsanız, rengi hemen kullanma isteğinize karşı koyun.
+Bir fikri daha geliştirmeye kesin gözüyle bakıyorsanız, rengi hemen ekleme isteğinize karşı koyun.
 
-By designing in grayscale, you’re forced to use spacing, contrast, and size to do all of the heavy lifting.
+Gri tonlamalı tasarım ile bütün kontrast, boşluk ve boyut ayarlarını yapmak zorunda kalırsınız.
 
 ![dsd](./images/img05.png)
 
-It’s a little more challenging, but you’ll end up with a clearer interface with a strong hierarchy that’s easy to enhance with color later.
+Bu sizi biraz zorlayabilir fakat daha sonra renkleri eklediğinizde güçlü bir hiyerarşiye sahip daha net bir arayüz elde edersiniz.
 
 ![dsd](./images/img06.png)
 
-### Don’t over-invest
+### Aşırı yatırım yapmayın
 
-The whole point of designing in low-fidelity is to be able to move fast, so you can start building the real thing as soon as possible.
+Düşük kaliteli tasarım yapmanın tüm amacı, hızlı hareket edebilmektir, böylece mümkün olan en kısa sürede gerçek düşünceyi inşa etmeye başlayabilirsiniz
 
-Sketches and wireframes are disposable — users can’t do anything with static mockups. Use them to explore your ideas, and leave them behind when you’ve made a decision.
+Sketche'ler ve wireframe'ler tek kullanımlıktır; kullanıcılar statik örneklerle hiçbir şey yapamaz. Fikirlerinizi keşfetmek için bunları kullanın ve karar verdiğinizde onları geride bırakın.
 
-## Don’t design too much
+## Çok fazla tasarlamayın
 
 
-You don’t need to design every single feature in an app before you move on to implementation; in fact, it’s better if you don’t.
+Uygulamaya geçmeden önce bir uygulamadaki her özelliği tasarlamanız gerekmez; Aslında, yapmasanız daha iyi.
 
 ![dsd](./images/img07.png)
 
-Figuring out how every feature in a product should interact and how every edge case should look is really hard, especially in the abstract.
+Bir üründeki her özelliğin nasıl etkileşime girmesi gerektiğini ve her uç durumun nasıl görünmesi gerektiğini anlamak, özellikle soyut olarak gerçekten zordur.
 
 
-How should this screen look if the user has 2000 contacts?
+Kullanıcının 2000 kişisi varsa bu ekran nasıl görünmelidir?
 
-Where should the error message go in this form?
+Hata mesajı bu formda nereye gitmeli?
 
-How should this calendar look when there are two events scheduled at the same time?
+Aynı anda programlanmış iki etkinlik olduğunda bu takvim nasıl görünmelidir?
 
-You’re setting yourself up for frustration by trying to figure this stuff out using only a design tool and your imagination.
+Bu tür şeyleri yalnızca bir tasarım aracı ve hayal gücünüzü kullanarak çözmeye çalışırsanız kendinizi hayal kırıklığına uğratırsınız.
 
-### Work in cycles
+### Döngüler halinde çalışın
 
-Instead of designing everything up front, work in short cycles. Start by designing a simple version of the next feature you want to build.
+Her şeyi önceden tasarlamak yerine, kısa döngüler halinde çalışın. Oluşturmak istediğiniz bir sonraki özelliğin basit bir sürümünü tasarlayarak başlayın.
 
 ![dsd](./images/img08.png)
 
-Once you’re happy with the basic design, make it real.
+Temel tasarımdan memnun kaldığınızda, onu gerçeğe dönüştürün.
 
-You’ll probably run into some unexpected complexity along the way, but that’s the point — it’s a lot easier to fix design problems in an interface you can actually use than it is to imagine every edge case in advance.
+Muhtemelen yol boyunca bazı beklenmedik karmaşıklıklarla karşılaşacaksınız, ancak asıl mesele bu! Gerçekten kullanabileceğiniz bir arayüzde tasarım sorunlarını çözmek, her son durumu önceden hayal etmekten çok daha kolay.
 
-Iterate on the working design until there are no more problems left to solve, then jump back into design mode and start working on the next feature.
+Çözülecek başka sorun kalmayana kadar çalışan tasarım üzerinde devam edin, ardından tasarım moduna geri dönün ve bir sonraki özellik üzerinde çalışmaya başlayın.
 
 ![dsd](./images/img09.png)
 
-### Be a pessimist
+### Karamsar olun
 
-Don’t imply functionality in your designs that you aren’t ready to build.
+Tasarımlarınıza işlevselliği hazır olmayan özellikleri eklemeyin.
 
-For example, say you’re working on a comment system for a project management tool. You know that one day, you’d like users to be able to attach files to their comments, so you include an attachments section in your design.
+Örneğin, bir proje yönetim aracı için bir yorum sistemi üzerinde çalıştığınızı varsayalım. Bir gün kullanıcıların yorumlarına dosya ekleyebilmelerini istediğinizi biliyorsunuz, bu nedenle tasarımınıza ekler(attachments) bölümü ekliyorsunuz.
 
 ![dsd](./images/img10.png)
 
-You get deep into implementation only to discover that supporting attachments is going to be a lot more work than you anticipated. There’s no way you have time to finish it right now, so the whole commenting system sits on the backburner while you take care of other priorities.
+Uygulamanın derinliklerine indiğinizde, yorum destekleyici eklerin tahmin ettiğinizden çok daha fazla iş çıkaracağını anladınız. Şu anda bitirmek için zamanınız yok, bu nedenle siz diğer önceliklerle ilgilenirken tüm yorum sistemini arka plana attınız.
 
-The thing is, a comment system with no attachments would still have been better than no comment system at all, but because you planned to include it from day one you’ve got nothing you can ship.
+Mesele şu ki, ekleri olmayan bir yorum sistemi yine de hiç yorum sistemi olmamasından daha iyi olurdu, ancak onu ilk günden dahil etmeyi planladığınız için gönderebileceğiniz hiçbir şey yok.
 
-When you’re designing a new feature, **expect it to be hard to build**. Designing the smallest useful version you can ship reduces that risk considerably.
+Yeni bir özellik tasarlarken, **oluşturmanın zor olmasını bekleyin**. Çıkartacağınız en küçük kullanışlı sürümü tasarlamak, bu riski önemli ölçüde azaltır.
 
 ![dsd](./images/img11.png)
 
-If part of a feature is a “nice-to-have”, **design it later**. Build the simple version first and you’ll always have something to fall back on.
+Bir özelliğin parçası "olsa iyi olur" ise, **onu daha sonra tasarlayın**. Önce basit sürümü oluşturun ve her zaman başvuracak bir şeyiniz olur.
 
 ## Choose a personality
 
