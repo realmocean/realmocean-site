@@ -1,7 +1,7 @@
 ---
 id: starting-from-strach
-title: En baştan başlamak
-sidebar_label: En baştan başlamak
+title: En baştan başlayın
+sidebar_label: En baştan başlayın
 ---
 ## Sayfa yerleşimi ile değil, bir özellik ile başlayın
 
@@ -123,152 +123,152 @@ Yeni bir özellik tasarlarken, **oluşturmanın zor olmasını bekleyin**. Çık
 
 Bir özelliğin parçası "olsa iyi olur" ise, **onu daha sonra tasarlayın**. Önce basit sürümü oluşturun ve her zaman başvuracak bir şeyiniz olur.
 
-## Choose a personality
+## Bir kişilik seç
 
-Every design has some sort of personality. A banking site might try to communicate secure and professional, while a trendy new startup might have a design that feels fun and playful.
+Her tasarımın bir çeşit kişiliği vardır. Bir bankacılık sitesi, güvenli ve profesyonel iletişim kurmaya çalışırken, modaya uygun yeni bir girişim, eğlenceli ve eğlenceli hissettiren bir tasarıma sahip olabilir.
 
 ![dsd](./images/img12.png)
 
-On the surface, giving a design a particular personality might sound abstract and handwavy, but a lot of it is determined by a few solid, concrete factors.
+Tasarıma belirli bir kişilik vermek kulağa soyut geliyor olabilir, ancak çoğu birkaç somut faktör tarafından belirlenmektedir.
 
-### Font choice
+### Yazı tipini seçin
 
-Typography plays a huge part in determining how a design feels.
+Tipografi, bir tasarımın nasıl hissettirdiğini belirlemede büyük rol oynar.
 
-If you want an elegant or classic look, you might want to incorporate a serif typeface in your design:
+Zarif veya klasik bir görünüm istiyorsanız, tasarımınıza bir serif yazı tipi eklemek isteyebilirsiniz:
 
 ![dsd](./images/img13.png)
 
-For a playful look, you could use a rounded sans serif:
+Eğlenceli bir görünüm için yuvarlak bir sans serif kullanabilirsiniz:
 
 ![dsd](./images/img14.png)
 
-If you’re going for a plainer look, or want to rely on other elements to provide the personality, a neutral sans serif works great:
+Daha sade bir görünüm arıyorsanız veya kişiliği sağlamak için diğer unsurlara güvenmek istiyorsanız, nötr bir sans serif iyi bir seçim olacaktır:
 
 ![dsd](./images/img15.png)
 
-### Color
+### Renk
 
-There’s a lot of science out there on the psychology of color, but in practice, you really just need to pay attention to how different colors feel to you.
+Renk psikolojisi üzerine pek çok bilim var, ancak pratikte, gerçekten farklı renklerin size nasıl hissettirdiğine dikkat etmeniz gerekiyor.
 
-Blue is safe and familiar — nobody ever complains about blue:
+Mavi güvenli ve tanıdıktır - hiç kimse maviden şikayet etmez:
 
 ![dsd](./images/img16.png)
 
-Gold might say “expensive” and “sophisticated”:
+Altın için “pahalı” ve “sofistike” diyebiliriz:
 
 ![dsd](./images/img17.png)
 
-Pink is a bit more fun, and not so serious:
+Pembe biraz daha eğlenceli ve bir o kadar da ciddi değildir:
 
 ![dsd](./images/img18.png)
 
-While trying to choose colors using only psychology isn’t super practical — a lot of it is just about what looks good to you — it can be helpful to think about when you’re trying to understand why you think a color is the right fit.
+Yalnızca psikolojiyi kullanarak renkleri seçmeye çalışmak çok pratik olmasa da çoğu renk size neyin iyi geldiğiyle ilgilidir. Bir rengin neden doğru olduğunu anlamaya çalışmak yararlı olabilir.
 
 ### Border radius
 
-As small of a detail as it sounds, if and how much you round the corners in your design can have a big impact on the overall feel.
+Kulağa ne kadar küçük gelse de, tasarımınızda köşeleri ne kadar keskinleştirip keskinleştirmediğiniz genel düşünce üzerinde büyük bir etkiye sahip olabilir.
 
-A small border radius is pretty neutral, and doesn’t really communicate much of a personality on its own:
+Küçük bir border-radius oldukça tarafsızdır ve tek başına bir kişiliğin pek bir kısmını ortaya çıkarmaz:
 
 ![dsd](./images/img19.png)
 
-A large border radius starts to feel more playful:
+Geniş border-radius daha eğlenceli hissettirmeye başlar:
 
 ![dsd](./images/img20.png)
 
-...while no border radius at all feels a lot more serious or formal:
+... hiçbir border-radius olmaması çok daha ciddi veya resmi hissettirir:
 
 ![dsd](./images/img21.png)
 
 
-Whatever you choose, it’s important to stay consistent. Mixing square corners with rounded corners in the same interface almost always looks worse than sticking with one or the other.
+Neyi seçerseniz seçin, tutarlı kalmak önemlidir. Aynı arayüzde keskin köşeleri yuvarlatılmış köşelerle karıştırmak, neredeyse her zaman birine veya diğerine bağlı daha kötü görünür.
 
-### Language
+### Dil
 
-While not a visual design technique per se, the words you use in an interface have a massive influence on the overall personality.
+Kendi başına bir görsel tasarım tekniği olmasa da, bir arayüzde kullandığınız kelimelerin genel kişilik üzerinde büyük bir etkisi vardır.
 
-Using a less personal tone might feel more official or professional:
+Daha az kişisel bir üslup kullanmak daha resmi veya profesyonel hissettirebilir:
 
 ![dsd](./images/img22.png)
 
-...while using friendlier, more casual language makes a site feel, well, friendlier:
+...daha dostça, daha rahat bir dil kullanırksanız sitenin daha samimi hissetirmesini sağlarsınız:
 
 ![dsd](./images/img23.png)
 
-Words are everywhere in a user interface, and choosing the right ones is just as (if not more) important than choosing the right color or typeface.
+Kelimeler bir kullanıcı arayüzünün her yerindedir ve doğru kelimeleri seçmek, doğru rengi veya yazı tipini seçmek kadar (hatta daha fazla) önemlidir.
 
-### Deciding what you actually want
+### Gerçekten ne istediğinize karar verin
 
-A lot of the time you’ll probably just have a gut feeling for the personality you’re going for. But if you don’t, a great way to simplify the decision is to take a look at other sites used by the people you want to reach.
+Çoğu zaman hedeflediğiniz kişiliğe dair içgüdüsel bir duyguya sahip olacaksınız. Ancak bunu yapmazsanız, kararı basitleştirmenin harika bir yolu ulaşmak istediğiniz kişiler tarafından kullanılan diğer sitelere göz atmaktır.
 
-If they are mostly pretty “serious business”, maybe that’s how your site should look too. If they are more playful with a bit of humor, maybe that’s a better direction to take.
+Amaç çoğunlukla "ciddi işler" ise tasarıma bu şekilde yön verebilirsiniz. Biraz mizahla haşır neşir iseler bu da iyi bir yön olabilir.
 
-Just try not to borrow too much from direct competitors, you don’t want to look like a second-rate version of something else.
+Doğrudan rakiplerinizin tasarımlarından çok etkilenmemeye çalışın, başka bir şeyin ikinci sınıf bir versiyonu gibi görünmek istemezsiniz.
 
-## Limit your choices
+## Seçimlerinizi sınırlayın
 
-Having millions of colors and thousands of fonts to choose from might sound nice in theory, but in practice it’s usually a paralyzing curse.
+Aralarından seçim yapabileceğiniz milyonlarca renge ve binlerce yazı tipine sahip olmak teoride kulağa hoş gelebilir, ancak pratikte genellikle felç edici bir lanettir.
 
-And it’s not just fonts and colors, either — you can easily waste time agonizing over almost any minor design decision.
+Ve sadece yazı tipleri ve renkler de değil, neredeyse tüm küçük tasarım kararları için acı çekerek kolayca zaman kaybedebilirsiniz.
 
-Should this text be 12px or 13px?
+Bu metin 12px mi yoksa 13px mi olmalı?
 
-Should this box shadow have a 10% opacity or a 15% opacity?
+Bu box shadow 10% opacity mi olmalı yoksa 15% opacity'mi olmalı?
 
-Should this avatar be 24px or 25px tall?
+Bu avatar 24px mi yoksa 25px uzunluğunda mı olmalı?
 
-Should I use a medium font weight for this button or semibold?
+Bu button için orta yazı tipi bold mu yoksa semibold mu kullanmalıyım?
 
-Should this headline have a bottom margin of 18px or 20px?
+Bu başlığın margin-bottom'ı 18px mi yoksa 20px mi olmalı?
 
-When you’re designing without constraints, decision-making is torture because there’s always going to be more than one right choice.
+Kısıtlamalar olmaksızın tasarlarken karar vermek bir işkencedir çünkü her zaman birden fazla doğru seçim olacaktır.
 
-For example, these buttons all have different background colors, but it’s almost impossible to tell the difference between them by just looking at them.
+Örneğin, bu düğmelerin hepsinin farklı arka plan renkleri vardır, ancak sadece onlara bakarak aralarındaki farkı anlamak neredeyse imkansızdır.
 
 ![dsd](./images/img24.png)
 
-How are you supposed to make a confident decision if none of these would really be bad choices?
+Bunların hiçbiri gerçekten kötü seçimler olmayacaksa, kendinden emin bir kararı nasıl vereceksin?
 
-### Define systems in advance
+### Sistemleri önceden tanımlayın
 
-Instead of hand-picking values from a limitless pool any time you need to make a decision, start with a smaller set of options.
+Bir karar vermeniz gerektiğinde sınırsız bir havuzdan değerleri tek tek seçmek yerine, daha küçük bir dizi seçenekle başlayın.
 
-Don’t reach for the color picker every time you need to pick a new shade of blue — choose from a set of 8-10 shades picked out ahead of time.
+Yeni bir mavi tonu seçmeniz gerektiğinde renk paletine bakmayın, önceden seçilmiş 8-10 tonluk bir set arasından seçim yapın.
 
 ![dsd](./images/img25.png)
 
-Similarly, don’t tweak a font size one pixel at a time until it looks perfect. Define a restrictive type scale in advance and use that to make any future font size decisions.
+Benzer şekilde, mükemmel görünene kadar yazı tipi boyutunu her seferinde bir piksel değiştirmeyin. Önceden kısıtlayıcı bir tür ölçeği tanımlayın ve gelecekteki yazı tipi boyutu kararlarını vermek için bunu kullanın.
 
 ![dsd](./images/img26.png)
 
-When you build systems like this, you only have to do the hard work of picking the initial values once instead of every time you’re designing a new piece of UI. It’s a bit more work up front, but it’s worth it — it’ll save you a ton of decision fatigue down the road.
+Bunun gibi sistemler oluşturduğunuzda, her yeni bir kullanıcı arabirimi parçası tasarladığınızda, başlangıç ​​değerlerini yalnızca bir kez seçmek gibi zorlu bir işi yapmanız gerekir. Önünüzde biraz daha fazla iş var ama buna değer, sizi yolda bir ton karar verme yorgunluğundan kurtaracaktır.
 
-### Designing by process of elimination
+### Eleme sürecine göre tasarlama
 
-When you’re designing using a constrained set of values, decision-making is a lot easier because there are a lot fewer “right” choices.
+Kısıtlanmış bir değerler kümesi kullanarak tasarım yaparken, çok daha az "doğru" seçenek olduğu için karar vermek çok daha kolaydır.
 
-For example, say you’re trying to choose a size for an icon. You’ve defined a sizing scale in advance where your only small-to-medium sized options are 12px, 16px, 24px, and 32px.
+Örneğin, bir simge için bir boyut seçmeye çalıştığınızı varsayalım. Yalnızca küçük ila orta boyut seçeneklerinizin 12px, 16px, 24px ve 32px olduğu bir boyutlandırma ölçeğini önceden tanımladınız.
 
 ![dsd](./images/img27.png)
 
-To pick the best option, start by taking a guess at which one will look best, maybe 16px. Then try the values on either side (12px and 24px) for comparison.
+En iyi seçeneği seçmek için hangisinin en iyi görüneceğini tahmin ederek başlayın, belki 16px olabilir. Ardından karşılaştırma için her iki taraftaki değerleri (12px ve 24px) deneyin.
 
 ![dsd](./images/img28.png)
 
-Chances are, two of those options will seem like obviously bad choices. If it’s the options on the outside, you’re done — the middle option is the only good choice.
+Muhtemelen, bu seçeneklerden ikisi açıkça kötü seçimler gibi görünecektir. Yanlardaki seçeneklerse, işiniz bitti! ortadaki seçenek tek iyi seçimdir.
 
-If one of the outer options looks best, do another comparison using that option as the “middle” value and make sure there’s not a better choice.
+Dış seçeneklerden biri en iyi görünüyorsa, bu seçeneği ortadaki değer ile olarak kullanarak başka bir karşılaştırma daha yapın ve daha iyi bir seçim olmadığından emin olun.
 
 ![dsd](./images/img29.png)
 
-This approach works for anything where you’ve defined a system. When you’re limited to a set of options that all look noticeably different, picking the best one is a piece of cake.
+Bu yaklaşım, bir sistem tanımladığınız her şey için işe yarar. Hepsi belirgin şekilde farklı görünen bir dizi seçenekle sınırlı olduğunuzda, en iyisini seçmek çocuk oyuncağı olacaktır.
 
-### Systematize everything
+### Her şeyi sistemleştirin
 
-The more systems you have in place, the faster you’ll be able to work and the less you’ll second guess your own decisions.
+Ne kadar çok sisteminiz varsa, o kadar hızlı çalışabilirsiniz ve kendi kararlarınızı o kadar az tahmin edersiniz.
 
-You’ll want systems for things like:
+Aşağıdaki gibi şeyler için sistemler tanımlamak isteyeceksiniz:
 
 - Font size
 - Font weight
@@ -283,8 +283,8 @@ You’ll want systems for things like:
 - Border width 
 - Opacity
 
-...and anything else you run into where it feels like you’re laboring over a low- level design decision.
+...ve düşük seviyeli bir tasarım üzerinde çalışıyormuşsunuz hissine kapıldığınız diğer her şey içinde.
 
-You don’t have to define all of this stuff ahead of time, just make sure you’re approaching design with a system-focused mindset. Look for opportunities to introduce new systems as you make new decisions, and try to avoid having to make the same minor decision twice.
+Tüm bunları önceden tanımlamanıza gerek yok, sadece tasarıma sistem odaklı bir zihniyetle yaklaştığınızdan emin olun. Yeni kararlar alırken yeni sistemleri tanıtma fırsatlarını araştırın ve aynı küçük kararı iki kez vermek zorunda kalmamaya çalışın.
 
-Designing with systems is going to be a recurring theme throughout this book, and in later chapters we’ll talk about building a lot of these systems in finer detail.
+Sistemlerle tasarım yapmak bu döküman boyunca yinelenen bir tema olacak ve sonraki bölümlerde bu sistemlerin birçoğunu daha ayrıntılı bir şekilde oluşturmaktan bahsedeceğiz.
