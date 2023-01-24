@@ -1,274 +1,274 @@
 ---
 id: starting-from-strach
-title: En baştan başlamak
-sidebar_label: En baştan başlamak
+title: En baştan başlayın
+sidebar_label: En baştan başlayın
 ---
-## Sayfa yerlesimi ile degil, bir ozellik ile baslayin
+## Sayfa yerleşimi ile değil, bir özellik ile başlayın
 
-When you start the design for a new app idea, what do you design first? If it’s the navigation bar at the top of the page, you’re making a mistake.
+Yeni bir uygulama fikri için tasarıma başladığınızda ilk olarak ne tasarlarsınız? Eğer bu bir navigation bar ise, bir hata yapıyorsunuz demektir.
 
-The easiest way to find yourself frustrated and stuck when working on a new design is to start by trying to “design the app.” When most people think about “designing the app”, they’re thinking about the shell.
+Yeni bir tasarım üzerinde çalışırken kendinizi takılıp kalmış olarak bulmanın en kolay yolu 'uygulamayı tasarlamaya çalışmaktır'. Çoğu insan "uygulamayı tasarlamayı" düşündüğünde, direkt olarak tamamlanmış görünümü düşünür.
 
-Should it have a top nav, or a sidebar?
+Bir top navigation bar mı olmalı yoksa bir sidebar mı olmalı?
 
-Should the navigation items be on the left, or on the right?
+Gezinme öğeleri solda mı yoksa sağda mı olmalı?
 
-Should the page content be in a container, or should it be full-width?
+Sayfa içeriği bir container'da mı yoksa tam genişlikte mi olmalı?
 
-Where should the logo go?
+Logo nerede durmalı?
 
 ![dsd](./images/img01.png)
 
-The thing is, an “app” is actually a collection of features. Before you’ve designed a few features, you don’t even have the information you need to make a decision about how the navigation should work. No wonder it’s frustrating!
+Mesele şu ki, bir "uygulama" aslında bir özellikler koleksiyonudur. Birkaç özellik tasarlamadan önce, navigation'un nasıl çalışması gerektiğine karar vermek için ihtiyacınız olan bilgilere bile sahip değilsiniz. Bu sinir bozucu olabilir!
 
-Instead of starting with the shell, start with a piece of actual functionality.
+Tüm sayfayı bir anda tasarlamak yerine, parça parça gerçek işlevsellik ile başlayın.
 
 
-For example, say you’re building a flight booking service. You could start with a feature like “searching for a flight”.
+Örneğin, bir uçuş rezervasyonu hizmeti oluşturduğunuzu varsayalım. “Uçuş arama” gibi bir özellikle başlayabilirsiniz.
 
-Your interface will need:
+Arayüzünüzün ihtiyacı olacak şeyler:
 
-- A field for the departure city
-- A field for the destination city
-- A field for the departure date
-- A field for the return date
-- A button to perform the search
+- Kalkış şehri için bir alan
+- Hedef şehir için bir alan
+- Kalkış tarihi için bir alan
+- Dönüş tarihi için bir alan
+- Arama yapmak için bir düğme
 
-Start with that.
+Bununla başlayın.
 
 ![dsd](./images/img02.png)
 
-Hell, you might not even need that other stuff anyways — it worked for Google.
+Çok iyi, diğer şeylere ihtiyacınız olmayabilir - Bu, Google'da işe yaradı.
 
 ![dsd](./images/img03.png)
 
-## Detail comes later
+## Detaylar sonra gelir
 
-In the earliest stages of designing a new feature, it’s important that you don’t get hung up making low-level decisions about things like typefaces, shadows, icons, etc.
+Yeni bir özellik tasarlamanın ilk aşamalarında, yazı biçimleri, gölgeler, simgeler vb. gibi şeyler hakkında düşük düzey kararlar vermeye takılıp kalmamanız önemlidir.
 
-That stuff will all matter eventually, but it doesn’t matter right now.
+Bu şeylerin hepsi sonunda önemli olacak, ama şu anda önemi yok.
 
 
-If you have trouble ignoring the details when working in a high fidelity environment like the browser or your favorite design tool, one trick Jason Fried of Basecamp likes to use is to design on paper using a thick Sharpie.
+Tarayıcı veya en sevdiğiniz tasarım aracı gibi aslına uygunluğu yüksek bir ortamda çalışırken ayrıntıları göz ardı etmekte zorlanıyorsanız, Basecamp'tan Jason Fried'in kullanmayı sevdiği bir numara, kalın bir Sharpie kullanarak kağıt üzerinde tasarım yapın.
 
 ![dsd](./images/img04.png)
 
-Obsessing over little details just isn’t possible with a Sharpie, so it can be a great way to quickly explore a bunch of different layout ideas.
+Bir Sharpie ile küçük ayrıntılara takılmak mümkün değildir, bu nedenle farklı bir tasarım fikrini hızla keşfetmenin harika bir yolu olabilir.
 
-### Hold the color
+### Rengi gizleyin
 
-Even when you’re ready to refine an idea in higher fidelity, resist the temptation to introduce color right away.
+Bir fikri daha geliştirmeye kesin gözüyle bakıyorsanız, rengi hemen ekleme isteğinize karşı koyun.
 
-By designing in grayscale, you’re forced to use spacing, contrast, and size to do all of the heavy lifting.
+Gri tonlamalı tasarım ile bütün kontrast, boşluk ve boyut ayarlarını yapmak zorunda kalırsınız.
 
 ![dsd](./images/img05.png)
 
-It’s a little more challenging, but you’ll end up with a clearer interface with a strong hierarchy that’s easy to enhance with color later.
+Bu sizi biraz zorlayabilir fakat daha sonra renkleri eklediğinizde güçlü bir hiyerarşiye sahip daha net bir arayüz elde edersiniz.
 
 ![dsd](./images/img06.png)
 
-### Don’t over-invest
+### Aşırı yatırım yapmayın
 
-The whole point of designing in low-fidelity is to be able to move fast, so you can start building the real thing as soon as possible.
+Düşük kaliteli tasarım yapmanın tüm amacı, hızlı hareket edebilmektir, böylece mümkün olan en kısa sürede gerçek düşünceyi inşa etmeye başlayabilirsiniz
 
-Sketches and wireframes are disposable — users can’t do anything with static mockups. Use them to explore your ideas, and leave them behind when you’ve made a decision.
+Sketche'ler ve wireframe'ler tek kullanımlıktır; kullanıcılar statik örneklerle hiçbir şey yapamaz. Fikirlerinizi keşfetmek için bunları kullanın ve karar verdiğinizde onları geride bırakın.
 
-## Don’t design too much
+## Çok fazla tasarlamayın
 
 
-You don’t need to design every single feature in an app before you move on to implementation; in fact, it’s better if you don’t.
+Uygulamaya geçmeden önce bir uygulamadaki her özelliği tasarlamanız gerekmez; Aslında, yapmasanız daha iyi.
 
 ![dsd](./images/img07.png)
 
-Figuring out how every feature in a product should interact and how every edge case should look is really hard, especially in the abstract.
+Bir üründeki her özelliğin nasıl etkileşime girmesi gerektiğini ve her uç durumun nasıl görünmesi gerektiğini anlamak, özellikle soyut olarak gerçekten zordur.
 
 
-How should this screen look if the user has 2000 contacts?
+Kullanıcının 2000 kişisi varsa bu ekran nasıl görünmelidir?
 
-Where should the error message go in this form?
+Hata mesajı bu formda nereye gitmeli?
 
-How should this calendar look when there are two events scheduled at the same time?
+Aynı anda programlanmış iki etkinlik olduğunda bu takvim nasıl görünmelidir?
 
-You’re setting yourself up for frustration by trying to figure this stuff out using only a design tool and your imagination.
+Bu tür şeyleri yalnızca bir tasarım aracı ve hayal gücünüzü kullanarak çözmeye çalışırsanız kendinizi hayal kırıklığına uğratırsınız.
 
-### Work in cycles
+### Döngüler halinde çalışın
 
-Instead of designing everything up front, work in short cycles. Start by designing a simple version of the next feature you want to build.
+Her şeyi önceden tasarlamak yerine, kısa döngüler halinde çalışın. Oluşturmak istediğiniz bir sonraki özelliğin basit bir sürümünü tasarlayarak başlayın.
 
 ![dsd](./images/img08.png)
 
-Once you’re happy with the basic design, make it real.
+Temel tasarımdan memnun kaldığınızda, onu gerçeğe dönüştürün.
 
-You’ll probably run into some unexpected complexity along the way, but that’s the point — it’s a lot easier to fix design problems in an interface you can actually use than it is to imagine every edge case in advance.
+Muhtemelen yol boyunca bazı beklenmedik karmaşıklıklarla karşılaşacaksınız, ancak asıl mesele bu! Gerçekten kullanabileceğiniz bir arayüzde tasarım sorunlarını çözmek, her son durumu önceden hayal etmekten çok daha kolay.
 
-Iterate on the working design until there are no more problems left to solve, then jump back into design mode and start working on the next feature.
+Çözülecek başka sorun kalmayana kadar çalışan tasarım üzerinde devam edin, ardından tasarım moduna geri dönün ve bir sonraki özellik üzerinde çalışmaya başlayın.
 
 ![dsd](./images/img09.png)
 
-### Be a pessimist
+### Karamsar olun
 
-Don’t imply functionality in your designs that you aren’t ready to build.
+Tasarımlarınıza işlevselliği hazır olmayan özellikleri eklemeyin.
 
-For example, say you’re working on a comment system for a project management tool. You know that one day, you’d like users to be able to attach files to their comments, so you include an attachments section in your design.
+Örneğin, bir proje yönetim aracı için bir yorum sistemi üzerinde çalıştığınızı varsayalım. Bir gün kullanıcıların yorumlarına dosya ekleyebilmelerini istediğinizi biliyorsunuz, bu nedenle tasarımınıza ekler(attachments) bölümü ekliyorsunuz.
 
 ![dsd](./images/img10.png)
 
-You get deep into implementation only to discover that supporting attachments is going to be a lot more work than you anticipated. There’s no way you have time to finish it right now, so the whole commenting system sits on the backburner while you take care of other priorities.
+Uygulamanın derinliklerine indiğinizde, yorum destekleyici eklerin tahmin ettiğinizden çok daha fazla iş çıkaracağını anladınız. Şu anda bitirmek için zamanınız yok, bu nedenle siz diğer önceliklerle ilgilenirken tüm yorum sistemini arka plana attınız.
 
-The thing is, a comment system with no attachments would still have been better than no comment system at all, but because you planned to include it from day one you’ve got nothing you can ship.
+Mesele şu ki, ekleri olmayan bir yorum sistemi yine de hiç yorum sistemi olmamasından daha iyi olurdu, ancak onu ilk günden dahil etmeyi planladığınız için gönderebileceğiniz hiçbir şey yok.
 
-When you’re designing a new feature, **expect it to be hard to build**. Designing the smallest useful version you can ship reduces that risk considerably.
+Yeni bir özellik tasarlarken, **oluşturmanın zor olmasını bekleyin**. Çıkartacağınız en küçük kullanışlı sürümü tasarlamak, bu riski önemli ölçüde azaltır.
 
 ![dsd](./images/img11.png)
 
-If part of a feature is a “nice-to-have”, **design it later**. Build the simple version first and you’ll always have something to fall back on.
+Bir özelliğin parçası "olsa iyi olur" ise, **onu daha sonra tasarlayın**. Önce basit sürümü oluşturun ve her zaman başvuracak bir şeyiniz olur.
 
-## Choose a personality
+## Bir kişilik seç
 
-Every design has some sort of personality. A banking site might try to communicate secure and professional, while a trendy new startup might have a design that feels fun and playful.
+Her tasarımın bir çeşit kişiliği vardır. Bir bankacılık sitesi, güvenli ve profesyonel iletişim kurmaya çalışırken, modaya uygun yeni bir girişim, eğlenceli ve eğlenceli hissettiren bir tasarıma sahip olabilir.
 
 ![dsd](./images/img12.png)
 
-On the surface, giving a design a particular personality might sound abstract and handwavy, but a lot of it is determined by a few solid, concrete factors.
+Tasarıma belirli bir kişilik vermek kulağa soyut geliyor olabilir, ancak çoğu birkaç somut faktör tarafından belirlenmektedir.
 
-### Font choice
+### Yazı tipini seçin
 
-Typography plays a huge part in determining how a design feels.
+Tipografi, bir tasarımın nasıl hissettirdiğini belirlemede büyük rol oynar.
 
-If you want an elegant or classic look, you might want to incorporate a serif typeface in your design:
+Zarif veya klasik bir görünüm istiyorsanız, tasarımınıza bir serif yazı tipi eklemek isteyebilirsiniz:
 
 ![dsd](./images/img13.png)
 
-For a playful look, you could use a rounded sans serif:
+Eğlenceli bir görünüm için yuvarlak bir sans serif kullanabilirsiniz:
 
 ![dsd](./images/img14.png)
 
-If you’re going for a plainer look, or want to rely on other elements to provide the personality, a neutral sans serif works great:
+Daha sade bir görünüm arıyorsanız veya kişiliği sağlamak için diğer unsurlara güvenmek istiyorsanız, nötr bir sans serif iyi bir seçim olacaktır:
 
 ![dsd](./images/img15.png)
 
-### Color
+### Renk
 
-There’s a lot of science out there on the psychology of color, but in practice, you really just need to pay attention to how different colors feel to you.
+Renk psikolojisi üzerine pek çok bilim var, ancak pratikte, gerçekten farklı renklerin size nasıl hissettirdiğine dikkat etmeniz gerekiyor.
 
-Blue is safe and familiar — nobody ever complains about blue:
+Mavi güvenli ve tanıdıktır - hiç kimse maviden şikayet etmez:
 
 ![dsd](./images/img16.png)
 
-Gold might say “expensive” and “sophisticated”:
+Altın için “pahalı” ve “sofistike” diyebiliriz:
 
 ![dsd](./images/img17.png)
 
-Pink is a bit more fun, and not so serious:
+Pembe biraz daha eğlenceli ve bir o kadar da ciddi değildir:
 
 ![dsd](./images/img18.png)
 
-While trying to choose colors using only psychology isn’t super practical — a lot of it is just about what looks good to you — it can be helpful to think about when you’re trying to understand why you think a color is the right fit.
+Yalnızca psikolojiyi kullanarak renkleri seçmeye çalışmak çok pratik olmasa da çoğu renk size neyin iyi geldiğiyle ilgilidir. Bir rengin neden doğru olduğunu anlamaya çalışmak yararlı olabilir.
 
 ### Border radius
 
-As small of a detail as it sounds, if and how much you round the corners in your design can have a big impact on the overall feel.
+Kulağa ne kadar küçük gelse de, tasarımınızda köşeleri ne kadar keskinleştirip keskinleştirmediğiniz genel düşünce üzerinde büyük bir etkiye sahip olabilir.
 
-A small border radius is pretty neutral, and doesn’t really communicate much of a personality on its own:
+Küçük bir border-radius oldukça tarafsızdır ve tek başına bir kişiliğin pek bir kısmını ortaya çıkarmaz:
 
 ![dsd](./images/img19.png)
 
-A large border radius starts to feel more playful:
+Geniş border-radius daha eğlenceli hissettirmeye başlar:
 
 ![dsd](./images/img20.png)
 
-...while no border radius at all feels a lot more serious or formal:
+... hiçbir border-radius olmaması çok daha ciddi veya resmi hissettirir:
 
 ![dsd](./images/img21.png)
 
 
-Whatever you choose, it’s important to stay consistent. Mixing square corners with rounded corners in the same interface almost always looks worse than sticking with one or the other.
+Neyi seçerseniz seçin, tutarlı kalmak önemlidir. Aynı arayüzde keskin köşeleri yuvarlatılmış köşelerle karıştırmak, neredeyse her zaman birine veya diğerine bağlı daha kötü görünür.
 
-### Language
+### Dil
 
-While not a visual design technique per se, the words you use in an interface have a massive influence on the overall personality.
+Kendi başına bir görsel tasarım tekniği olmasa da, bir arayüzde kullandığınız kelimelerin genel kişilik üzerinde büyük bir etkisi vardır.
 
-Using a less personal tone might feel more official or professional:
+Daha az kişisel bir üslup kullanmak daha resmi veya profesyonel hissettirebilir:
 
 ![dsd](./images/img22.png)
 
-...while using friendlier, more casual language makes a site feel, well, friendlier:
+...daha dostça, daha rahat bir dil kullanırksanız sitenin daha samimi hissetirmesini sağlarsınız:
 
 ![dsd](./images/img23.png)
 
-Words are everywhere in a user interface, and choosing the right ones is just as (if not more) important than choosing the right color or typeface.
+Kelimeler bir kullanıcı arayüzünün her yerindedir ve doğru kelimeleri seçmek, doğru rengi veya yazı tipini seçmek kadar (hatta daha fazla) önemlidir.
 
-### Deciding what you actually want
+### Gerçekten ne istediğinize karar verin
 
-A lot of the time you’ll probably just have a gut feeling for the personality you’re going for. But if you don’t, a great way to simplify the decision is to take a look at other sites used by the people you want to reach.
+Çoğu zaman hedeflediğiniz kişiliğe dair içgüdüsel bir duyguya sahip olacaksınız. Ancak bunu yapmazsanız, kararı basitleştirmenin harika bir yolu ulaşmak istediğiniz kişiler tarafından kullanılan diğer sitelere göz atmaktır.
 
-If they are mostly pretty “serious business”, maybe that’s how your site should look too. If they are more playful with a bit of humor, maybe that’s a better direction to take.
+Amaç çoğunlukla "ciddi işler" ise tasarıma bu şekilde yön verebilirsiniz. Biraz mizahla haşır neşir iseler bu da iyi bir yön olabilir.
 
-Just try not to borrow too much from direct competitors, you don’t want to look like a second-rate version of something else.
+Doğrudan rakiplerinizin tasarımlarından çok etkilenmemeye çalışın, başka bir şeyin ikinci sınıf bir versiyonu gibi görünmek istemezsiniz.
 
-## Limit your choices
+## Seçimlerinizi sınırlayın
 
-Having millions of colors and thousands of fonts to choose from might sound nice in theory, but in practice it’s usually a paralyzing curse.
+Aralarından seçim yapabileceğiniz milyonlarca renge ve binlerce yazı tipine sahip olmak teoride kulağa hoş gelebilir, ancak pratikte genellikle felç edici bir lanettir.
 
-And it’s not just fonts and colors, either — you can easily waste time agonizing over almost any minor design decision.
+Ve sadece yazı tipleri ve renkler de değil, neredeyse tüm küçük tasarım kararları için acı çekerek kolayca zaman kaybedebilirsiniz.
 
-Should this text be 12px or 13px?
+Bu metin 12px mi yoksa 13px mi olmalı?
 
-Should this box shadow have a 10% opacity or a 15% opacity?
+Bu box shadow 10% opacity mi olmalı yoksa 15% opacity'mi olmalı?
 
-Should this avatar be 24px or 25px tall?
+Bu avatar 24px mi yoksa 25px uzunluğunda mı olmalı?
 
-Should I use a medium font weight for this button or semibold?
+Bu button için orta yazı tipi bold mu yoksa semibold mu kullanmalıyım?
 
-Should this headline have a bottom margin of 18px or 20px?
+Bu başlığın margin-bottom'ı 18px mi yoksa 20px mi olmalı?
 
-When you’re designing without constraints, decision-making is torture because there’s always going to be more than one right choice.
+Kısıtlamalar olmaksızın tasarlarken karar vermek bir işkencedir çünkü her zaman birden fazla doğru seçim olacaktır.
 
-For example, these buttons all have different background colors, but it’s almost impossible to tell the difference between them by just looking at them.
+Örneğin, bu düğmelerin hepsinin farklı arka plan renkleri vardır, ancak sadece onlara bakarak aralarındaki farkı anlamak neredeyse imkansızdır.
 
 ![dsd](./images/img24.png)
 
-How are you supposed to make a confident decision if none of these would really be bad choices?
+Bunların hiçbiri gerçekten kötü seçimler olmayacaksa, kendinden emin bir kararı nasıl vereceksin?
 
-### Define systems in advance
+### Sistemleri önceden tanımlayın
 
-Instead of hand-picking values from a limitless pool any time you need to make a decision, start with a smaller set of options.
+Bir karar vermeniz gerektiğinde sınırsız bir havuzdan değerleri tek tek seçmek yerine, daha küçük bir dizi seçenekle başlayın.
 
-Don’t reach for the color picker every time you need to pick a new shade of blue — choose from a set of 8-10 shades picked out ahead of time.
+Yeni bir mavi tonu seçmeniz gerektiğinde renk paletine bakmayın, önceden seçilmiş 8-10 tonluk bir set arasından seçim yapın.
 
 ![dsd](./images/img25.png)
 
-Similarly, don’t tweak a font size one pixel at a time until it looks perfect. Define a restrictive type scale in advance and use that to make any future font size decisions.
+Benzer şekilde, mükemmel görünene kadar yazı tipi boyutunu her seferinde bir piksel değiştirmeyin. Önceden kısıtlayıcı bir tür ölçeği tanımlayın ve gelecekteki yazı tipi boyutu kararlarını vermek için bunu kullanın.
 
 ![dsd](./images/img26.png)
 
-When you build systems like this, you only have to do the hard work of picking the initial values once instead of every time you’re designing a new piece of UI. It’s a bit more work up front, but it’s worth it — it’ll save you a ton of decision fatigue down the road.
+Bunun gibi sistemler oluşturduğunuzda, her yeni bir kullanıcı arabirimi parçası tasarladığınızda, başlangıç ​​değerlerini yalnızca bir kez seçmek gibi zorlu bir işi yapmanız gerekir. Önünüzde biraz daha fazla iş var ama buna değer, sizi yolda bir ton karar verme yorgunluğundan kurtaracaktır.
 
-### Designing by process of elimination
+### Eleme sürecine göre tasarlama
 
-When you’re designing using a constrained set of values, decision-making is a lot easier because there are a lot fewer “right” choices.
+Kısıtlanmış bir değerler kümesi kullanarak tasarım yaparken, çok daha az "doğru" seçenek olduğu için karar vermek çok daha kolaydır.
 
-For example, say you’re trying to choose a size for an icon. You’ve defined a sizing scale in advance where your only small-to-medium sized options are 12px, 16px, 24px, and 32px.
+Örneğin, bir simge için bir boyut seçmeye çalıştığınızı varsayalım. Yalnızca küçük ila orta boyut seçeneklerinizin 12px, 16px, 24px ve 32px olduğu bir boyutlandırma ölçeğini önceden tanımladınız.
 
 ![dsd](./images/img27.png)
 
-To pick the best option, start by taking a guess at which one will look best, maybe 16px. Then try the values on either side (12px and 24px) for comparison.
+En iyi seçeneği seçmek için hangisinin en iyi görüneceğini tahmin ederek başlayın, belki 16px olabilir. Ardından karşılaştırma için her iki taraftaki değerleri (12px ve 24px) deneyin.
 
 ![dsd](./images/img28.png)
 
-Chances are, two of those options will seem like obviously bad choices. If it’s the options on the outside, you’re done — the middle option is the only good choice.
+Muhtemelen, bu seçeneklerden ikisi açıkça kötü seçimler gibi görünecektir. Yanlardaki seçeneklerse, işiniz bitti! ortadaki seçenek tek iyi seçimdir.
 
-If one of the outer options looks best, do another comparison using that option as the “middle” value and make sure there’s not a better choice.
+Dış seçeneklerden biri en iyi görünüyorsa, bu seçeneği ortadaki değer ile olarak kullanarak başka bir karşılaştırma daha yapın ve daha iyi bir seçim olmadığından emin olun.
 
 ![dsd](./images/img29.png)
 
-This approach works for anything where you’ve defined a system. When you’re limited to a set of options that all look noticeably different, picking the best one is a piece of cake.
+Bu yaklaşım, bir sistem tanımladığınız her şey için işe yarar. Hepsi belirgin şekilde farklı görünen bir dizi seçenekle sınırlı olduğunuzda, en iyisini seçmek çocuk oyuncağı olacaktır.
 
-### Systematize everything
+### Her şeyi sistemleştirin
 
-The more systems you have in place, the faster you’ll be able to work and the less you’ll second guess your own decisions.
+Ne kadar çok sisteminiz varsa, o kadar hızlı çalışabilirsiniz ve kendi kararlarınızı o kadar az tahmin edersiniz.
 
-You’ll want systems for things like:
+Aşağıdaki gibi şeyler için sistemler tanımlamak isteyeceksiniz:
 
 - Font size
 - Font weight
@@ -283,8 +283,8 @@ You’ll want systems for things like:
 - Border width 
 - Opacity
 
-...and anything else you run into where it feels like you’re laboring over a low- level design decision.
+...ve düşük seviyeli bir tasarım üzerinde çalışıyormuşsunuz hissine kapıldığınız diğer her şey içinde.
 
-You don’t have to define all of this stuff ahead of time, just make sure you’re approaching design with a system-focused mindset. Look for opportunities to introduce new systems as you make new decisions, and try to avoid having to make the same minor decision twice.
+Tüm bunları önceden tanımlamanıza gerek yok, sadece tasarıma sistem odaklı bir zihniyetle yaklaştığınızdan emin olun. Yeni kararlar alırken yeni sistemleri tanıtma fırsatlarını araştırın ve aynı küçük kararı iki kez vermek zorunda kalmamaya çalışın.
 
-Designing with systems is going to be a recurring theme throughout this book, and in later chapters we’ll talk about building a lot of these systems in finer detail.
+Sistemlerle tasarım yapmak bu döküman boyunca yinelenen bir tema olacak ve sonraki bölümlerde bu sistemlerin birçoğunu daha ayrıntılı bir şekilde oluşturmaktan bahsedeceğiz.
