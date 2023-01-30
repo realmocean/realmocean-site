@@ -1,7 +1,7 @@
 ---
 id: starting-from-strach
-title: En baştan başlayın
-sidebar_label: En baştan başlayın
+title: 다시 시작하다
+sidebar_label: 다시 시작하다
 ---
 ## 페이지 레이아웃이 말고 속성으로 시작
 
