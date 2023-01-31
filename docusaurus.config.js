@@ -140,7 +140,7 @@ module.exports = {
                 direction: 'ltr',
             },
             ko: {
-                label: '한국인',
+                label: '한국어',
                 direction: 'ltr',
             },
         }
