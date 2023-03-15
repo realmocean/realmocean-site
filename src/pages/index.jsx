@@ -157,8 +157,7 @@ const features = [
       <Translate
         id="homepage.features.customize-easy"
         description="Feature Customize easy">
-        AWE has multiple preconfigured themes and multi-language support.
-        You can add custom CSS according to your needs.
+        {''}
       </Translate>
     ),
   },
@@ -176,7 +175,7 @@ const features = [
         values={{ autowired: (<code>@Autowired</code>) }}
         id="homepage.features.powered-by"
         description="Typescript Support">
-        {`Uses Spring 5 and Spring Boot 2. {autowired} is available for AWE components and layouts.`}
+       {''}
       </Translate>
     ),
   },
