@@ -37,7 +37,6 @@
                     "collapsed": true,
                     "items": [
                         "realm-management/appstore/default-apps"
-
                     ]
                 },
                 {
@@ -46,7 +45,6 @@
                     "collapsed": true,
                     "items": [
                         "realm-management/license/licenses"
-
                     ]
                 },
                 {
@@ -62,7 +60,17 @@
                         "realm-management/security/zones",
                         "realm-management/security/access-restriction",
                         "realm-management/security/delegations"
-
+                    ]
+                },
+                {
+                    "type": "category",
+                    "label": "WORKFLOWS",
+                    "collapsed": true,
+                    "items": [
+                        "realm-management/workflow/automation",
+                        "realm-management/workflow/flows",
+                        "realm-management/workflow/notifications",
+                        "realm-management/workflow/webhooks"
                     ]
                 }
             ]
