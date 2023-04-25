@@ -39,7 +39,7 @@ module.exports = {
                 {
                     to: '/widgetstore',
                     position: 'left',
-                    label: 'Widget Store',
+                    label: 'Widgets',
                 },
                 {
                     type: 'docsVersion',

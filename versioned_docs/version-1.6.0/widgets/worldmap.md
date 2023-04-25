@@ -1,6 +1,6 @@
 ---
 id: worldmap
-title: Worlmap Widget
+title: Worldmap Widget
 sidebar_label: Worldmap
 ---
 
