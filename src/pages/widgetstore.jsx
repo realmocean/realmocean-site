@@ -43,7 +43,7 @@ export default function WidgetStore() {
                             <img src={item.widget_icon}></img>
                            {/*  <span>{item.widget_short_description}</span> */}
                             <div className="spacer"></div>
-                            <a target={'_blank'} href={item.widget_url}>Go to widget</a>
+                            <a href={item.widget_url}>Go to widget</a>
 
                         </div>
                     )
