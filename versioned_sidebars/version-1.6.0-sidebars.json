@@ -580,7 +580,10 @@
                 "widgets/worldmap",
                 "widgets/rating",
                 "widgets/gauge",
-                "widgets/radar"
+                "widgets/radar",
+                "widgets/topdropdown",
+                "widgets/timeserieschart"
+
             ]
         }
     ]
