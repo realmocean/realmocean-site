@@ -585,6 +585,23 @@
                 "widgets/timeserieschart"
 
             ]
+        },
+        {
+            "type": "category",
+            "label": "Protocols",
+            "collapsed": true,
+            "items": [
+                "protocols/TaskProtocol",
+                "protocols/OKRProtocol",
+                "protocols/KanbanBoardProtocol",
+                "protocols/CalendarProtocol",
+                "protocols/FileSystemProtocol",
+                "protocols/DirectoryProtocol"
+
+                
+                
+
+            ]
         }
     ]
 }

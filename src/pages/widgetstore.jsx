@@ -30,10 +30,6 @@ export default function WidgetStore() {
 
     return (
         <Layout title="Widgets" description="Realmocean Widget Store">
-
-
-
-
             <div className="grid-container">
                 {
                     widgets?.map(item =>
