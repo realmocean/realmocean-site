@@ -593,118 +593,18 @@
                 "protocols/TaskProtocol",
                 {
                     "type": "category",
+                    "label": "Work Protocol",
+                    "collapsed": true,
+                    "items": [
+                         "protocols/work-protocol/workspaces"
+                    ]
+                },
+                {
+                    "type": "category",
                     "label": "Task Protocol",
                     "collapsed": true,
                     "items": [
-                        {
-                            "type": "category",
-                            "label": "Tasks",
-                            "collapsed": true,
-                            "items": [
-                                "protocols/task-protocol/tasks/tasks.task.add",
-                                "protocols/task-protocol/tasks/tasks.task.approve",
-                                "protocols/task-protocol/tasks/tasks.task.complete",
-                                "protocols/task-protocol/tasks/tasks.task.counters.get",
-                                "protocols/task-protocol/tasks/tasks.task.defer",
-                                "protocols/task-protocol/tasks/tasks.task.delegate",
-                                "protocols/task-protocol/tasks/tasks.task.delete",
-                                "protocols/task-protocol/tasks/tasks.task.disapprove",
-                                "protocols/task-protocol/tasks/tasks.task.favorite.add",
-                                "protocols/task-protocol/tasks/tasks.task.favorite.remove",
-                                "protocols/task-protocol/tasks/tasks.task.files.attach",
-                                "protocols/task-protocol/tasks/tasks.task.get",
-                                "protocols/task-protocol/tasks/tasks.task.getFields",
-                                "protocols/task-protocol/tasks/tasks.task.getaccess",
-                                "protocols/task-protocol/tasks/tasks.task.history.list",
-                                "protocols/task-protocol/tasks/tasks.task.list",
-                                "protocols/task-protocol/tasks/tasks.task.mute",
-                                "protocols/task-protocol/tasks/tasks.task.pause",
-                                "protocols/task-protocol/tasks/tasks.task.renew",
-                                "protocols/task-protocol/tasks/tasks.task.result.addFromComment",
-                                "protocols/task-protocol/tasks/tasks.task.result.deleteFromComment",
-                                "protocols/task-protocol/tasks/tasks.task.result.list",
-                                "protocols/task-protocol/tasks/tasks.task.start",
-                                "protocols/task-protocol/tasks/tasks.task.startwatch",
-                                "protocols/task-protocol/tasks/tasks.task.stopwatch",
-                                "protocols/task-protocol/tasks/tasks.task.update"
-                            ]
-                        },
-                        {
-                            "type": "category",
-                            "label": "Comment Items",
-                            "collapsed": true,
-                            "items": [
-                                "protocols/task-protocol/comment-items/task.commentitem.getmanifest",
-                                "protocols/task-protocol/comment-items/task.commentitem.getlist",
-                                "protocols/task-protocol/comment-items/task.commentitem.get",
-                                "protocols/task-protocol/comment-items/task.commentitem.add",
-                                "protocols/task-protocol/comment-items/task.commentitem.update",
-                                "protocols/task-protocol/comment-items/task.commentitem.delete",
-                                "protocols/task-protocol/comment-items/task.commentitem.isactionallowed"
-                          ]
-                        },
-                        {
-                            "type": "category",
-                            "label": "Kanban and Planner",
-                            "collapsed": true,
-                            "items": [
-                                "protocols/task-protocol/kanban/task.stages.add",
-                                "protocols/task-protocol/kanban/task.stages.canmovetask",
-                                "protocols/task-protocol/kanban/task.stages.delete",
-                                "protocols/task-protocol/kanban/task.stages.get",
-                                "protocols/task-protocol/kanban/task.stages.movetask",
-                                "protocols/task-protocol/kanban/task.stages.update"
-                            ]
-                        },
-                        {
-                            "type": "category",
-                            "label": "Counters",
-                            "collapsed": true,
-                            "items": [
-                                "protocols/task-protocol/counters/ui.counters.get"
-
-                            ]
-                        },
-                        {
-                            "type": "category",
-                            "label": "Dependencies",
-                            "collapsed": true,
-                            "items": [
-                                "protocols/task-protocol/dependencies/task.dependence.add",
-                                "protocols/task-protocol/dependencies/task.dependence.delete"
-
-                            ]
-                        },
-                        {
-                            "type": "category",
-                            "label": "Item User Fields",
-                            "collapsed": true,
-                            "items": [
-                                "protocols/task-protocol/item-user-fields/task.item.userfield.add",
-                                "protocols/task-protocol/item-user-fields/task.item.userfield.delete",
-                                "protocols/task-protocol/item-user-fields/task.item.userfield.get",
-                                "protocols/task-protocol/item-user-fields/task.item.userfield.getfields",
-                                "protocols/task-protocol/item-user-fields/task.item.userfield.getlist",
-                                "protocols/task-protocol/item-user-fields/task.item.userfield.gettypes",
-                                "protocols/task-protocol/item-user-fields/task.item.userfield.update"
-
-                            ]
-                        },
-                        {
-                            "type": "category",
-                            "label": "Elapsed Item",
-                            "collapsed": true,
-                            "items": [
-                                "protocols/task-protocol/elapsed-item/task.elapseditem.getmanifest",
-                                "protocols/task-protocol/elapsed-item/task.elapseditem.getlist",
-                                "protocols/task-protocol/elapsed-item/task.elapseditem.get",
-                                "protocols/task-protocol/elapsed-item/task.elapseditem.add",
-                                "protocols/task-protocol/elapsed-item/task.elapseditem.delete",
-                                "protocols/task-protocol/elapsed-item/task.elapseditem.isactionallowed",
-                                "protocols/task-protocol/elapsed-item/task.elapseditem.update"
-
-                            ]
-                        }
+                         "protocols/task-protocol/tasks"
                     ]
                 },
                 "protocols/OKRProtocol",
