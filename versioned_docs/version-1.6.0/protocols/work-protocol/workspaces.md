@@ -8,7 +8,7 @@ sidebar_label: Workspaces
 ## Queries
 ```ts
 const { query } = useProtocol(WorkProtocol.Workspaces);
-const {data:{workspaces}} = query`
+const { data: { workspaces } } = query`
                                     workspaces(tenant_id:"tenant_1") {
                                         id
                                         name
@@ -17,14 +17,14 @@ const {data:{workspaces}} = query`
 ```
 
 ### Arguments
-| Parameter                | Description                                            |
-| ------------------------ | ------------------------------------------------------ |
-| tenant_id: ```String```  |                                                        |
-| account_id: ```String``` |                                                        |
-| app_id: ```String```     |                                                        |
-| page: ```Int```          | The page number to get. Starts at 1.                   |
-| limit: ```Int```         | The number of workspaces to return. The default is 25. |
-| order_by: ```String```   | The number of workspaces to return. The default is 25. |
+| Parameter                | Description                                                |
+| ------------------------ | ---------------------------------------------------------- |
+| tenant_id: ```String```  | Optional. If not present, the session's tenant_id is used  |
+| account_id: ```String``` | Optional. If not present, the session's account_id is used |
+| app_id: ```String```     | Optional. If not present, current app_id is used           |
+| page: ```Int```          | The page number to get. Starts at 1.                       |
+| limit: ```Int```         | The number of workspaces to return. The default is 25.     |
+| order_by: ```String```   | The number of workspaces to return. The default is 25.     |
 
 ### Fields
 | Fields                   | Description |
@@ -35,7 +35,7 @@ const {data:{workspaces}} = query`
 | name: ```String```       |             |
 | created_at: ```Date```   |             |
 
-## Mutationsß
+## Mutations
 
 ### Create a workspace
 

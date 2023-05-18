@@ -596,7 +596,8 @@
                     "label": "Work Protocol",
                     "collapsed": true,
                     "items": [
-                         "protocols/work-protocol/workspaces"
+                         "protocols/work-protocol/workspaces",
+                         "protocols/work-protocol/folders"
                     ]
                 },
                 {
