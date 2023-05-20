@@ -597,7 +597,8 @@
                     "collapsed": true,
                     "items": [
                          "protocols/work-protocol/workspaces",
-                         "protocols/work-protocol/folders"
+                         "protocols/work-protocol/folders",
+                         "protocols/work-protocol/applets"
                     ]
                 },
                 {
