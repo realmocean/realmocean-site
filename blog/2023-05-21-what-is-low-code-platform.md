@@ -3,9 +3,10 @@ title: Low/No Code Platform Nedir? Kimler Kullanmalı?
 author: Selim TAN
 author_title: Software Engineer
 author_url: 'https://www.linkedin.com/in/selim-tan-5a852040/'
-author_image_url: 'https://media.licdn.com/dms/image/C4D03AQEw23lEsyjb_g/profile-displayphoto-shrink_200_200/0/1600513688130?e=1686787200&v=beta&t=bpL1oNOw3VepBPfFEl7d8cU8QDnVZ-xNe1uPDresZ_I'
+author_image_url: 'https://realmocean.com/img/undraw_responsive_re_e1nn.svg'
 tags: []
 ---
+
 
 Low / No code platform, dusuk kod, az kod gibi turkceye cevirebilecegimiz, temel olarak uzman programlama bilgisi gerektirmeden hizli bir sekilde web veya mobil uygulamalar gelistirmek amaciyla tasarlanmis platformlardir. Low code ve No code kavramları birlikte kullanılsa da aynı şeyler değildir. Bu yazıda daha çok low-code üzerinde duracağız.
 

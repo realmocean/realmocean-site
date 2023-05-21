@@ -4,7 +4,7 @@ author: Selim TAN
 author_title: Software Engineer @ bpmgenesis
 author_url: https://github.com/selimtan
 author_image_url: https://avatars.githubusercontent.com/u/5240006?v=4
-tags: [awe, hola]
+tags: []
 ---
 
 Superapps are still emerging as technologies, enabling them to mature; they promise practical benefits and richer experiences.
