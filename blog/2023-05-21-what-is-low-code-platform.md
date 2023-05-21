@@ -11,11 +11,19 @@ Low/No code platform, dusuk kod, az kod gibi turkceye cevirebilecegimiz, temel o
 
 Bu tip platformlar genellikle uygulamalari gelistirmek icin gorsel ortamlar sunar. Gelistiriciler kod yazmak yerine görsel araçları kullanarak ve sürükle-bırak yaparak uygulama sayfalarini yada formlari tasarlar. Aslinda yazilim gelistirmek icin ihtiyac duyulan uzmanlik seviyesini dusurmeyi amaclar.
 
-Aslinda bu cok yeni ve sihirli bir kavram degildir. Microislemcilerin nispeten kisa tarihi boyunca bir donanim icin yazilim gelistirme isi her donem yuksek uzmanlik gerektiren isler arasindaydi. Ornegin 1960 li yillarda programcilar o zamanki sistemler icin yazilim gelistirirken Fortran veya ALGOL gibi diller kullaniyorlardi. Bu diller tahmin edeceginiz uzere hem uygulamanin calisacagi donanimi hem de programlama dilinin ozelliklerini cok iyi bilmeyi gerekli kiliyordur. Bu sebeple uzmanlar programlamayi donanimdan bagimsiz hale getirip herkesin anlayabilecegi bir forma sokmak icin kafa yordular. Bunun sonucunda 1964 yilinda BASIC programlama dili gelistirildi ve boylece bir anda programlama lise seviyesindeki ogrencilerin bile yapabilecekleri bir faaliye haline geldi. Bence yazilim tarihinin ilk low code mantigi basic ile baslamistir. Sonrasinda bu mantigi izleyerek visual basic, delphi, visual studio gibi yazilim araclarininda temelinde low code mantigi ile yazilim gelistirmek vardir.  90 larin sonunda Window API ile bir form olusturmak icin onlarca satir kod yazmak gerekirken, delphi ile sadece surukle birak yaparak neredeyse programin tum gorsel arabirimini hazirlayabiliyordunuz. Bir satir kod yazmadan DB ye baglanip, bu baglantiyi bir datagrid e baglayip formunuzun icerisinde gosterebiliyordunuz. 
+Aslinda bu cok yeni ve sihirli bir kavram degildir. Microislemcilerin nispeten kisa tarihi boyunca bir donanim icin yazilim gelistirme isi her donem yuksek uzmanlik gerektiren isler arasindaydi. Ornegin 1960 li yillarda programcilar o zamanki sistemler icin yazilim gelistirirken Fortran veya ALGOL gibi diller kullaniyorlardi. Bu diller tahmin edeceginiz uzere hem uygulamanin calisacagi donanimi hem de programlama dilinin ozelliklerini cok iyi bilmeyi gerekli kiliyordur. Bu sebeple uzmanlar programlamayi donanimdan bagimsiz hale getirip herkesin anlayabilecegi bir forma sokmak icin kafa yordular. Bunun sonucunda 1964 yilinda BASIC programlama dili gelistirildi ve boylece bir anda programlama lise seviyesindeki ogrencilerin bile yapabilecekleri bir faaliye haline geldi. Bence yazilim tarihinin ilk low code mantigi basic ile baslamistir. Sonrasinda bu mantigi izleyerek visual basic, delphi, visual studio gibi yazilim araclarininda temelinde low code mantigi ile yazilim gelistirmek vardir.  90 larin sonunda Window API ile bir form olusturmak icin onlarca satir kod yazmak gerekirken, delphi ile sadece surukle birak yaparak neredeyse programin tum gorsel arabirimini hazirlayabiliyordunuz. Bir satir kod yazmadan DB ye baglanip, bu baglantiyi bir datagrid e baglayip formunuzun icerisinde gosterebiliyordunuz. Bu toollar 2000 lerde web uygulamalarinin yazilim dunyasinda baskin hal;e gelmesiyle kendi kabuklarina cekildiler yada mobil platformlara yoneldiler.
 
-Peki ne degistide bu tip sistemlere bir isim verilip trend haline gelmeye basladi.
+Peki ne degistide bu tip sistemler tekrar yazilim gelistirmede populer hale geldi..
+
+Bana gore bunun arkasindaki nedenler:
+
+- Yazilimlarin cok fazla karmasiklasmasi, gelistirilmelerinin uzun zaman ve maliyet gerektirmesi
+- Kapsamlarin cok buyuyerek tek bir firmanin uzmanligini asmasi 
+- Yeterli uzman developerlarin bulunamayisi
+- SAAS platformlarin yayginlasarak belli islerin servisler araciligi ile yapilabiliyor olmasi
 
 
+- Belli seviyelerdeki soyutlama
 
 Citizen developer
 Form tabanli surec otomasyonu
