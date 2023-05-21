@@ -8,7 +8,7 @@
 module.exports = {
     docs: [{
             type: 'category',
-            label: 'AWE framework',
+            label: 'Realmocean',
             collapsed: false,
             items: [
                 'intro',
