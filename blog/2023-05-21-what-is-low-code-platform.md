@@ -2,8 +2,6 @@
 title: Low/No Code Platform Nedir? Kimler Kullanmalı?
 author: Selim TAN
 author_title: Software Engineer
-author_url: 'https://www.linkedin.com/in/selim-tan-5a852040/'
-author_image_url: 'https://realmocean.com/img/undraw_responsive_re_e1nn.svg'
 tags: []
 ---
 
