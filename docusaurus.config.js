@@ -37,6 +37,11 @@ module.exports = {
                     label: 'App Store',
                 },
                 {
+                    to: '/widgetstore',
+                    position: 'left',
+                    label: 'Widgets',
+                },
+                {
                     type: 'docsVersion',
                     position: 'left',
                     label: 'Documentation',

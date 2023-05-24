@@ -12,6 +12,71 @@
         },
         {
             "type": "category",
+            "label": "Realm Management",
+            "collapsed": true,
+            "items": [
+                "realm-management/what-is-realm",
+                "realm-management/overview",
+                "realm-management/sessions",
+                "realm-management/users",
+                {
+                    "type": "category",
+                    "label": "DIRECTORY",
+                    "collapsed": true,
+                    "items": [
+                        "realm-management/directory/tenants",
+                        "realm-management/directory/users",
+                        "realm-management/directory/teams",
+                        "realm-management/directory/profiles",
+                        "realm-management/directory/sources"
+                    ]
+                },
+                {
+                    "type": "category",
+                    "label": "APP STORE",
+                    "collapsed": true,
+                    "items": [
+                        "realm-management/appstore/default-apps"
+                    ]
+                },
+                {
+                    "type": "category",
+                    "label": "LICENSE",
+                    "collapsed": true,
+                    "items": [
+                        "realm-management/license/licenses"
+                    ]
+                },
+                {
+                    "type": "category",
+                    "label": "SECURITY",
+                    "collapsed": true,
+                    "items": [
+                        "realm-management/security/auth-providers",
+                        "realm-management/security/authenticators",
+                        "realm-management/security/policies",
+                        "realm-management/security/roles",
+                        "realm-management/security/permissions",
+                        "realm-management/security/zones",
+                        "realm-management/security/access-restriction",
+                        "realm-management/security/delegations"
+                    ]
+                },
+                {
+                    "type": "category",
+                    "label": "WORKFLOWS",
+                    "collapsed": true,
+                    "items": [
+                        "realm-management/workflow/automation",
+                        "realm-management/workflow/flows",
+                        "realm-management/workflow/notifications",
+                        "realm-management/workflow/webhooks"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "category",
             "label": "App Management",
             "collapsed": true,
             "items": [
@@ -222,7 +287,6 @@
                         "providers/emailService"
                     ]
                 },
-
                 {
                     "type": "category",
                     "label": "Notification Service",
@@ -506,6 +570,50 @@
                         "components/datavisualization/rangeselector"
                     ]
                 }
+            ]
+        },
+        {
+            "type": "category",
+            "label": "Widgets",
+            "collapsed": true,
+            "items": [
+                "widgets/worldmap",
+                "widgets/rating",
+                "widgets/gauge",
+                "widgets/radar",
+                "widgets/topdropdown",
+                "widgets/timeserieschart"
+            ]
+        },
+        {
+            "type": "category",
+            "label": "Protocols",
+            "collapsed": true,
+            "items": [
+                "protocols/TaskProtocol",
+                {
+                    "type": "category",
+                    "label": "Work Protocol",
+                    "collapsed": true,
+                    "items": [
+                         "protocols/work-protocol/workspaces",
+                         "protocols/work-protocol/folders",
+                         "protocols/work-protocol/applets"
+                    ]
+                },
+                {
+                    "type": "category",
+                    "label": "Task Protocol",
+                    "collapsed": true,
+                    "items": [
+                         "protocols/task-protocol/tasks"
+                    ]
+                },
+                "protocols/OKRProtocol",
+                "protocols/KanbanBoardProtocol",
+                "protocols/CalendarProtocol",
+                "protocols/FileSystemProtocol",
+                "protocols/DirectoryProtocol"
             ]
         }
     ]

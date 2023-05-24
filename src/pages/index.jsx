@@ -79,15 +79,15 @@ const features = [
       <Translate
         id="homepage.features.easy-to-use.title"
         description="Title of feature of Easy to use on the home page">
-        Easy to Use
+        Identity Management as a Service
       </Translate>
     ),
-    imageUrl: 'img/undraw_just_browsing.svg',
+    imageUrl: 'img/undraw_authentication_re_svpt.svg',
     description: (
       <Translate
         id="homepage.features.easy-to-use"
         description="Feature easy to use">
-        Tuval framework is designed from the ground up to be easily build your apps and running quickly.
+        {''}
       </Translate>
     ),
   },
@@ -96,16 +96,16 @@ const features = [
       <Translate
         id="homepage.features.modern-ui.title"
         description="Title of feature of Modern UI on the home page">
-        Modern UI
+        License Management as a Service
       </Translate>
     ),
-    imageUrl: 'img/undraw_responsive.svg',
+    imageUrl: 'img/undraw_certification_re_ifll.svg',
     description: (
       <Translate
         values={{ angularJS: (<code>AngularJS</code>), reactJS: (<code>ReactJS</code>) }}
         id="homepage.features.modern-ui"
         description="Modern UI">
-        {`All Tuval web components let you design modern and responsive user interfaces using a functional API`}
+        {''}
       </Translate>
     ),
   },
@@ -114,16 +114,16 @@ const features = [
       <Translate
         id="homepage.features.pluggable-extensible.title"
         description="The Virtual File System makes it possible to manage files that in client browser.">
-        Virtual File System In Browser
+        Integration Platform as a Service
       </Translate>
     ),
-    imageUrl: 'img/undraw_text_files_au1q.svg',
+    imageUrl: 'img/undraw_product_iteration_kjok.svg',
     description: (
       <Translate
         values={{ starters: (<code>starters</code>) }}
         id="homepage.features.pluggable-extensible"
         description="Feature __Pluggable and Extensible">
-        {`The Virtual File System makes it possible to manage files that in client browser.`}
+        {''}
       </Translate>
     ),
   },
@@ -132,15 +132,15 @@ const features = [
       <Translate
         id="homepage.features.connect-information.title"
         description="Title of feature of Connect your information on the home page">
-        Connect your information
+        App Store as a Service
       </Translate>
     ),
-    imageUrl: 'img/undraw_online_connection.svg',
+    imageUrl: 'img/undraw_responsive_re_e1nn.svg',
     description: (
       <Translate
         id="homepage.features.connect-information"
         description="Feature Connect your information">
-        ...
+        {''}
       </Translate>
     ),
   },
@@ -157,8 +157,7 @@ const features = [
       <Translate
         id="homepage.features.customize-easy"
         description="Feature Customize easy">
-        AWE has multiple preconfigured themes and multi-language support.
-        You can add custom CSS according to your needs.
+        {''}
       </Translate>
     ),
   },
@@ -176,7 +175,7 @@ const features = [
         values={{ autowired: (<code>@Autowired</code>) }}
         id="homepage.features.powered-by"
         description="Typescript Support">
-        {`Uses Spring 5 and Spring Boot 2. {autowired} is available for AWE components and layouts.`}
+       {''}
       </Translate>
     ),
   },
@@ -218,9 +217,9 @@ function Home() {
 
 
             <img
-              alt="Awe logo"
+              alt="Realmocean logo"
               className={styles.heroLogo}
-              src={useBaseUrl('img/undraw_freelancer_re_irh4.svg')}
+              src={useBaseUrl('img/tuval-logo.png')}
             />
 
 
@@ -274,10 +273,10 @@ function Home() {
 
           </div>
           <div className={styles.indexCtas}>
-            <div style={{width: 'auto'}} className="container">
+            <div style={{ width: 'auto' }} className="container">
               <div className="row">
                 <div className={clsx('col col--4')}>
-                  <Link className={styles.singupButton} to={useBaseUrl('docs/')}>
+                  <Link className={styles.singupButton} to={'https://app.realmocean.com/google_login?next='}>
                     <img className={styles['singupButton-img']} src={"https://www-static.cdn.prismic.io/www-static/7b66f955-63dd-41f5-a403-e6727b24d4ea_google-logo.svg"}></img>
                     <span className={styles['singupButton-span']}>
                       <Translate>Sign up with Google</Translate>
@@ -320,17 +319,7 @@ function Home() {
         </div>
       </div> */}
       <main>
-        {infos && infos.length > 0 && (
-          <section className={styles.features}>
-            <div className="container">
-              <div className="row">
-                {infos.map((props, idx) => (
-                  <InfoBox key={idx} {...props} />
-                ))}
-              </div>
-            </div>
-          </section>
-        )}
+
 
         {features && features.length > 0 && (
           <section className={styles.features}>
@@ -338,6 +327,17 @@ function Home() {
               <div className="row">
                 {features.map((props, idx) => (
                   <Feature key={idx} {...props} />
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
+        {infos && infos.length > 0 && (
+          <section className={styles.features}>
+            <div className="container">
+              <div className="row">
+                {infos.map((props, idx) => (
+                  <InfoBox key={idx} {...props} />
                 ))}
               </div>
             </div>
