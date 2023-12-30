@@ -1,8 +1,7 @@
 ---
-id: intro
-title: What is realmocean
-sidebar_label: What is realmocean
-slug: /
+id: development
+title: Development
+sidebar_label: Development
 tags:
   - install
   - Getting started

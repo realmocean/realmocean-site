@@ -6,95 +6,61 @@
             "collapsed": false,
             "items": [
                 "intro",
-                "faqs",
-                "architecture"
+                "infrastructure"
             ]
         },
         {
             "type": "category",
-            "label": "Realm Management",
-            "collapsed": true,
+            "label": "Getting Started",
+            "collapsed": false,
             "items": [
-                "realm-management/what-is-realm",
-                "realm-management/overview",
-                "realm-management/sessions",
-                "realm-management/users",
+                "development",
                 {
                     "type": "category",
-                    "label": "DIRECTORY",
+                    "label": "Installation",
                     "collapsed": true,
                     "items": [
-                        "realm-management/directory/tenants",
-                        "realm-management/directory/users",
-                        "realm-management/directory/teams",
-                        "realm-management/directory/profiles",
-                        "realm-management/directory/sources"
-                    ]
-                },
-                {
-                    "type": "category",
-                    "label": "APP STORE",
-                    "collapsed": true,
-                    "items": [
-                        "realm-management/appstore/default-apps"
-                    ]
-                },
-                {
-                    "type": "category",
-                    "label": "LICENSE",
-                    "collapsed": true,
-                    "items": [
-                        "realm-management/license/licenses"
-                    ]
-                },
-                {
-                    "type": "category",
-                    "label": "SECURITY",
-                    "collapsed": true,
-                    "items": [
-                        "realm-management/security/auth-providers",
-                        "realm-management/security/authenticators",
-                        "realm-management/security/policies",
-                        "realm-management/security/roles",
-                        "realm-management/security/permissions",
-                        "realm-management/security/zones",
-                        "realm-management/security/access-restriction",
-                        "realm-management/security/delegations"
-                    ]
-                },
-                {
-                    "type": "category",
-                    "label": "WORKFLOWS",
-                    "collapsed": true,
-                    "items": [
-                        "realm-management/workflow/automation",
-                        "realm-management/workflow/flows",
-                        "realm-management/workflow/notifications",
-                        "realm-management/workflow/webhooks"
+                        "ubuntu"
                     ]
                 }
             ]
         },
         {
             "type": "category",
-            "label": "App Management",
+            "label": "Modules",
             "collapsed": true,
             "items": [
-                "app-management/planning-your-app",
-                "app-management/choosing-authentication-method",
-                "app-management/creating-and-updating-apps",
                 {
                     "type": "category",
-                    "label": "Monetization",
+                    "label": "Auth",
                     "collapsed": true,
                     "items": [
-                        "app-management/monetization/faqs",
-                        "app-management/monetization/applicensing",
-                        "app-management/monetization/providing-discounts",
-                        "app-management/monetization/extending-trials"
+                        "modules/auth/auth",
+                        "modules/auth/quick-start",
+                        "modules/auth/accounts",
+                        "modules/auth/users",
+                        "modules/auth/teams",
+                        "modules/auth/labels",
+                        "modules/auth/security"
                     ]
                 },
-                "app-management/oauth-and-permissions"
+                {
+                    "type": "category",
+                    "label": "Database",
+                    "collapsed": true,
+                    "items": [
+                        "modules/database/overview",
+                        "modules/database/quick-start",
+                        "modules/database/database",
+                        "modules/database/collections",
+                        "modules/database/documents",
+                        "modules/database/permissions",
+                        "modules/database/relationships",
+                        "modules/database/queries",
+                        "modules/database/pagination",
+                        "modules/database/database-api"
+                    ]
+                }
             ]
         },
         {
@@ -106,514 +72,6 @@
                 "app-design/hierarchy-is-everything",
                 "app-design/layout-and-spacing",
                 "app-design/designing-text"
-            ]
-        },
-        {
-            "type": "category",
-            "label": "Services",
-            "collapsed": true,
-            "items": [
-                {
-                    "type": "category",
-                    "label": "Licensing Service",
-                    "collapsed": true,
-                    "items": [
-                        "providers/licensing/overview",
-                        "providers/licensing/object-model",
-                        {
-                            "type": "category",
-                            "label": "Licensing Models",
-                            "collapsed": false,
-                            "items": [
-                                "providers/licensing/licensing-models/overview",
-                                "providers/licensing/licensing-models/floating",
-                                "providers/licensing/licensing-models/multi-feature",
-                                "providers/licensing/licensing-models/node-locked",
-                                "providers/licensing/licensing-models/pay-per-use",
-                                "providers/licensing/licensing-models/pricing-table",
-                                "providers/licensing/licensing-models/quota",
-                                "providers/licensing/licensing-models/rental",
-                                "providers/licensing/licensing-models/subscription",
-                                "providers/licensing/licensing-models/try-n-buy"
-                            ]
-                        },
-                        {
-                            "type": "category",
-                            "label": "AppLicensing API",
-                            "collapsed": false,
-                            "items": [
-                                "providers/licensing/restfull-api/services/license-services",
-                                "providers/licensing/restfull-api/services/licensee-services"
-                            ]
-                        },
-                        "providers/licensing/glossary"
-                    ]
-                },
-                {
-                    "type": "category",
-                    "label": "Organization Service",
-                    "collapsed": true,
-                    "items": [
-                        "providers/orgProvider",
-                        {
-                            "type": "category",
-                            "label": "Models",
-                            "collapsed": false,
-                            "items": [
-                                "providers/organizationService/models/IEmployee",
-                                "providers/organizationService/models/IPosition",
-                                "providers/organizationService/models/IEmployeeTitle"
-                            ]
-                        },
-                        "providers/emailService"
-                    ]
-                },
-                {
-                    "type": "category",
-                    "label": "Customer Service",
-                    "collapsed": true,
-                    "items": [
-                        "providers/orgProvider",
-                        "providers/customerProvider",
-                        "providers/emailService"
-                    ]
-                },
-                {
-                    "type": "category",
-                    "label": "File System Service",
-                    "collapsed": true,
-                    "items": [
-                        "providers/orgProvider",
-                        "providers/customerProvider",
-                        "providers/emailService"
-                    ]
-                },
-                {
-                    "type": "category",
-                    "label": "Authentication Service",
-                    "collapsed": true,
-                    "items": [
-                        "providers/orgProvider",
-                        "providers/customerProvider",
-                        "providers/emailService"
-                    ]
-                },
-                {
-                    "type": "category",
-                    "label": "Project Service",
-                    "collapsed": true,
-                    "items": [
-                        "providers/orgProvider",
-                        "providers/customerProvider",
-                        "providers/emailService"
-                    ]
-                },
-                {
-                    "type": "category",
-                    "label": "Document Service",
-                    "collapsed": true,
-                    "items": [
-                        "providers/orgProvider",
-                        "providers/customerProvider",
-                        "providers/emailService"
-                    ]
-                },
-                {
-                    "type": "category",
-                    "label": "Email Service",
-                    "collapsed": true,
-                    "items": [
-                        "providers/orgProvider",
-                        "providers/customerProvider",
-                        "providers/emailService"
-                    ]
-                },
-                {
-                    "type": "category",
-                    "label": "Log Service",
-                    "collapsed": true,
-                    "items": [
-                        "providers/orgProvider",
-                        "providers/customerProvider",
-                        "providers/emailService"
-                    ]
-                },
-                {
-                    "type": "category",
-                    "label": "Tracker Service",
-                    "collapsed": true,
-                    "items": [
-                        "providers/orgProvider",
-                        "providers/customerProvider",
-                        "providers/emailService"
-                    ]
-                },
-                {
-                    "type": "category",
-                    "label": "Process Management Service",
-                    "collapsed": true,
-                    "items": [
-                        "providers/orgProvider",
-                        "providers/customerProvider",
-                        "providers/emailService"
-                    ]
-                },
-                {
-                    "type": "category",
-                    "label": "Process Mining Service",
-                    "collapsed": true,
-                    "items": [
-                        "providers/orgProvider",
-                        "providers/customerProvider",
-                        "providers/emailService"
-                    ]
-                },
-                {
-                    "type": "category",
-                    "label": "AppStore Service",
-                    "collapsed": true,
-                    "items": [
-                        "providers/orgProvider",
-                        {
-                            "type": "category",
-                            "label": "Models",
-                            "collapsed": false,
-                            "items": [
-                                "providers/organizationService/models/IEmployee",
-                                "providers/organizationService/models/IPosition",
-                                "providers/organizationService/models/IEmployeeTitle"
-                            ]
-                        },
-                        "providers/emailService"
-                    ]
-                },
-                {
-                    "type": "category",
-                    "label": "Notification Service",
-                    "collapsed": true,
-                    "items": [
-                        "providers/orgProvider",
-                        {
-                            "type": "category",
-                            "label": "Models",
-                            "collapsed": false,
-                            "items": [
-                                "providers/organizationService/models/IEmployee",
-                                "providers/organizationService/models/IPosition",
-                                "providers/organizationService/models/IEmployeeTitle"
-                            ]
-                        },
-                        "providers/emailService"
-                    ]
-                },
-                {
-                    "type": "category",
-                    "label": "Digital Signature Service",
-                    "collapsed": true,
-                    "items": [
-                        "providers/orgProvider",
-                        {
-                            "type": "category",
-                            "label": "Models",
-                            "collapsed": false,
-                            "items": [
-                                "providers/organizationService/models/IEmployee",
-                                "providers/organizationService/models/IPosition",
-                                "providers/organizationService/models/IEmployeeTitle"
-                            ]
-                        },
-                        "providers/emailService"
-                    ]
-                },
-                {
-                    "type": "category",
-                    "label": "Theme Service",
-                    "collapsed": true,
-                    "items": [
-                        "providers/orgProvider",
-                        {
-                            "type": "category",
-                            "label": "Models",
-                            "collapsed": false,
-                            "items": [
-                                "providers/organizationService/models/IEmployee",
-                                "providers/organizationService/models/IPosition",
-                                "providers/organizationService/models/IEmployeeTitle"
-                            ]
-                        },
-                        "providers/emailService"
-                    ]
-                }
-            ]
-        },
-        {
-            "type": "category",
-            "label": "Brokers",
-            "collapsed": true,
-            "items": [
-                {
-                    "type": "category",
-                    "label": "Licensing Broker",
-                    "collapsed": true,
-                    "items": [
-                        "providers/licensing/overview",
-                        "providers/licensing/object-model",
-                        {
-                            "type": "category",
-                            "label": "Licensing Models",
-                            "collapsed": false,
-                            "items": [
-                                "providers/licensing/licensing-models/overview",
-                                "providers/licensing/licensing-models/floating",
-                                "providers/licensing/licensing-models/multi-feature",
-                                "providers/licensing/licensing-models/node-locked",
-                                "providers/licensing/licensing-models/pay-per-use",
-                                "providers/licensing/licensing-models/pricing-table",
-                                "providers/licensing/licensing-models/quota",
-                                "providers/licensing/licensing-models/rental",
-                                "providers/licensing/licensing-models/subscription",
-                                "providers/licensing/licensing-models/try-n-buy"
-                            ]
-                        },
-                        {
-                            "type": "category",
-                            "label": "AppLicensing API",
-                            "collapsed": false,
-                            "items": [
-                                "providers/licensing/restfull-api/services/license-services",
-                                "providers/licensing/restfull-api/services/licensee-services"
-                            ]
-                        },
-                        "providers/licensing/glossary"
-                    ]
-                },
-                {
-                    "type": "category",
-                    "label": "Organization Broker",
-                    "collapsed": true,
-                    "items": [
-                        "providers/orgProvider",
-                        {
-                            "type": "category",
-                            "label": "Models",
-                            "collapsed": false,
-                            "items": [
-                                "providers/organizationService/models/IEmployee",
-                                "providers/organizationService/models/IPosition",
-                                "providers/organizationService/models/IEmployeeTitle"
-                            ]
-                        },
-                        "providers/emailService"
-                    ]
-                },
-                {
-                    "type": "category",
-                    "label": "Customer Broker",
-                    "collapsed": true,
-                    "items": [
-                        "providers/orgProvider",
-                        "providers/customerProvider",
-                        "providers/emailService"
-                    ]
-                },
-                {
-                    "type": "category",
-                    "label": "Email Service",
-                    "collapsed": true,
-                    "items": [
-                        "providers/orgProvider",
-                        "providers/customerProvider",
-                        "providers/emailService"
-                    ]
-                },
-                {
-                    "type": "category",
-                    "label": "Log Service",
-                    "collapsed": true,
-                    "items": [
-                        "providers/orgProvider",
-                        "providers/customerProvider",
-                        "providers/emailService"
-                    ]
-                },
-                {
-                    "type": "category",
-                    "label": "Tracker Service",
-                    "collapsed": true,
-                    "items": [
-                        "providers/orgProvider",
-                        "providers/customerProvider",
-                        "providers/emailService"
-                    ]
-                }
-            ]
-        },
-        {
-            "type": "category",
-            "label": "Components",
-            "collapsed": true,
-            "items": [
-                {
-                    "type": "category",
-                    "label": "Buttons",
-                    "collapsed": true,
-                    "items": [
-                        "components/buttons/button",
-                        "components/buttons/button-group",
-                        "components/buttons/dropdown-menu",
-                        "components/buttons/progress-button",
-                        "components/buttons/split-button",
-                        "components/buttons/chips",
-                        "components/buttons/fab",
-                        "components/buttons/speeddial"
-                    ]
-                },
-                {
-                    "type": "category",
-                    "label": "Inputs",
-                    "collapsed": true,
-                    "items": [
-                        "components/inputs/textbox",
-                        "components/inputs/input-mask",
-                        "components/inputs/numeric-textbox",
-                        "components/inputs/radio-button",
-                        "components/inputs/checkbox",
-                        "components/inputs/color-picker",
-                        "components/inputs/file-upload",
-                        "components/inputs/range-slider",
-                        "components/inputs/toggle-switch-button",
-                        "components/inputs/signature"
-                    ]
-                },
-                {
-                    "type": "category",
-                    "label": "DropDowns",
-                    "collapsed": true,
-                    "items": [
-                        "components/dropdowns/autocomplate",
-                        "components/dropdowns/combobox",
-                        "components/dropdowns/dropdownlist",
-                        "components/dropdowns/dropdowntree",
-                        "components/dropdowns/multiselectdropdown",
-                        "components/dropdowns/mention",
-                        "components/dropdowns/listbox"
-                    ]
-                },
-                {
-                    "type": "category",
-                    "label": "Navigation",
-                    "collapsed": true,
-                    "items": [
-                        "components/navigation/accordion",
-                        "components/navigation/appbar",
-                        "components/navigation/breadcrumb",
-                        "components/navigation/carousel",
-                        "components/navigation/contextmenu",
-                        "components/navigation/menubar",
-                        "components/navigation/sidebar",
-                        "components/navigation/tabs",
-                        "components/navigation/toolbar",
-                        "components/navigation/treeview",
-                        "components/navigation/filemanager"
-                    ]
-                },
-                {
-                    "type": "category",
-                    "label": "Grids",
-                    "collapsed": true,
-                    "items": [
-                        "components/grids/datagrid",
-                        "components/grids/pivottable",
-                        "components/grids/treegrid",
-                        "components/grids/spreadsheet"
-                    ]
-                },
-                {
-                    "type": "category",
-                    "label": "File Viewers & Editors",
-                    "collapsed": true,
-                    "items": [
-                        "components/fileviewers/inplaceeditor",
-                        "components/fileviewers/PDFViewer",
-                        "components/fileviewers/richtexteditor",
-                        "components/fileviewers/wordprocessor",
-                        "components/fileviewers/imageeditor"
-                    ]
-                },
-                {
-                    "type": "category",
-                    "label": "Layout",
-                    "collapsed": true,
-                    "items": [
-                        "components/layout/avatar",
-                        "components/layout/card",
-                        "components/layout/dialog",
-                        "components/layout/predefineddialogs",
-                        "components/layout/listview",
-                        "components/layout/tooltip",
-                        "components/layout/splitter",
-                        "components/layout/dashboardlayout"
-                    ]
-                },
-                {
-                    "type": "category",
-                    "label": "Data Visualization",
-                    "collapsed": true,
-                    "items": [
-                        "components/datavisualization/charts",
-                        "components/datavisualization/stockchart",
-                        "components/datavisualization/circulargauge",
-                        "components/datavisualization/diagram",
-                        "components/datavisualization/heatmapchart",
-                        "components/datavisualization/lineargauge",
-                        "components/datavisualization/maps",
-                        "components/datavisualization/rangeselector"
-                    ]
-                }
-            ]
-        },
-        {
-            "type": "category",
-            "label": "Widgets",
-            "collapsed": true,
-            "items": [
-                "widgets/worldmap",
-                "widgets/rating",
-                "widgets/gauge",
-                "widgets/radar",
-                "widgets/topdropdown",
-                "widgets/timeserieschart"
-            ]
-        },
-        {
-            "type": "category",
-            "label": "Protocols",
-            "collapsed": true,
-            "items": [
-                "protocols/TaskProtocol",
-                {
-                    "type": "category",
-                    "label": "Work Protocol",
-                    "collapsed": true,
-                    "items": [
-                         "protocols/work-protocol/workspaces",
-                         "protocols/work-protocol/folders",
-                         "protocols/work-protocol/applets"
-                    ]
-                },
-                {
-                    "type": "category",
-                    "label": "Task Protocol",
-                    "collapsed": true,
-                    "items": [
-                         "protocols/task-protocol/tasks"
-                    ]
-                },
-                "protocols/OKRProtocol",
-                "protocols/KanbanBoardProtocol",
-                "protocols/CalendarProtocol",
-                "protocols/FileSystemProtocol",
-                "protocols/DirectoryProtocol"
             ]
         }
     ]

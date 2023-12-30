@@ -26,7 +26,7 @@ module.exports = {
                     position: 'left',
                     label: 'Home',
                 },
-                {
+               /*  {
                     to: '/realms',
                     position: 'left',
                     label: 'Realms',
@@ -40,7 +40,7 @@ module.exports = {
                     to: '/widgetstore',
                     position: 'left',
                     label: 'Widgets',
-                },
+                }, */
                 {
                     type: 'docsVersion',
                     position: 'left',
