@@ -6,6 +6,7 @@ sidebar_label: Applets
 
 
 ## Queries
+
 ```ts
 const { query } = useProtocol(WorkProtocol.Applets);
 
@@ -84,18 +85,8 @@ createApplet({
 | name: ```String```     | Name of the applet                               |
 
 
-### Delete folder
+## Brokers Implement
 
-```ts
-const { mutation } = useProtocol(WorkProtocol.Folders);
-const { mutate: deleteFolder } = mutation`
-                                     delete_folder (folder_id: "ABC") {
-                                        id
-                                    }
-                                `
-
-```
-#### Arguments
-| Arguments                | Description                     |
+| Name                     | Description                     |
 | ------------------------ | ------------------------------- |
-| folder_id: ```String!``` | The folder's unique identifier. |
+| com.tuvalsoft.broker.realm | Main broker of the realm  |

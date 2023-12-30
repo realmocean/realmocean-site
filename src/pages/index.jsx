@@ -217,9 +217,9 @@ function Home() {
 
 
             <img
-              alt="Awe logo"
+              alt="Realmocean logo"
               className={styles.heroLogo}
-              src={useBaseUrl('img/undraw_freelancer_re_irh4.svg')}
+              src={useBaseUrl('img/tuval-logo.png')}
             />
 
 
