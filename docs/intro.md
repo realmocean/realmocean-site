@@ -1,62 +1,65 @@
 ---
 id: intro
-title: Almis Web Engine
-sidebar_label: Introduction
+title: What is realmocean
+sidebar_label: What is realmocean
 slug: /
+tags:
+  - install
+  - Getting started
 ---
 
-<img alt="Almis" src={require('@docusaurus/useBaseUrl').default('img/awe_logo.png')} />
+Realmocean is a self-hosted Soft Code (Baas + Iaas) platform.
 
-AWE is a light-weight Java web framework. Allows you build web applications in the fastest way.
+That pretty straightforward, but, if you never heard of BaaS, you are probably scratching the top of your head and asking yourself, "what for? What is the meaning of that?"
 
-- :white_check_mark: Automatic server-client communication with WebSocket support
-- :white_check_mark: Use Xml or Java for building views
-- :white_check_mark: Modern UI responsive components
-- :white_check_mark: Themes and Multi-language support
-- :white_check_mark: Multiple data binding. Rest, SQL and noSql database, ...
-- :white_check_mark: Built-in Spring Boot support
-- :white_check_mark: Easiest learning curve
+Well, let's start with the basics. BaaS stands for Backend as a Service. It is a cloud computing service model that provides developers with a way to connect their applications to a backend cloud storage and APIs exposed by back end applications while also providing features such as user management, push notifications, and integration with social networking services.
 
-## AWE Project main page
+## This is what Realmocean is:
 
-Please visit us at [https://www.aweframework.com](https://www.aweframework.com)
+Realmocean is a set of essential modules that 99.9% of apps would need.
 
+Every app needs a Database, a solid Authentication & Authorization mechanism, permission system, a way to compute information, and an organized place for the app files.
 
-## Prerequisites
-You must have Maven 3.x installed on your computer and JDK 8 or higher
+Realmocean taking cover of all the above + more; you will explore these Realmocean modules:
 
-## Getting Started
+- **Auth** - User-management system that can work with basic traditional authorization techniques such as email and - Phone and with all the popular OAuth2 providers in the market today, including Google, AzureAD, Apple, and more.
+- **Database** - An extraordinary hybrid NoSQL approach to a Relational Database engine runs on MariaDB.
+- **Functions** - A serverless runtime system to run your necessary computing needs with the most popular languages. If you never met with serverless computing, you are going to love it.
+- **Storage** - A permission-based storage module.
+- **Realtime** - Realtime module in which you can subscribe and response to almost any server side events.
+- **Miscellaneous** — More cool modules like Locale, Health, and Avatar creator.
 
-This is a multi module maven project. Import as maven project with your favorite IDE to contribute. If you want create your first AWE project, use maven archetype `awe-boot-archetype` with version [![Version](https://img.shields.io/maven-central/v/com.almis.awe/awe-starter-parent.svg?label=maven%20central)](https://search.maven.org/search?q=g:%22com.almis.awe%22%20AND%20a:%22awe-starter-parent%22)
+## Server vs. Client
 
-```bash
-mvn -B archetype:generate \
- -DarchetypeGroupId=com.almis.awe \
- -DarchetypeArtifactId=awe-boot-archetype \
- -DarchetypeVersion=[Archetype version]
- -DgroupId=com.mycompany.app \
- -DartifactId=my-app \
- -Dversion=1.0-SNAPSHOT 
-```
+Realmocean has three methods by which you can connect to the engine.
 
-## Built With
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [Spring framework](https://spring.io/) - AWE Spring boot starter
-* [Angular JS](https://angularjs.org/) - Angular JS framework
-* [Bootstrap](https://getbootstrap.com/) - Bootstrap web toolkit
-* [Highcharts](https://www.highcharts.com/) - Interactive charts library
+### REST API
 
-[![StackShare](https://img.shields.io/badge/tech-stack-0690fa.svg?style=flat)](https://stackshare.io/almis-informatica-financiera/aweframework)
+GraphQL API
+Platform SDKs
+Those three methods can be used for two types of connection, client & server connections.
 
-## Changelogs
+**Client** - a connection made by code that is content exposed to the client. This code won't have any administrative keys within it, and the connection results go through permission rules to ensure the data is sent back to an appropriate user.
 
-Latest changelog file: [CHANGELOG.md](https://gitlab.com/aweframework/awe/-/blob/master/CHANGELOG.md)
+**Server** - a connection made from a "secret" code. Aka code that has hidden from the end-users. This code has more access to resources by providing a unique API key.
+Platform SDKs available for both client & server connections.
 
-## Contributing
+| Platform | Language   |
+| -------- | ---------- |
+| Client   | SDKs       |
+| Platform | Language   |
+| Web      | JavaScript |
+| Flutter  | Dart       |
+| Apple    | Swift      |
+| Android  | Java       |
+| Android  | Kotlin     |
 
-Please read [CONTRIBUTING.md](https://gitlab.com/aweframework/awe/-/blob/master/CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
+#### Server SDKs
 
-## License
-
-All parts of AWE, **except the contents of the graphical charts library (HighCharts)**, are licensed
-under Apache License v2.0 see the [LICENSE.md](https://gitlab.com/aweframework/awe/-/blob/master/LICENSE.md) file for details.
+| Platform | Language   |
+| -------- | ---------- |
+| Node | Ruby |
+| Deno | Dart |
+| PHP | Kotlin |
+| Python | Java (Uses Kotlin) |
+| Swift | |

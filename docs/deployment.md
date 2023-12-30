@@ -44,12 +44,13 @@ If you are running your application in an Application server like Apache Tomcat,
 ```
 
 3. Modify your main class `AppBootApplication.java` to start the application in a stand-alone servlet container.
+
 ```java
 
 @SpringBootApplication
 public class AppBootApplication extends SpringBootServletInitializer {
 
-  private static Class<AppBootApplication> applicationClass = AppBootApplication.class;
+  private static final Class<AppBootApplication> applicationClass = AppBootApplication.class;
 
   @Override
   protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {

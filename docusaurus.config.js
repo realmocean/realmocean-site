@@ -1,4 +1,4 @@
-module.exports = {
+export default {
     title: 'Realm Ocean',
     tagline: 'Superapp Cloud',
     url: 'http://tuvalframework.com',
@@ -65,20 +65,20 @@ module.exports = {
                 position: 'right',
             },
 
-            {
+          /*   {
                 type: 'doc',
                 docId: 'components/inputs/textbox',
                 position: 'left',
                 label: 'Tutorials',
                 activeSidebarClassName: 'navbar__link--active',
-            },
+            }, */
 
             {
                 to: 'blog',
                 label: 'Blog',
                 position: 'left'
             },
-            {
+       /*      {
                 to: '/templates',
                 position: 'left',
                 label: 'Templates',
@@ -87,7 +87,7 @@ module.exports = {
                 to: '/buildwithrealmocean',
                 position: 'left',
                 label: 'Build with Realmocean',
-            },
+            }, */
             {
                 href: 'https://app.realmocean.com',
                 html: '<b>Log In</b>',

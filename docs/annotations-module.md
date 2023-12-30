@@ -1,9 +1,9 @@
 ---
-id: annotations
-title: Annotations Module
-sidebar_label: Annotations Module
+id: arraylist
+title: ArrayList
+sidebar_label: ArrayList
 ---
-### Annotations
+
 The `annotations` module includes a set of Spring-oriented annotations to make it easier to manage some AWE features.
 
 To include this module, just add the dependency to the pom descriptor:
