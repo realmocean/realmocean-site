@@ -7,6 +7,10 @@ module.exports = {
     favicon: 'icon/tuval.ico',
     organizationName: 'tuvalframework',
     projectName: 'RealmOcean',
+    markdown: {
+        mermaid: true,
+    },
+    themes: ['@docusaurus/theme-mermaid'],
     themeConfig: {
         docs: {
             sidebar: {
@@ -22,65 +26,76 @@ module.exports = {
             },
             hideOnScroll: true,
             items: [{
-                    to: '/',
-                    position: 'left',
-                    label: 'Home',
-                },
-               /*  {
-                    to: '/realms',
-                    position: 'left',
-                    label: 'Realms',
-                },
-                {
-                    to: '/appstore',
-                    position: 'left',
-                    label: 'App Store',
-                },
-                {
-                    to: '/widgetstore',
-                    position: 'left',
-                    label: 'Widgets',
-                }, */
-                {
-                    type: 'docsVersion',
-                    position: 'left',
-                    label: 'Documentation',
-                },
-                /* {
-                    type: 'docsVersionDropdown',
-                    position: 'right',
-                }, */
-                {
-                    to: 'hireanexpert',
-                    position: 'right',
-                    label: 'Hire an expert',
-                },
-                {
-                    type: 'localeDropdown',
-                    position: 'right',
-                },
+                to: '/',
+                position: 'left',
+                label: 'Home',
+            },
 
-                {
-                    type: 'doc',
-                    docId: 'components/inputs/textbox',
-                    position: 'left',
-                    label: 'Tutorials',
-                    activeSidebarClassName: 'navbar__link--active',
-                },
+            /*  {
+                 to: '/realms',
+                 position: 'left',
+                 label: 'Realms',
+             },
+             {
+                 to: '/appstore',
+                 position: 'left',
+                 label: 'App Store',
+             },
+             {
+                 to: '/widgetstore',
+                 position: 'left',
+                 label: 'Widgets',
+             }, */
+            {
+                type: 'docsVersion',
+                position: 'left',
+                label: 'Documentation',
+            },
+            /* {
+                type: 'docsVersionDropdown',
+                position: 'right',
+            }, */
+            {
+                to: 'hireanexpert',
+                position: 'right',
+                label: 'Hire an expert',
+            },
+            {
+                type: 'localeDropdown',
+                position: 'right',
+            },
 
-                {
-                    to: 'blog',
-                    label: 'Blog',
-                    position: 'left'
-                },
-                {
-                    href: 'https://app.realmocean.com',
-                    html: '<b>Log In</b>',
-                    position: 'right',
-                    className: 'login-button',
-                    target: '_self',
-                    'aria-label': 'GitHub repository'
-                }
+            {
+                type: 'doc',
+                docId: 'components/inputs/textbox',
+                position: 'left',
+                label: 'Tutorials',
+                activeSidebarClassName: 'navbar__link--active',
+            },
+
+            {
+                to: 'blog',
+                label: 'Blog',
+                position: 'left'
+            },
+            {
+                to: '/templates',
+                position: 'left',
+                label: 'Templates',
+            },
+            {
+                to: '/buildwithrealmocean',
+                position: 'left',
+                label: 'Build with Realmocean',
+            },
+            {
+                href: 'https://app.realmocean.com',
+                html: '<b>Log In</b>',
+                position: 'right',
+                className: 'login-button',
+                target: '_self',
+                'aria-label': 'GitHub repository'
+            }
                 /*   {
                       alt: 'Github repository',
                       href: 'https://github.com/tuvalframework/framework',
@@ -92,28 +107,28 @@ module.exports = {
         footer: {
             style: 'dark',
             links: [{
-                    title: 'Docs',
-                    items: [{
-                        label: 'Introduction',
-                        to: 'docs/',
-                    }],
+                title: 'Docs',
+                items: [{
+                    label: 'Introduction',
+                    to: 'docs/',
+                }],
+            },
+            {
+                title: 'Community',
+                items: [{
+                    label: 'Stack Overflow',
+                    href: 'https://stackoverflow.com/questions/tagged/tuvalframework',
                 },
-                {
-                    title: 'Community',
-                    items: [{
-                            label: 'Stack Overflow',
-                            href: 'https://stackoverflow.com/questions/tagged/tuvalframework',
-                        },
 
-                    ],
-                },
-                {
-                    title: 'More',
-                    items: [{
-                        label: 'Github repository',
-                        href: 'https://github.com/tuvalframework/framework',
-                    }],
-                },
+                ],
+            },
+            {
+                title: 'More',
+                items: [{
+                    label: 'Github repository',
+                    href: 'https://github.com/tuvalframework/framework',
+                }],
+            },
             ],
             copyright: `Copyright © ${new Date().getFullYear()} Tuvalsoft`,
         },
@@ -134,7 +149,7 @@ module.exports = {
     },
     i18n: {
         defaultLocale: 'en',
-        locales: ['en', 'tr','ko'],
+        locales: ['en', 'tr', 'ko'],
         localeConfigs: {
             en: {
                 label: 'English',

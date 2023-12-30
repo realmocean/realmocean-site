@@ -22,13 +22,14 @@
                     "items": [
                         "ubuntu"
                     ]
-                }
+                },
+                "post-installation"
             ]
         },
         {
             "type": "category",
             "label": "Modules",
-            "collapsed": true,
+            "collapsed": false,
             "items": [
                 {
                     "type": "category",
@@ -66,9 +67,20 @@
         {
             "type": "category",
             "label": "App Design",
-            "collapsed": true,
+            "collapsed": false,
             "items": [
                 "app-design/starting-from-strach",
+                "app-design/hierarchy-is-everything",
+                "app-design/layout-and-spacing",
+                "app-design/designing-text"
+            ]
+        },
+        {
+            "type": "category",
+            "label": "Expanding",
+            "collapsed": false,
+            "items": [
+                "expanding/vertical-scaling",
                 "app-design/hierarchy-is-everything",
                 "app-design/layout-and-spacing",
                 "app-design/designing-text"
