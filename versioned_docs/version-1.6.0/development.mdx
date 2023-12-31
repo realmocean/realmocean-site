@@ -1,0 +1,110 @@
+---
+id: development
+title: Development
+sidebar_label: Development
+tags:
+  - install
+  - Getting started
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+In order to be able to work with Realmocean is best to have a ready-to-use local environment in which you can try all the goodies.
+
+---
+
+## Docker Desktop
+First you are going to install Docker desktop.
+
+Docker desktop is going to make our life and monitoring our docker containers much easier.
+
+Install it from the link above its available to all platforms.
+
+---
+
+## Local installation.
+After you've installed Docker Desktop open your terminal, and navigate to folder in which you want to install your Realmocean. For example in my Windows I've navigated to my documents folder, have created a folder named realmocean and I've cd's into it, like so:
+
+```cmd
+C:\> cd Users\user\documents
+C:\Users\user\documents\> mkdir realmocean
+C:\Users\user\documents\> cd realmocean
+```
+
+Creating a folder will ease any maintenance workflow needed in your local Realmocean.
+
+Now you can install Realmocean select the appropriate Operation system below and run the command.
+
+
+<Tabs>
+<TabItem value="docker" label="Linux & Mac">
+
+```shell
+docker run -it --rm \
+    --volume /var/run/docker.sock:/var/run/docker.sock \
+    --volume "$(pwd)"/realmocean:/usr/src/code/realmocean:rw \
+    --entrypoint="install" \
+    realmocean/realmocean:1.3.8
+```
+
+</TabItem>
+<TabItem value="py" label="Windows-CMD">
+
+```cmd
+docker run -it --rm ^
+    --volume //var/run/docker.sock:/var/run/docker.sock ^
+    --volume "%cd%"/realmocean:/usr/src/code/realmocean:rw ^
+    --entrypoint="install" ^
+    realmocean/realmocean:1.3.8
+```
+
+</TabItem>
+
+<TabItem value="powershell" label="Windows-PowerShell">
+
+```cmd
+docker run -it --rm `
+    --volume /var/run/docker.sock:/var/run/docker.sock `
+    --volume ${pwd}/realmocean:/usr/src/code/realmocean:rw `
+    --entrypoint="install" `
+    realmocean/realmocean:1.3.8
+```
+
+</TabItem>
+
+</Tabs>
+
+Let it run, it should take a few minutes as it will download all the necessary images and setting everything.
+
+When it looks like is done, you will present with the installation wizard. and you'll to answer these five prompts.
+
+```cmd
+Choose your server HTTP port: (default: 80)
+Choose your server HTTPS port: (default: 443)
+Choose a secret API key, make sure to make a backup of your key in a secure location (default: 'your-secret-key')
+Enter your Realmocean hostname (default: 'localhost')
+Enter a DNS A record hostname to serve as a CNAME for your custom domains.
+ ```
+
+They're mostly self-explanatory but to summarize:
+
+1. Select the port in which you be able to access your Realmocean without SSL
+2. Select the port in which you be able to access your Realmocean with SSL
+3. Enter a secret key which Realmocean is going to use encrypt all the two-way encrypted data inside the database. if you're planning to duplicate this local instance to a remote one be sure to set something unique and backup it as your going to need it.
+4. Enter the hostname (domain) that will have A record with the server IP. in local localhost will be fine.
+5. Enter the hostname (domain) in which other domain point toward it using a CNAME DNS record.
+
+As this is just a local version of Realmocean you can hit enter for all the options.
+
+After that the final step of installation process will run. when it finishes run this command:
+
+```shell
+docker ps
+```
+
+This docker command will show all your active docker containers. you should see something like this
+
+You can also check in your Docker desktop, and you should see something like this
+
+In case everything looks like this, access to url you've entered in step 4 in the installation wizard and go to Post installation page to finish your installation.

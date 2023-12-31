@@ -10,20 +10,20 @@ tags:
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-After installing Appwrite and before accessing it, there are set of step, tools, and general tips you should know.
+After installing Realmocean and before accessing it, there are set of step, tools, and general tips you should know.
 
 ---
 
 ## Setting variables
-Your self-hosted Appwrite instance uses two files to manage all the needed containers, volumes, and networks all together composing your Appwrite server.
+Your self-hosted Realmocean instance uses two files to manage all the needed containers, volumes, and networks all together composing your Realmocean server.
 
-- docker-compose.yml - This file contains all the declaration of the containers, volumes and networks requires running an instance of Appwrite
+- docker-compose.yml - This file contains all the declaration of the containers, volumes and networks requires running an instance of Realmocean
 - .env - This file contains all the environment variable values. Those variables that can be past to one or more containers, and lets you modify Docker containers without having the need to change the container itself.
 
 This file should be located:
 
-- In a DigitalOcean one-click installation inside the /root/appwrite folder.
-- In a Linode (Akamai) one-click installation inside the /appwrite folder.
+- In a DigitalOcean one-click installation inside the /root/realmocean folder.
+- In a Linode (Akamai) one-click installation inside the /realmocean folder.
 - In all other cases those files should be in the directory in which you've executed the docker compose command.
 
 :::note
@@ -37,7 +37,7 @@ ls -lah
 ```
 :::
 
-Before using Appwrite there are few environment variables inside the .env file that are best to be set before using Appwrite at all.
+Before using Realmocean there are few environment variables inside the .env file that are best to be set before using Realmocean at all.
 
 You can use any CLI editor like nano for example, to edit the .env file.
 
@@ -47,12 +47,12 @@ nano .env
 
 These are the variables you should set, and what each of them means:
 
-* _APP_OPENSSL_KEY_V1 - This variable value is widely use inside Appwrite for encryption-related tasks.
+* _APP_OPENSSL_KEY_V1 - This variable value is widely use inside Realmocean for encryption-related tasks.
   * It's vital to change from the default your-secret-key value and set as a random long string. (in case of automatic installation, this part is done for you).
   * Keep a backup of this variable value, in case it was lost you'll need to regenerate user passwords, API token, and more. it will be an unpleasant surprise.
  
-* _APP_DOMAIN - This variable set the main domain in which you will access your Appwrite instance, insert your domain as is without any prefix. e.g. api.domain.com. If you don't have a domain, you can leave it on localhost.
-* _APP_DOMAIN_TARGET - This variable is used as the target domain name when you want to add custom domain to your Appwrite instance. usually it will be the same value as _APP_DOMAIN
+* _APP_DOMAIN - This variable set the main domain in which you will access your Realmocean instance, insert your domain as is without any prefix. e.g. api.domain.com. If you don't have a domain, you can leave it on localhost.
+* _APP_DOMAIN_TARGET - This variable is used as the target domain name when you want to add custom domain to your Realmocean instance. usually it will be the same value as _APP_DOMAIN
 * _APP_EXECUTOR_SECRET - Change it from the default your-secret-key value and set as a random long string. (in case of automatic installation, this part is done for you).
 
 The rest of the variables are imported but can be change later with ease.
@@ -71,19 +71,19 @@ This will run these two commands:
 
 ## SSL generation
 
-Appwrite uses Let's encrypt to create your SSL certificate. When accessing Appwrite using the domain you've set in the _APP_DOMAIN value, or in any of the custom-domains you've added in any of the projects, Appwrite will generate the SSL automatically.
+Realmocean uses Let's encrypt to create your SSL certificate. When accessing Realmocean using the domain you've set in the _APP_DOMAIN value, or in any of the custom-domains you've added in any of the projects, Realmocean will generate the SSL automatically.
 
-After you've a valid SSL certificate for your Appwrite instance you can change the value of _APP_OPTIONS_FORCE_HTTPS to enabled in your .env file forcing accessing your Appwrite only through HTTPS.
+After you've a valid SSL certificate for your Realmocean instance you can change the value of _APP_OPTIONS_FORCE_HTTPS to enabled in your .env file forcing accessing your Realmocean only through HTTPS.
 
-In case you've changed the domain, or you just want Appwrite to regenerate the SSL certificates you can run:
+In case you've changed the domain, or you just want Realmocean to regenerate the SSL certificates you can run:
 
 ```bash
-docker exec appwrite ssl
+docker exec realmocean ssl
 ```
 
 ### Cloudflare & other HTTPS on DNS level
 
-When using a services like Cloudflare that gives you HTTPS in the proxy level, it may still be necessary to have SSL certificate in the Appwrite server.
+When using a services like Cloudflare that gives you HTTPS in the proxy level, it may still be necessary to have SSL certificate in the Realmocean server.
 
 In Cloudflare, For example, go to SSL/TLS > Overview and change the mode to Full
 
@@ -110,14 +110,14 @@ Here's two examples of setting the trustedIPs property, when your nginx uses 10.
 services:
   traefik:
     image: traefik:2.7
-    container_name: appwrite-traefik
+    container_name: realmocean-traefik
     <<: *x-logging
     command:
       - --providers.file.directory=/storage/config
       - --providers.file.watch=true
       - --providers.docker=true
       - --providers.docker.exposedByDefault=false
-      - --providers.docker.constraints=Label(`traefik.constraint-label-stack`,`appwrite`)
+      - --providers.docker.constraints=Label(`traefik.constraint-label-stack`,`realmocean`)
       - --entrypoints.appwrite_web.address=:80
       - --entryPoints.appwrite_web.forwardedHeaders.trustedIPs=10.0.0.25 
       - --entrypoints.appwrite_websecure.address=:443
@@ -133,14 +133,14 @@ services:
 services:
   traefik:
     image: traefik:2.7
-    container_name: appwrite-traefik
+    container_name: realmocean-traefik
     <<: *x-logging
     command:
       - --providers.file.directory=/storage/config
       - --providers.file.watch=true
       - --providers.docker=true
       - --providers.docker.exposedByDefault=false
-      - --providers.docker.constraints=Label(`traefik.constraint-label-stack`,`appwrite`)
+      - --providers.docker.constraints=Label(`traefik.constraint-label-stack`,`realmocean`)
       - --entrypoints.appwrite_web.address=:80
       - --entryPoints.appwrite_web.forwardedHeaders.trustedIPs=173.245.48.0/20,103.21.244.0/22,103.22.200.0/22,103.31.4.0/22,141.101.64.0/18,108.162.192.0/18,190.93.240.0/20,188.114.96.0/20,197.234.240.0/22,198.41.128.0/17,162.158.0.0/15,104.16.0.0/13,104.24.0.0/14,172.64.0.0/13,131.0.72.0/22 
       - --entrypoints.appwrite_websecure.address=:443
@@ -156,9 +156,9 @@ services:
 ---
 
 ## Admin account
-Now that everything is set, you can access your Appwrite server IP or Domain.
+Now that everything is set, you can access your Realmocean server IP or Domain.
 
-You'll see the Appwrite console, which is the backoffice dashboard for using Appwrite, and you'll need to register.
+You'll see the Realmocean console, which is the backoffice dashboard for using Realmocean, and you'll need to register.
 
 The register option is open for one account only. Meaning, after one registration, no other user would be able to register for the console.
 
@@ -167,31 +167,31 @@ You can change that by modifying the _APP_CONSOLE_WHITELIST_ROOT variable. Check
 ---
 
 ## Daily management
-It's good to have a backup for your Appwrite server in the IaaS level like snapshots and weekly backups.
+It's good to have a backup for your Realmocean server in the IaaS level like snapshots and weekly backups.
 
-Also, it's highly recommended to also use some backup scripts like this one created by Steven, Appwrite core member.
+Also, it's highly recommended to also use some backup scripts like this one created by Steven, Realmocean core member.
 
 After creating the backup, you can use tools like rclone to push that backup to a huge list of Cloud Storage providers.
 
 ---
 
 ## Troubleshooting
-The main container of Appwrite has few commands in the path that can be executed from the outside, just like with the ssl
+The main container of Realmocean has few commands in the path that can be executed from the outside, just like with the ssl
 
 ```bash
-docker exec appwrite ssl
+docker exec realmocean ssl
 ```
 Here are some of the available executables:
 
 * ssl - Generates SSL certificates.
-* doctor - Generates a full report about your Appwrite instance.
+* doctor - Generates a full report about your Realmocean instance.
 * migrate - Runs Database migration, updating tables, columns etc. needed to be run after each minor upgrade.
-* vars - Outputs all the .env vars available for the Appwrite container. useful for troubleshooting and verifying the environment variables values.
+* vars - Outputs all the .env vars available for the Realmocean container. useful for troubleshooting and verifying the environment variables values.
 
 ---
 
 ## Docker problems
-Appwrite use Docker to run the underlying infrastructure. Inside the docker-compose.yml file you can see that each container has this setting
+Realmocean use Docker to run the underlying infrastructure. Inside the docker-compose.yml file you can see that each container has this setting
 
 ```yaml
 restart: unless-stopped
@@ -214,10 +214,10 @@ Now you can try to spot which container is being reset and causing all the troub
 ```bash
 docker logs <container_name>
 #for example
-docker logs appwrite
+docker logs realmocean
 ```
 
-Appwrite supports adding error reporting service like Sentry in the .env file.
+Realmocean supports adding error reporting service like Sentry in the .env file.
 
 Using a service like Sentry will produce much more detailed error than the logs one.
 
@@ -225,7 +225,7 @@ Using a service like Sentry will produce much more detailed error than the logs 
 
 ## Upgrades
 
-Appwrite upgrades are very easy to use and run.
+Realmocean upgrades are very easy to use and run.
 
 :::warning Backup, Backup, Backup!!
 
@@ -233,22 +233,22 @@ Appwrite upgrades are very easy to use and run.
 
 It's best to always have a backup before upgrading.
 
-Upgrading Appwrite is not a daily task rather a monthly one, adding backup to the process can make things difficult but will benefit you in the long-term.
+Upgrading Realmocean is not a daily task rather a monthly one, adding backup to the process can make things difficult but will benefit you in the long-term.
 
 :::
 
 Let's say the upgrade is from version 1.3.7 to 1.3.8.
 
-The upgrade of Appwrite can be done in two ways.
+The upgrade of Realmocean can be done in two ways.
 
 ## Manual
 The manual way is usefully in case you've made some changes to the docker-compose.yml file.
 
-Edit the docker-compose.yml file and change all Appwrite images version from 1.3.7 to 1.3.8.
+Edit the docker-compose.yml file and change all Realmocean images version from 1.3.7 to 1.3.8.
 
 ```yaml
-- image: appwrite/appwrite:1.3.7 
-+ image: appwrite/appwrite:1.3.8 
+- image: realmocean/realmocean:1.3.7 
++ image: realmocean/realmocean:1.3.8 
 ```
 
 Then, restart the Docker compose infrastructure.
@@ -256,14 +256,14 @@ Then, restart the Docker compose infrastructure.
 ## Automatic
 Navigate to folder above the one contains the docker-compose.yml.
 
-For example, if the docker-compose.yml is inside /root/appwrite, then run this command from the /root folder.
+For example, if the docker-compose.yml is inside /root/realmocean, then run this command from the /root folder.
 
 ``` bash
 docker run -it --rm \
   --volume /var/run/docker.sock:/var/run/docker.sock \
-  --volume "$(pwd)"/appwrite:/usr/src/code/appwrite:rw \
+  --volume "$(pwd)"/realmocean:/usr/src/code/realmocean:rw \
   --entrypoint="install" \
-  appwrite/appwrite:1.3.8
+  realmocean/realmocean:1.3.8
 ```
 :::info
 This command is the same as the one used for the installation.
@@ -271,9 +271,9 @@ This command is the same as the one used for the installation.
 
 ## Migration
 
-When upgrading Appwrite from one minor version to another you'll need to run migrations.
+When upgrading Realmocean from one minor version to another you'll need to run migrations.
 
-The migration script is in-charge of upgrading and changing the database structure, so it will match the up-to-date version of Appwrite.
+The migration script is in-charge of upgrading and changing the database structure, so it will match the up-to-date version of Realmocean.
 
 To migrate the database, run:
 

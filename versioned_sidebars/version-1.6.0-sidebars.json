@@ -2,7 +2,7 @@
     "docs": [
         {
             "type": "category",
-            "label": "Realm Ocean",
+            "label": "Realmocean",
             "collapsed": false,
             "items": [
                 "intro",
@@ -81,9 +81,12 @@
             "collapsed": false,
             "items": [
                 "expanding/vertical-scaling",
-                "app-design/hierarchy-is-everything",
-                "app-design/layout-and-spacing",
-                "app-design/designing-text"
+                "expanding/decentralization",
+                "expanding/horizontal-scaling",
+                "expanding/docker-swarm",
+                "expanding/high-availability",
+                "expanding/security",
+                "expanding/benchmarks"
             ]
         }
     ]
