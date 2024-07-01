@@ -18,7 +18,7 @@ export default {
             },
         },
         navbar: {
-            title: 'realmocean',
+            title: 'appconda',
             logo: {
                 alt: 'Tuval Framework Logo',
                 src: 'img/tuval-logo.png',
