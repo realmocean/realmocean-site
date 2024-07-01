@@ -34,28 +34,25 @@ echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab
 ## Install Docker
 You will install Docker using the Docker installation script. For more advance and specific installation, check Docker install instructions.
 
-First, You need to fetch the "installation script."
-
 ```bash
-curl -fsSL https://get.docker.com -o get-docker.sh
+sudo apt-get update
+apt-get install \
+    apt-transport-https \
+    ca-certificates \
+    curl \
+    gnupg-agent \
+    software-properties-common
 ```
 
-### Best practice
-
-When downloading any script from an outside source, it's always best examining the file before executing it. To see all the steps for that get-docker.sh file you can run
+Docker ve Docker Compose kurulumlarını yapıp versiyonlarını kontrol ediyoruz
 
 ```bash
-sudo sh ./get-docker.sh --dry-run
+apt install docker.io
+docker --version
+
+apt install docker-compose
+docker-compose --version
 ```
-
-This command will print all the command this script is about the run.
-
-To install Docker run the script:
-
-```bash
-sudo sh get-docker.sh
-```
-You can choose one of two methods to install Realmocean
 
 ---
 
