@@ -17,7 +17,7 @@ For example, we can create a team called teachers with roles maths, sciences, ar
 
 The creator of the team is also granted the owner role. Only those with the owner role can invite and remove members.
 ```ts
-import {useCreateTeam} from '@realmocean/sdk'
+import {useCreateTeam} from '@appconda/sdk'
 
 
 useCreateTeam('console');

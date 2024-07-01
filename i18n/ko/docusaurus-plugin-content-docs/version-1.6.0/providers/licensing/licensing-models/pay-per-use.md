@@ -87,7 +87,7 @@ productModuleNumber0=MTEST-DEMO&usedQuantity0=10
 ```
 
 ```xml
-<AppLicensing xmlns="http://AppLicensing.Realmocean.com/schema/context" ttl="2020-05-21T07:28:48.646Z">
+<AppLicensing xmlns="http://AppLicensing.Appconda.com/schema/context" ttl="2020-05-21T07:28:48.646Z">
     <infos/>
     <items>
         <item type="ProductModuleValidation">
@@ -113,7 +113,7 @@ productModuleNumber0=MTEST-DEMO&usedQuantity0=25
 ```
 
 ```xml
- <AppLicensing xmlns="http://AppLicensing.Realmocean.com/schema/context" ttl="2020-05-21T07:30:28.246Z">
+ <AppLicensing xmlns="http://AppLicensing.Appconda.com/schema/context" ttl="2020-05-21T07:30:28.246Z">
     <infos/>
     <items>
         <item type="ProductModuleValidation">
@@ -140,7 +140,7 @@ productModuleNumber0=MTEST-DEMO&usedQuantity0=30
 ```
 
 ```xml
-<AppLicensing xmlns="http://AppLicensing.Realmocean.com/schema/context" ttl="2020-05-21T07:30:28.246Z">
+<AppLicensing xmlns="http://AppLicensing.Appconda.com/schema/context" ttl="2020-05-21T07:30:28.246Z">
     <infos>
         <info id="usedQuantityExceedsRemaining" type="warning">
             usedQuantity exceeds remaining quantity - use of more than remaining quantity returned by the validation call should be prevented by the client software
@@ -177,7 +177,7 @@ productModuleNumber0=MTEST-DEMO&reserveQuantity0=10
 ```
 
 ```xml
-<AppLicensing xmlns="http://AppLicensing.Realmocean.com/schema/context" ttl="2020-05-21T07:28:48.646Z">
+<AppLicensing xmlns="http://AppLicensing.Appconda.com/schema/context" ttl="2020-05-21T07:28:48.646Z">
     <infos/>
     <items>
         <item type="ProductModuleValidation">
@@ -205,7 +205,7 @@ productModuleNumber0=MTEST-DEMO&reserveQuantity0=15
 
 
 ```xml
- <AppLicensing xmlns="http://AppLicensing.Realmocean.com/schema/context" ttl="2020-05-21T07:30:28.246Z">
+ <AppLicensing xmlns="http://AppLicensing.Appconda.com/schema/context" ttl="2020-05-21T07:30:28.246Z">
     <infos/>
     <items>
         <item type="ProductModuleValidation">
@@ -232,7 +232,7 @@ productModuleNumber0=MTEST-DEMO&reserveQuantity0=20
 ```
 
 ```xml
-<AppLicensing xmlns="http://AppLicensing.Realmocean.com/schema/context" ttl="2020-05-21T07:30:28.246Z">
+<AppLicensing xmlns="http://AppLicensing.Appconda.com/schema/context" ttl="2020-05-21T07:30:28.246Z">
     <items>
         <item type="ProductModuleValidation">
             <property name="productModuleNumber">MTEST-DEMO</property>

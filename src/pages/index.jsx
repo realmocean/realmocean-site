@@ -217,7 +217,7 @@ function Home() {
 
 
             <img
-              alt="Realmocean logo"
+              alt="Appconda logo"
               className={styles.heroLogo}
               src={useBaseUrl('img/tuval-logo.png')}
             />
@@ -276,7 +276,7 @@ function Home() {
             <div style={{ width: 'auto' }} className="container">
               <div className="row">
                 <div className={clsx('col col--4')}>
-                  <Link className={styles.singupButton} to={'https://app.realmocean.com/google_login?next='}>
+                  <Link className={styles.singupButton} to={'https://app.appconda.com/google_login?next='}>
                     <img className={styles['singupButton-img']} src={"https://www-static.cdn.prismic.io/www-static/7b66f955-63dd-41f5-a403-e6727b24d4ea_google-logo.svg"}></img>
                     <span className={styles['singupButton-span']}>
                       <Translate>Sign up with Google</Translate>

@@ -10,7 +10,7 @@ tags:
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-In order to be able to work with Realmocean is best to have a ready-to-use local environment in which you can try all the goodies.
+In order to be able to work with Appconda is best to have a ready-to-use local environment in which you can try all the goodies.
 
 ---
 
@@ -24,17 +24,17 @@ Install it from the link above its available to all platforms.
 ---
 
 ## Local installation.
-After you've installed Docker Desktop open your terminal, and navigate to folder in which you want to install your Realmocean. For example in my Windows I've navigated to my documents folder, have created a folder named realmocean and I've cd's into it, like so:
+After you've installed Docker Desktop open your terminal, and navigate to folder in which you want to install your Appconda. For example in my Windows I've navigated to my documents folder, have created a folder named appconda and I've cd's into it, like so:
 
 ```cmd
 C:\> cd Users\user\documents
-C:\Users\user\documents\> mkdir realmocean
-C:\Users\user\documents\> cd realmocean
+C:\Users\user\documents\> mkdir appconda
+C:\Users\user\documents\> cd appconda
 ```
 
-Creating a folder will ease any maintenance workflow needed in your local Realmocean.
+Creating a folder will ease any maintenance workflow needed in your local Appconda.
 
-Now you can install Realmocean select the appropriate Operation system below and run the command.
+Now you can install Appconda select the appropriate Operation system below and run the command.
 
 
 <Tabs>
@@ -43,9 +43,9 @@ Now you can install Realmocean select the appropriate Operation system below and
 ```shell
 docker run -it --rm \
     --volume /var/run/docker.sock:/var/run/docker.sock \
-    --volume "$(pwd)"/realmocean:/usr/src/code/realmocean:rw \
+    --volume "$(pwd)"/appconda:/usr/src/code/appconda:rw \
     --entrypoint="install" \
-    realmocean/realmocean:1.3.8
+    appconda/appconda:1.3.8
 ```
 
 </TabItem>
@@ -54,9 +54,9 @@ docker run -it --rm \
 ```cmd
 docker run -it --rm ^
     --volume //var/run/docker.sock:/var/run/docker.sock ^
-    --volume "%cd%"/realmocean:/usr/src/code/realmocean:rw ^
+    --volume "%cd%"/appconda:/usr/src/code/appconda:rw ^
     --entrypoint="install" ^
-    realmocean/realmocean:1.3.8
+    appconda/appconda:1.3.8
 ```
 
 </TabItem>
@@ -66,9 +66,9 @@ docker run -it --rm ^
 ```cmd
 docker run -it --rm `
     --volume /var/run/docker.sock:/var/run/docker.sock `
-    --volume ${pwd}/realmocean:/usr/src/code/realmocean:rw `
+    --volume ${pwd}/appconda:/usr/src/code/appconda:rw `
     --entrypoint="install" `
-    realmocean/realmocean:1.3.8
+    appconda/appconda:1.3.8
 ```
 
 </TabItem>
@@ -83,19 +83,19 @@ When it looks like is done, you will present with the installation wizard. and y
 Choose your server HTTP port: (default: 80)
 Choose your server HTTPS port: (default: 443)
 Choose a secret API key, make sure to make a backup of your key in a secure location (default: 'your-secret-key')
-Enter your Realmocean hostname (default: 'localhost')
+Enter your Appconda hostname (default: 'localhost')
 Enter a DNS A record hostname to serve as a CNAME for your custom domains.
  ```
 
 They're mostly self-explanatory but to summarize:
 
-1. Select the port in which you be able to access your Realmocean without SSL
-2. Select the port in which you be able to access your Realmocean with SSL
-3. Enter a secret key which Realmocean is going to use encrypt all the two-way encrypted data inside the database. if you're planning to duplicate this local instance to a remote one be sure to set something unique and backup it as your going to need it.
+1. Select the port in which you be able to access your Appconda without SSL
+2. Select the port in which you be able to access your Appconda with SSL
+3. Enter a secret key which Appconda is going to use encrypt all the two-way encrypted data inside the database. if you're planning to duplicate this local instance to a remote one be sure to set something unique and backup it as your going to need it.
 4. Enter the hostname (domain) that will have A record with the server IP. in local localhost will be fine.
 5. Enter the hostname (domain) in which other domain point toward it using a CNAME DNS record.
 
-As this is just a local version of Realmocean you can hit enter for all the options.
+As this is just a local version of Appconda you can hit enter for all the options.
 
 After that the final step of installation process will run. when it finishes run this command:
 

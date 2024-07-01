@@ -62,7 +62,7 @@ Validation returns following values, specific to **Quota** licensing model:
 Validation response example:
 
 ```xml
-<ns2:AppLicensing xmlns="http://www.w3.org/2000/09/xmldsig#" xmlns:ns2="http://AppLicensing.Realmocean.com/schema/context" ttl="2020-03-12T19:56:47.297Z">
+<ns2:AppLicensing xmlns="http://www.w3.org/2000/09/xmldsig#" xmlns:ns2="http://AppLicensing.Appconda.com/schema/context" ttl="2020-03-12T19:56:47.297Z">
   <ns2:infos/>
   <ns2:items>
     <ns2:item type="ProductModuleValidation">

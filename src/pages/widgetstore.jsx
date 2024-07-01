@@ -6,7 +6,7 @@ export default function WidgetStore() {
 
     useEffect(() => {
         let mounted = true;
-        var url = "https://app.realmocean.com/api/widget:mainstore-settings";
+        var url = "https://app.appconda.com/api/widget:mainstore-settings";
 
         var xhr = new XMLHttpRequest();
         xhr.open("GET", url);
@@ -29,7 +29,7 @@ export default function WidgetStore() {
 
 
     return (
-        <Layout title="Widgets" description="Realmocean Widget Store">
+        <Layout title="Widgets" description="Appconda Widget Store">
             <div className="grid-container">
                 {
                     widgets?.map(item =>

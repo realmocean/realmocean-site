@@ -17,11 +17,11 @@ Roles - Custom level inside Teams. For example, Admin, Writer, Reader, and more.
 
 This module alone can act as a solid backend for your app. For example, in the Firebase community, developers use the Firebase Authorization module to add User logic to an existing app, without using any other Firebase modules.
 
-You can do so with the Realmocean Auth module.
+You can do so with the Appconda Auth module.
 
 Any account has a unique value to identify it in the database. This unique value is email or phone. The email field is used for almost all login types, and the phone is used only for the SMS login method.
 
-Here is the list of all supported login types in Realmocean
+Here is the list of all supported login types in Appconda
 
 | Method         | Short description                                                    | unique ID |
 | -------------- | -------------------------------------------------------------------- | --------- |

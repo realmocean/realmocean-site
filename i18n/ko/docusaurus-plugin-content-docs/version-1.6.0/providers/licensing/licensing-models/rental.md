@@ -148,7 +148,7 @@ If devices in our example were all added at the same time on Feb 01, 2012 at 14:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<AppLicensing xmlns="http://AppLicensing.Realmocean.com/schema/context">
+<AppLicensing xmlns="http://AppLicensing.Appconda.com/schema/context">
   <items>
     <item type="ProductModuleValidation">
       <property name="productModuleNumber">M1XMKFVY7</property>
@@ -223,7 +223,7 @@ And the validation result for the validation performed on Aug 21, 2012 will look
 
 ```xml
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<AppLicensing xmlns="http://AppLicensing.Realmocean.com/schema/context">
+<AppLicensing xmlns="http://AppLicensing.Appconda.com/schema/context">
   <items>
     <item type="ProductModuleValidation">
       <property name="productModuleNumber">M1XMKFVY7</property>

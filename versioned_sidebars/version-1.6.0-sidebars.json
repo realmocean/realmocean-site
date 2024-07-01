@@ -2,7 +2,7 @@
     "docs": [
         {
             "type": "category",
-            "label": "Realmocean",
+            "label": "Appconda",
             "collapsed": false,
             "items": [
                 "intro",
@@ -28,7 +28,7 @@
         },
         {
             "type": "category",
-            "label": "Modules",
+            "label": "Services",
             "collapsed": false,
             "items": [
                 {
@@ -60,6 +60,16 @@
                         "modules/database/queries",
                         "modules/database/pagination",
                         "modules/database/database-api"
+                    ]
+                },
+                {
+                    "type": "category",
+                    "label": "Storage",
+                    "collapsed": true,
+                    "items": [
+                        "modules/storage/overview",
+                        "modules/storage/quick-start",
+                         "modules/storage/buckets"
                     ]
                 }
             ]

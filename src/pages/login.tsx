@@ -2,7 +2,7 @@ import React from 'react';
 import Layout from '@theme/Layout';
 
 export default function Login() {
-   // window.location.replace('http://app.realmocean.com');
+   // window.location.replace('http://app.appconda.com');
     return (
       <Layout title="Hello" description="Hello React Page">
         <div

@@ -1,26 +1,26 @@
 ---
 id: intro
-title: What is realmocean
-sidebar_label: What is realmocean
+title: What is appconda
+sidebar_label: What is appconda
 slug: /
 tags:
   - install
   - Getting started
 ---
 
-Realmocean is a self-hosted Soft Code (Baas + Iaas) platform.
+Appconda is a self-hosted Soft Code (Baas + Iaas) platform.
 
 That pretty straightforward, but, if you never heard of BaaS, you are probably scratching the top of your head and asking yourself, "what for? What is the meaning of that?"
 
 Well, let's start with the basics. BaaS stands for Backend as a Service. It is a cloud computing service model that provides developers with a way to connect their applications to a backend cloud storage and APIs exposed by back end applications while also providing features such as user management, push notifications, and integration with social networking services.
 
-## This is what Realmocean is:
+## This is what Appconda is:
 
-Realmocean is a set of essential modules that 99.9% of apps would need.
+Appconda is a set of essential modules that 99.9% of apps would need.
 
 Every app needs a Database, a solid Authentication & Authorization mechanism, permission system, a way to compute information, and an organized place for the app files.
 
-Realmocean taking cover of all the above + more; you will explore these Realmocean modules:
+Appconda taking cover of all the above + more; you will explore these Appconda modules:
 
 - **Auth** - User-management system that can work with basic traditional authorization techniques such as email and - Phone and with all the popular OAuth2 providers in the market today, including Google, AzureAD, Apple, and more.
 - **Database** - An extraordinary hybrid NoSQL approach to a Relational Database engine runs on MariaDB.
@@ -31,7 +31,7 @@ Realmocean taking cover of all the above + more; you will explore these Realmoce
 
 ## Server vs. Client
 
-Realmocean has three methods by which you can connect to the engine.
+Appconda has three methods by which you can connect to the engine.
 
 ### REST API
 

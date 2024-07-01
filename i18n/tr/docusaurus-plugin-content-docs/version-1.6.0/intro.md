@@ -1,6 +1,6 @@
 ---
 id: intro
-title: Introduction to realmocean
+title: Introduction to appconda
 sidebar_label: Introduction
 slug: /
 tags:
@@ -29,15 +29,15 @@ The apps you create can be used by any organization or individual user in any re
 
 You can create and install custom apps for your own realm account. Also, having the ability to integrate with other systems used by the organization and to create visuals and custom reports for your needs.
 
-You can also make your app a public app that allows you to share it with the realmocean community. You can create apps and sell them on your own or become a realm Partner and create apps as a service you offer to your customers.
+You can also make your app a public app that allows you to share it with the appconda community. You can create apps and sell them on your own or become a realm Partner and create apps as a service you offer to your customers.
 
 We also have an app marketplace where other realm users can scan to install these third party apps. You can submit your app in our app store. For more information on submitting apps, check out our article Submitting Your App to the Apps Marketplace.
 
 ## Start Building
 
-To start building your first app all you need is a realmocean account.
+To start building your first app all you need is a appconda account.
 
-If you do not already have a realmocean account, sign up for a free account here.
+If you do not already have a appconda account, sign up for a free account here.
 
 Learn more about how to create and manage your apps here.
 

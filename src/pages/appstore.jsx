@@ -6,7 +6,7 @@ export default function AppStore() {
 
   useEffect(() => {
     let mounted = true;
-    var url = "https://app.realmocean.com/api/GetMainStoreInfos";
+    var url = "https://app.appconda.com/api/GetMainStoreInfos";
 
     var xhr = new XMLHttpRequest();
     xhr.open("POST", url);
@@ -29,7 +29,7 @@ export default function AppStore() {
 
 
   return (
-    <Layout title="Apps" description="Realmocean AppStore">
+    <Layout title="Apps" description="Appconda AppStore">
 
 
       <div className='app-store-apps-page-content'>

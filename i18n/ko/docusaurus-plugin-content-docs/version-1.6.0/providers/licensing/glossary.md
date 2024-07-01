@@ -21,7 +21,7 @@ sidebar_label: Glossary
 </tr>
 <tr class="odd">
 <td><p><strong>AppLicensing</strong></p></td>
-<td><p>Realmocean innovative license management solution</p></td>
+<td><p>Appconda innovative license management solution</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>AppLicensing Management Console</strong></p></td>

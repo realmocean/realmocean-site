@@ -6,7 +6,7 @@ sidebar_label: UITextBoxView
 
 Represents the UITextBoxView component that allows the user to enter the values based on it’s type.
 ```tsx
-import { UITextBoxView } from '@realmocean/inputs'
+import { UITextBoxView } from '@appconda/inputs'
 
 HStack(
     UITextBoxView().width('100%').placeholder(placeholder)

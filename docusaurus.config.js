@@ -86,10 +86,10 @@ export default {
             {
                 to: '/buildwithrealmocean',
                 position: 'left',
-                label: 'Build with Realmocean',
+                label: 'Build with Appconda',
             }, */
             {
-                href: 'https://app.realmocean.com',
+                href: 'https://app.appconda.com',
                 html: '<b>Log In</b>',
                 position: 'right',
                 className: 'login-button',

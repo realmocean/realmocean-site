@@ -3,9 +3,9 @@ id: overview
 title: Overview
 sidebar_label: Overview
 ---
-Realmocean AppLicensing is sophisticated enough to cover even the most
+Appconda AppLicensing is sophisticated enough to cover even the most
 outlandish licensing models: from single-user to network overflow
-licenses. Realmocean AppLicensing provides the software vendor with the
+licenses. Appconda AppLicensing provides the software vendor with the
 ability to map/combine numerous licensing models.
 
 Licensing models combine different parameters that define how a product

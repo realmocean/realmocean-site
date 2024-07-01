@@ -17,6 +17,6 @@ The app framework is written by Typescript and using Tuval Framework. You can us
 
 ## How do I submit my app for the app store?
 
-## Can I get a realmocean account for testing?
+## Can I get a appconda account for testing?
 
 ## How do I get troubleshooting help?

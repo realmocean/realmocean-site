@@ -9,7 +9,7 @@ const realms = [
   },
   {
     name: 'Next Normal',
-    realm_link: 'https://next-normal.realmocean.app'
+    realm_link: 'https://next-normal.appconda.app'
   },
   {
     name: 'BPM Genesis',
