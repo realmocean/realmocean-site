@@ -13,7 +13,7 @@ Appconda Storage allows you to manage files in your project. You can use it to s
 :::info
 **Looking for a database?**
 
-Appconda Storage stores files like images, PDFs or videos. If you need to store data like profiles, recipes, or transactions, use [Appconda Databases](/docs/products/databases).
+Appconda Storage stores files like images, PDFs or videos. If you need to store data like profiles, recipes, or transactions, use [Appconda Databases](/).
 :::
 
 ### Get started
