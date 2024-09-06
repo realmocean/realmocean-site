@@ -33,7 +33,7 @@
             "items": [
                 {
                     "type": "category",
-                    "label": "Auth",
+                    "label": "Identity Management",
                     "collapsed": true,
                     "items": [
                         "modules/auth/auth",
@@ -47,7 +47,7 @@
                 },
                 {
                     "type": "category",
-                    "label": "Database",
+                    "label": "Managed Database",
                     "collapsed": true,
                     "items": [
                         "modules/database/overview",
@@ -70,6 +70,78 @@
                         "modules/storage/overview",
                         "modules/storage/quick-start",
                          "modules/storage/buckets"
+                    ]
+                },
+                {
+                    "type": "category",
+                    "label": "International",
+                    "collapsed": true,
+                    "items": [
+                        "modules/storage/overview",
+                        "modules/storage/quick-start",
+                         "modules/storage/buckets"
+                    ]
+                },
+                {
+                    "type": "category",
+                    "label": "License Management",
+                    "collapsed": true,
+                    "items": [
+                        "modules/storage/overview",
+                        "modules/storage/quick-start",
+                         "modules/storage/buckets"
+                    ]
+                },
+                {
+                    "type": "category",
+                    "label": "AI",
+                    "collapsed": true,
+                    "items": [
+                        "modules/storage/overview",
+                        "modules/storage/quick-start",
+                         "modules/storage/buckets"
+                    ]
+                },
+                {
+                    "type": "category",
+                    "label": "Tracer",
+                    "collapsed": true,
+                    "items": [
+                        "modules/storage/overview",
+                        "modules/storage/quick-start",
+                         "modules/storage/buckets"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "category",
+            "label": "Applets",
+            "collapsed": false,
+            "items": [
+                  "applets/overview",
+                {
+                    "type": "category",
+                    "label": "Task Management",
+                    "collapsed": true,
+                    "items": [
+                        "modules/auth/auth"
+                    ]
+                },
+                {
+                    "type": "category",
+                    "label": "Log Management",
+                    "collapsed": true,
+                    "items": [
+                        "modules/database/overview"
+                    ]
+                },
+                {
+                    "type": "category",
+                    "label": "Document Management",
+                    "collapsed": true,
+                    "items": [
+                        "modules/storage/overview"
                     ]
                 }
             ]
