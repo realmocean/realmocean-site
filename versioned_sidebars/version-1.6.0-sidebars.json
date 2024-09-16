@@ -42,7 +42,8 @@
                         "modules/auth/users",
                         "modules/auth/teams",
                         "modules/auth/labels",
-                        "modules/auth/security"
+                        "modules/auth/security",
+                        "modules/auth/email-password"
                     ]
                 },
                 {
