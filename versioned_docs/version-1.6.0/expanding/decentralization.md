@@ -1001,7 +1001,7 @@ docker compose up -d
 ---
 
 ## Vertical scaling
-Even though you're going to use decentralization with horizontal scaling, decentralization on itself gives a huge advantage even when working with a single server of Appwrite, by letting you scale up and down your server with zero downtime.
+Even though you're going to use decentralization with horizontal scaling, decentralization on itself gives a huge advantage even when working with a single server of Appconda, by letting you scale up and down your server with zero downtime.
 
 The way you can do that is by doing something like this:
 

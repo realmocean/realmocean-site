@@ -60,14 +60,14 @@ In the previous chapter you have created the main and client servers, When you h
 4. Create as many as needed servers and make them use the client snapshot you've just created.
 5. Assign the client tag/label (depends on the IaaS provider) to all of the client instances.
    
-Now, every time you'll access any of the newly created servers IP, you'll get the same Appwrite instance.
+Now, every time you'll access any of the newly created servers IP, you'll get the same Appconda instance.
 
 ### Tag-based load-balancer
-That part alone won't give you horizontal-scaled Appwrite, to complete that process you'll need to utilize a load-balancer and make balance between all your client instances.
+That part alone won't give you horizontal-scaled Appconda, to complete that process you'll need to utilize a load-balancer and make balance between all your client instances.
 
 Most IaaS load-balancers let you balance the traffic by tag.
 
-Then all you need to do is point your domain to the load-balancer IP, doing so will make sure any request made to your Appwrite domain will be balanced between your client instances.
+Then all you need to do is point your domain to the load-balancer IP, doing so will make sure any request made to your Appconda domain will be balanced between your client instances.
 
 ### More DB connection
 In case you're scaling up and up it's necessary to let your MariaDB have more than the 151 default connections limit.
@@ -80,14 +80,14 @@ To do so, edit your main server docker-compose.yml file and add this line
 services:
   mariadb:
     image: mariadb:10.7
-    container_name: appwrite-mariadb
+    container_name: appconda-mariadb
     ports:
       - "3306:3306"
     restart: unless-stopped
     networks:
       - gateway
     volumes:
-      - appwrite-mariadb:/var/lib/mysql:rw
+      - appconda-mariadb:/var/lib/mysql:rw
       - /root/databases/my.cnf:/etc/mysql/my.cnf:rw 
     environment:
       - MYSQL_ROOT_PASSWORD
@@ -128,13 +128,13 @@ docker compose down && docker compose up -d
 ---
 
 ## Upgrade
-Upgrading an HA cluster of Appwrite must be done manually following these steps, make sure to choose the most-quite time in your server.
+Upgrading an HA cluster of Appconda must be done manually following these steps, make sure to choose the most-quite time in your server.
 
 1. Create a strong replication of your client server. You want to create a strong one, so the inside process will be as fast as possible
 2. Don't give the new server the load-balancer tag
-3. Edit the docker-compose.yml file change the Appwrite image version to new one
+3. Edit the docker-compose.yml file change the Appconda image version to new one
 4. Run docker compose up -d that will download the new image and update the infrastructure to the latest version
-5. In case there's a need of migrate run docker exec appwrite migrate
+5. In case there's a need of migrate run docker exec appconda migrate
 6. Turn off the new server
 7. Take a snapshot of the new server
 8. Delete the new server
@@ -148,7 +148,7 @@ You can automate most of the process from step 6-13 by using your IaaS API. For 
 
 ## Benchmarks
 
-Go to Benchmarks to see how Appwrite is handling request when scaling it horizontally.
+Go to Benchmarks to see how Appconda is handling request when scaling it horizontally.
 
 ---
 
@@ -159,5 +159,5 @@ In the book repo in the horizontal folder, you'll find ansible file for automati
 You'll need to set just the servers IP and run
 
 ```shell
-ansible-playbook appwrite.yml --ask-vault-pass
+ansible-playbook appconda.yml --ask-vault-pass
 ```

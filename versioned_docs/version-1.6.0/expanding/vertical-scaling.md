@@ -60,7 +60,7 @@ Even though the basic level of any horizontal scaling infrastructure will be exp
 
 The number 100 here is actually not good.
 
-It means that there is 100% downtime when upgrading your Appwrite instance that has only one server.
+It means that there is 100% downtime when upgrading your Appconda instance that has only one server.
 
 It is worth remembering that when scaling a server it must be turned off, so during that time no access can be made to the server.
 
