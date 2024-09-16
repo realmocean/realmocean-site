@@ -79,7 +79,7 @@ const features = [
       <Translate
         id="homepage.features.easy-to-use.title"
         description="Title of feature of Easy to use on the home page">
-        Identity Management as a Service
+        Identity Management
       </Translate>
     ),
     imageUrl: 'img/undraw_authentication_re_svpt.svg',
@@ -96,7 +96,7 @@ const features = [
       <Translate
         id="homepage.features.modern-ui.title"
         description="Title of feature of Modern UI on the home page">
-        License Management as a Service
+        Managed Database
       </Translate>
     ),
     imageUrl: 'img/undraw_certification_re_ifll.svg',
@@ -132,7 +132,7 @@ const features = [
       <Translate
         id="homepage.features.connect-information.title"
         description="Title of feature of Connect your information on the home page">
-        App Store as a Service
+        Storage
       </Translate>
     ),
     imageUrl: 'img/undraw_responsive_re_e1nn.svg',
